@@ -22,8 +22,6 @@
 - [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`
 - UI компоненты в `src/components/discours-ui`, верстка — в `src/components`, логика — в `src/containers`
 
-### Манифест разработки Дискурса
-
 > [Оригинал](https://github.com/Discours/discours-welcome)
 
 :[Манифест](https://raw.githubusercontent.com/Discours/discours-welcome/master/MANIFEST.md)
