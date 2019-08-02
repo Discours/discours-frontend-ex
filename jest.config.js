@@ -5,7 +5,7 @@ const filesExts = require("./config/filesExts");
 module.exports = {
   preset: "ts-jest",
   errorOnDeprecated: true,
-  coverageReporters: ["json-summary", "text", "html"],
+  coverageReporters: ["json-summary", "text", "html", "lcov"],
   testMatch: ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec).ts?(x)"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
   collectCoverageFrom: ["src/**/*.ts?(x)", "!src/**/*.stories.ts?(x)"],
