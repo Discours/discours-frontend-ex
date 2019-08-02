@@ -1,9 +1,9 @@
 import * as React from "react";
-import MuiLocaleProvider from "./MuiLocaleProvider";
+import LocaleProvider from "./LocaleProvider";
 
 class RootProvider extends React.PureComponent {
   public render() {
-    return <MuiLocaleProvider>{this.props.children}</MuiLocaleProvider>;
+    return <LocaleProvider>{this.props.children}</LocaleProvider>;
   }
 }
 

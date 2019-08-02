@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { RawLocaleProvider } from "src/contexts/LocaleContext";
 
-import MuiLocaleProvider from "./MuiLocaleProvider";
+import LocaleProvider from "./LocaleProvider";
 
 export type StorybookLocaleProviderProps = {
   direction: "ltr" | "rtl";
@@ -17,7 +17,7 @@ class StorybookLocaleProvider extends React.PureComponent<
     return (
       <RawLocaleProvider
         value={{ direction, locale, changeLocale: this.changeLocale }}>
-        <MuiLocaleProvider>{children}</MuiLocaleProvider>
+        <LocaleProvider>{children}</LocaleProvider>
       </RawLocaleProvider>
     );
   }

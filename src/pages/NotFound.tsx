@@ -1,9 +1,14 @@
 import Typography from "@material-ui/core/Typography";
+import { T } from "lioness";
 import * as React from "react";
 
 class NotFoundPage extends React.PureComponent {
   public render() {
-    return <Typography>Page was not found</Typography>;
+    return (
+      <Typography>
+        <T context="errorCodes.404.title" message="404!" />
+      </Typography>
+    );
   }
 }
 

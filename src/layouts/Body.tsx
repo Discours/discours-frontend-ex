@@ -1,33 +1,14 @@
-import { Theme, withStyles, WithStyles } from "@material-ui/core/styles";
 import * as React from "react";
-import Header from "src/layouts/Header";
 // tslint:disable-next-line import-name
 import Pages from "src/pages";
 
-const styles = (theme: Theme) => ({
-  layout: {
-    paddingTop: 30,
-    width: "auto",
-    marginLeft: theme.spacing(3),
-    marginRight: theme.spacing(3),
-    [theme.breakpoints.up(theme.spacing(6) + 900)]: {
-      width: 900,
-      marginLeft: "auto",
-      marginRight: "auto",
-    },
-  },
-});
-
-interface IProps extends WithStyles<typeof styles> {}
+interface IProps {}
 
 class Body extends React.Component<IProps> {
   public render() {
-    const { classes } = this.props;
-
     return (
       <React.Fragment>
-        <Header />
-        <main className={classes.layout}>
+        <main>
           <Pages />
         </main>
       </React.Fragment>
@@ -35,4 +16,4 @@ class Body extends React.Component<IProps> {
   }
 }
 
-export default withStyles(styles)(Body);
+export default Body;
