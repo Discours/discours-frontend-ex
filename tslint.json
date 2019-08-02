@@ -1,4 +1,9 @@
 {
   "extends": "tslint-config-trucknet-io",
-  "rules": {}
+  "rules": {
+    "no-import-side-effect": [
+      true,
+      { "ignore-module": "jest-dom/extend-expect$|jest-extended$" }
+    ]
+  }
 }
