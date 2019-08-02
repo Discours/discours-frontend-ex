@@ -2,24 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Fri Aug 02 2019 17:30:26 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Fri Aug 02 2019 18:12:31 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: src/components/examples/HelloWorld/HelloWorld.tsx:39
-msgctxt "helloWorld"
-msgid "Demo of jss-rtl"
-msgstr ""
-
-#: src/components/examples/SvgRender/SvgRender.tsx:57
-msgctxt "svg.title"
-msgid "This is Rick from SVG universe!"
-msgstr ""
-
-#: src/components/examples/SvgRender/SvgRender.tsx:69
-msgctxt "svg.changeColor"
-msgid "Change color!"
-msgstr ""
 
 #: src/pages/NotFound.tsx:9
 msgctxt "errorCodes.404.title"
