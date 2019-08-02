@@ -11,7 +11,8 @@ const WebpackBar = require("webpackbar");
 
 const filesExts = require("./config/filesExts");
 const errorReportingPlugin = require("./config/errorReporting/webpack");
-const { SUPPORTED_LOCALES } = require("./src/config/locales/locales");
+require("ts-node").register({ compilerOptions: { module: "commonjs" } });
+const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
 
 const paths = {
   input: "src",
@@ -29,7 +30,6 @@ const LANGUAGES_REGEX = new RegExp(
   `(${SUPPORTED_LOCALES.join("|")})($|\.js$|\/index\.js$)`,
 );
 const DEV = process.env.NODE_ENV !== "production";
-const E2E = !!process.env.E2E;
 
 const plugins = [
   new WebpackBar(),

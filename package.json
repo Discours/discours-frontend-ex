@@ -118,6 +118,7 @@
     "trucknet-commit": "^1.5.2",
     "ts-jest": "^24.0.0",
     "ts-loader": "^6.0.4",
+    "ts-node": "^8.3.0",
     "tslint": "^5.16.0",
     "tslint-config-trucknet-io": "^1.8.2",
     "webpack-dev-server": "^3.3.1"
