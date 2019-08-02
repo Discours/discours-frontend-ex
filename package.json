@@ -49,7 +49,10 @@
     "test": "jest --detectOpenHandles",
     "test:ci": "npm run test -- --coverage",
     "test:e2e": "env-cmd e2e --no-override start-server-and-test start http-get://localhost:3000 cy:e2e",
-    "test:e2e:ci": "npm run test:e2e"
+    "test:e2e:ci": "npm run test:e2e",
+    "docs:readme": "gitdown ./docs/.README.tmp --output-file ./README.md",
+    "predocs:readme": "hercule ./docs/_README.md -o ./docs/.README.tmp",
+    "prepush": "npm run docs:readme -- --check"
   },
   "dependencies": {
     "@babel/core": "~7.4.0",
@@ -107,7 +110,9 @@
     "@types/storybook__addon-knobs": "^5.0.3",
     "@types/storybook__react": "^4.0.1",
     "cypress": "^3.3.2",
+    "gitdown": "^3.1.1",
     "hard-source-webpack-plugin": "^0.13.1",
+    "hercule": "^4.1.1",
     "jest": "^24.7.0",
     "jest-date-mock": "^1.0.7",
     "jest-dom": "^3.1.3",
