@@ -55,9 +55,6 @@
   },
   "dependencies": {
     "@babel/core": "~7.4.0",
-    "@material-ui/core": "^4.2.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.2.0",
     "@sentry/browser": "^5.1.0",
     "@sentry/webpack-plugin": "^1.6.2",
     "@types/react": "^16.8.14",
@@ -76,7 +73,6 @@
     "gettext-utils": "^1.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "jss-rtl": "^0.2.3",
     "lioness": "^0.2.13",
     "markdown-loader": "^5.0.0",
     "raw-loader": "^3.0.0",

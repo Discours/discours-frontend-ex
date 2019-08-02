@@ -1,6 +1,6 @@
-import Typography from "@material-ui/core/Typography";
 import { T } from "lioness";
 import * as React from "react";
+import { Typography } from "src/components/discours-ui/Typography";
 
 class NotFoundPage extends React.PureComponent {
   public render() {

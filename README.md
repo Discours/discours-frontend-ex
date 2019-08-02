@@ -8,13 +8,13 @@
 
 > Весь фронтэнд Дискурса в одном репозитории!
 
-* [Cheat Sheet](#cheat-sheet)
-* [Манифест разработки Дискурса](#)
-* [Storybook](#storybook)
-* [Component Testing](#component-testing)
-
+- [Cheat Sheet](#cheat-sheet)
+- [Манифест разработки Дискурса](#)
+- [Storybook](#storybook)
+- [Component Testing](#component-testing)
 
 <a name="cheat-sheet"></a>
+
 ### Cheat Sheet
 
 > Быстрый справочник по разработке проекта
@@ -26,10 +26,12 @@
 - [emotion](https://emotion.sh/docs/introduction) для css, на самом деле просто пишем css текстом, но с классным автодополнением и поддержкой Typescript
 - [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`
 - UI компоненты в `src/components/discours-ui`, верстка — в `src/components`, логика — в `src/containers`
+- Всё, что нужно для успешного билда — production dependency
 
 > [Оригинал](https://github.com/Discours/discours-welcome)
 
 <a name=""></a>
+
 ### Манифест разработки Дискурса
 
 <p align="center"> 
@@ -39,7 +41,7 @@
 ![Красивый баннер Дискурса с людьми в одежде 18-о века](https://github.com/Discours/discours-welcome/raw/master/docs/img/banner.jpg)
 
 1. Дискурс — открытый проект. Каждый желающий имеет право стать контрибьютором проекта, внести изменения в любой из сервисов проекта и отправить Pull Request.
-1. Дискурс — общий проект. Вы всегда можете пообщаться с другими членами команды в [Gitter чате Дискурса](https://gitter.im/Discours/community). Там Вы можете узнать, что сейчас лучше сделать, а также задать любой вопрос по поводу разработки проекта. 
+1. Дискурс — общий проект. Вы всегда можете пообщаться с другими членами команды в [Gitter чате Дискурса](https://gitter.im/Discours/community). Там Вы можете узнать, что сейчас лучше сделать, а также задать любой вопрос по поводу разработки проекта.
 1. Дискурс — проект для читателя. В первую очередь команда выполняет те таски, за которые проголосовали пользователи на [публичной доске задач проекта]().
 1. Дискурс — проект для любого разработчика. Мы принимаем микросервисы для backend на любом языке программирования. Но стоит понимать, что мэйнтейнеры проекта не могут знать всех языков, поэтому Dockerfile для запуска микросервиса, понятная документация и тесты (с настроенным CI для их прогона) обязательны в каждом микросервисе.
 1. Дискурс — проект для приятной разработки. Команда следит за качеством кода в проекте для того, чтобы новым контрибьюторам было максимально просто влиться в проект. Качество кода - это не только code style и тесты, но и такие субъективные показатели, как читаемость кода и архитектура. Мэйнтейнеры проекта имеют право попросить автора PR изменить код в целях повышения его качества.
@@ -49,11 +51,13 @@
 1. Дискурс — проект без гос. цензуры. Но большая часть наших читателей из РФ, где РосКомНадзор частенько бомбит славный город Воронеж и даже иногда [блокирует сам себя](https://lenta.ru/news/2016/12/12/127001/). Инфраструктура проекта должна быть распределенной, но должна поддерживать быструю смену IP адресов всего, до чего необходимо достучаться пользователю (фронтэнд, бэкэнд, rss микросервис, другие микросервисы доступные пользователю). Нельзя создавать vendor lock на решения, которые не позволяют быстро сменить IP (Cloudflare, Netlify).
 
 <a name="storybook"></a>
+
 ## Storybook
 
 This repo includes [Storybook](https://storybook.js.org/) - a great way to develop components. [Try a tutorial](https://www.learnstorybook.com/) to get started, if you are not familiar with this instrument.
 
 <a name="component-testing"></a>
+
 ## Component Testing
 
 [react-testing-library](https://github.com/kentcdodds/react-testing-library) is used to write integration tests of React components. [jest-dom](https://github.com/gnapse/jest-dom#readme) is used to have better development experience to write expectations.
