@@ -1,15 +1,17 @@
-/* Do not use this file to write styles */
-/* CSS modules are used to write css to each component in isolation */
+/*
+  Do not use this file to write styles
+  CSS modules are used to write css to each component in isolation
+*/
 
 /* https://github.com/csstools/postcss-normalize */
-@import "sanitize";
 
+@import "sanitize";
 @import "./themes/default.css";
 @import "./themes/dark.css";
 
 :global [class^="discours-theme"] {
+  min-width: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   background-color: var(--color-background);
-  min-height: 100vh;
-  min-width: 100vh;
 }

@@ -18,9 +18,9 @@
 - PR в ветку `develop`.
 - [storybook](https://storybook.js.org) для верстки компонентов и страниц очень помогает.
 - [react-testing-library](https://testing-library.com/react) для интеграционного тестирования компонентов (если там есть какая-то логика) для полной уверенности в своём коде.
-- [emotion](https://emotion.sh/docs/introduction) для css, на самом деле просто пишем css текстом, но с классным автодополнением и поддержкой Typescript.
 - [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`.
 - UI компоненты в `src/components/discours-ui`, верстка — в `src/components`, логика — в `src/containers`.
+- Свойства `.css` автоматически сортируются перед коммитом. [Зачем?](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec).
 
 > [Оригинал](https://github.com/Discours/discours-welcome)
 

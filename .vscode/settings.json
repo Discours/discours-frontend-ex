@@ -1,10 +1,11 @@
 {
+  "css.validate": false, // https://github.com/shinnn/vscode-stylelint#optional-but-recommended-setup
   "files.exclude": {
     "**/*.js": { "when": "$(basename).ts" },
     "**/*.js.map": true
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true
+    "source.fixAll": true
   },
   "editor.formatOnSave": true,
   "jest.debugCodeLens.showWhenTestStateIn": ["fail", "unknown", "pass", "skip"],

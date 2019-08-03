@@ -3,7 +3,8 @@
   --color-text: #fff;
   --color-border: #fff;
   --color-background: #000;
-  background-color: var(--color-background);
-  min-height: 100vh;
+
   min-width: 100vh;
+  min-height: 100vh;
+  background-color: var(--color-background);
 }
