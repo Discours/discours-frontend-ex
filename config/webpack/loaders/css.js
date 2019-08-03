@@ -13,6 +13,7 @@ const cssLoader = {
     {
       loader: require.resolve("css-loader"),
       options: {
+        importLoaders: 1, // https://github.com/postcss/postcss-loader#css-modules
         modules: {
           mode: "local",
           localIdentName: DEV ? "[path][name]__[local]" : "[hash:base64]",
@@ -20,6 +21,7 @@ const cssLoader = {
         },
       },
     },
+    require.resolve("postcss-loader"),
   ],
 };
 

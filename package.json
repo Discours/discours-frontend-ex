@@ -75,6 +75,7 @@
     "lioness": "^0.2.15",
     "markdown-loader": "^5.1.0",
     "postcss-loader": "^3.0.0",
+    "postcss-normalize": "^8.0.1",
     "raw-loader": "^3.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
