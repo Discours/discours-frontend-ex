@@ -39,7 +39,7 @@ addParameters({
     providerProps: {
       messages,
     },
-    supportedLocales: 3SUPPORTED_LOCALES,
+    supportedLocales: SUPPORTED_LOCALES,
   },
 });
 
