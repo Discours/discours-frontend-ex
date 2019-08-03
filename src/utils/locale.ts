@@ -1,3 +1,4 @@
+import { Locale } from "date-fns";
 import { SUPPORTED_LOCALES } from "src/config/locales";
 
 export const findLocale = (locales: string[], locale: string) => {

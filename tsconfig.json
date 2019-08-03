@@ -14,7 +14,8 @@
     "typeRoots": ["node_modules/@types", "./@types"],
     "isolatedModules": false, // https://github.com/microsoft/TypeScript/issues/32294
     "target": "es5",
-    "module": "esnext"
+    "resolveJsonModule": true
+    // "module": "es6"
   },
   "include": ["src/**/*", "__tests__/**/*", "__utils__/**/*"]
 }
