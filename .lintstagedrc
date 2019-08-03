@@ -3,7 +3,7 @@
     "prettier --write",
     "git add"
   ],
-  "*.ts": [
+  "*.ts,!*.css.d.ts": [
     "tslint --fix",
     "prettier --write",
     "git add"
