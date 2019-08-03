@@ -25,7 +25,7 @@ const paths = {
   },
 };
 
-const TITLE = "Boilerplate";
+const TITLE = "Дискурс";
 const LANGUAGES_REGEX = new RegExp(
   `(${SUPPORTED_LOCALES.join("|")})($|\.js$|\/index\.js$)`,
 );
@@ -33,7 +33,6 @@ const DEV = process.env.NODE_ENV !== "production";
 
 const plugins = [
   new WebpackBar(),
-  new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, LANGUAGES_REGEX),
   new webpack.ContextReplacementPlugin(/date-fns[/\\]locale$/, LANGUAGES_REGEX),
   new CleanWebpackPlugin([paths.output]),
   new CopyWebpackPlugin([paths.static]),
