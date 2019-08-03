@@ -2,12 +2,16 @@ const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const ProgressPlugin = require("webpack").ProgressPlugin;
+const { cssLoaderStorybook } = require("../config/webpack/loaders/css");
+const { mdLoadersStorybook } = require("../config/webpack/loaders/md");
+const { tsLoaderStorybook } = require("../config/webpack/loaders/ts");
 
 module.exports = ({ config, mode }) => {
-  config.module.rules = config.module.rules.filter(
-    (r) => r.test.toString() !== /\.md$/.toString(),
-  );
+  // Config
   config.devtool = "cheap-module-eval-source-map";
+  config.resolve.extensions.unshift(".ts", ".tsx");
+
+  // Plugins
   config.plugins = config.plugins.filter(
     (m) => m instanceof ProgressPlugin === false,
   ); // We are using Webpackbar, so no need in ProgressPlugin
@@ -15,48 +19,13 @@ module.exports = ({ config, mode }) => {
   config.plugins.push(new WebpackBar());
 
   config.resolve.plugins = [new TsconfigPathsPlugin()];
-  config.resolve.extensions.unshift(".ts", ".tsx");
 
-  const rules = [
-    {
-      test: /\.(ts|tsx)$/,
-      use: [
-        {
-          loader: require.resolve("awesome-typescript-loader"),
-          options: {
-            transpileOnly: true,
-            useCache: true,
-            sourceMap: true,
-          },
-        },
-        {
-          loader: require.resolve("react-docgen-typescript-loader"),
-        },
-      ],
-    },
-    {
-      test: /\.md$/,
-      exclude: /README\.md/,
-      use: [
-        {
-          loader: require.resolve("html-loader"),
-        },
-        {
-          loader: require.resolve("markdown-loader"),
-        },
-      ],
-    },
-    {
-      test: /README\.md$/,
-      use: [
-        {
-          loader: require.resolve("raw-loader"),
-        },
-      ],
-    },
+  // Loaders
+  config.module.rules = [
+    tsLoaderStorybook,
+    ...mdLoadersStorybook,
+    cssLoaderStorybook,
   ];
-
-  config.module.rules = [...rules, ...config.module.rules];
 
   return config;
 };

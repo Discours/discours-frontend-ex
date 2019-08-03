@@ -8,11 +8,14 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const WebpackBar = require("webpackbar");
-
 const filesExts = require("./config/filesExts");
 const errorReportingPlugin = require("./config/errorReporting/webpack");
 require("ts-node").register({ compilerOptions: { module: "commonjs" } });
 const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
+const { DEV } = require("./config/webpack/env");
+const { cssLoader } = require("./config/webpack/loaders/css");
+const { mdLoader } = require("./config/webpack/loaders/md");
+const { tsLoader } = require("./config/webpack/loaders/ts");
 
 const paths = {
   input: "src",
@@ -29,7 +32,6 @@ const TITLE = "Дискурс";
 const LANGUAGES_REGEX = new RegExp(
   `(${SUPPORTED_LOCALES.join("|")})($|\.js$|\/index\.js$)`,
 );
-const DEV = process.env.NODE_ENV !== "production";
 
 const plugins = [
   new WebpackBar(),
@@ -83,6 +85,7 @@ module.exports = {
       ignored: ["node_modules", "dist"],
     },
     stats: "minimal",
+    open: true,
   },
   mode: DEV ? "development" : "production",
   output: {
@@ -97,22 +100,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(j|t)sx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "ts-loader",
-            options: {
-              transpileOnly: true,
-              getCustomTransformers: path.join(
-                __dirname,
-                "./config/polyfills.js",
-              ),
-            },
-          },
-        ],
-      },
+      tsLoader,
       {
         test: /\.jsx?$/,
         include: /node_modules/,
@@ -127,39 +115,8 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.md$/,
-        use: [
-          {
-            loader: require.resolve("html-loader"),
-          },
-          {
-            loader: require.resolve("markdown-loader"),
-          },
-        ],
-      },
-      {
-        test: /\.css$/i,
-        use: [
-          require.resolve("style-loader"),
-          {
-            loader: "css-modules-typescript-loader",
-            options: {
-              mode: process.env.CI ? "verify" : "emit",
-            },
-          },
-          {
-            loader: require.resolve("css-loader"),
-            options: {
-              modules: {
-                mode: "local",
-                localIdentName: DEV ? "[path][name]__[local]" : "[hash:base64]",
-                hashPrefix: "discours",
-              },
-            },
-          },
-        ],
-      },
+      mdLoader,
+      cssLoader,
     ],
   },
 };
