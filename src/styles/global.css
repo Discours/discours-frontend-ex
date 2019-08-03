@@ -1,0 +1,5 @@
+/* Do not use this file to write styles */
+/* CSS modules are used to write css to each component in isolation */
+
+@import "./themes/light.css";
+@import "./themes/dark.css";

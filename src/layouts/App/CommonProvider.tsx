@@ -2,9 +2,9 @@
 
 import { LionessProvider } from "lioness";
 import * as React from "react";
-
 import { WithLocale, withLocale } from "src/contexts/LocaleContext";
 import translationsJson from "src/i18n/translations.json";
+import "src/styles/global.css"; // tslint:disable-line no-import-side-effect
 
 export class CommonProvider extends React.PureComponent<WithLocale> {
   public render() {

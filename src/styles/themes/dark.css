@@ -1,0 +1,7 @@
+:global .discours-theme-dark {
+  --color-primary: #fff;
+  --color-text: #fff;
+  --color-border: #fff;
+  --color-background: #000;
+  background-color: var(--color-background);
+}

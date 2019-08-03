@@ -1,9 +1,10 @@
 import * as React from "react";
+import classes from "./Typography.css";
 
 class Typography extends React.Component {
   public render() {
-    return <p>{this.props.children}</p>;
+    return <p className={classes.text}>{this.props.children}</p>;
   }
 }
 
-export { Typography };
+export default Typography;

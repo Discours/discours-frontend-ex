@@ -21,7 +21,14 @@ export class ThemeContextProvider extends React.Component<{}, WithLocale> {
   }
 
   public render() {
-    return <Provider value={this.state}>{this.props.children}</Provider>;
+    const { state, props } = this;
+    return (
+      <Provider value={state}>
+        <div className={`discours-theme-${state.activeTheme}`}>
+          {props.children}
+        </div>
+      </Provider>
+    );
   }
 
   private setActiveTheme = (theme: ThemeName) => {
