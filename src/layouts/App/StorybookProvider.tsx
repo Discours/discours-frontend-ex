@@ -2,22 +2,20 @@ import * as React from "react";
 
 import { RawLocaleProvider } from "src/contexts/LocaleContext";
 
-import LocaleProvider from "./LocaleProvider";
+import CommonProvider from "./CommonProvider";
 
-export type StorybookLocaleProviderProps = {
+export type StorybookProviderProps = {
   direction: "ltr" | "rtl";
   locale: string;
 };
 
-class StorybookLocaleProvider extends React.PureComponent<
-  StorybookLocaleProviderProps
-> {
+class StorybookProvider extends React.PureComponent<StorybookProviderProps> {
   public render() {
     const { children, direction, locale } = this.props;
     return (
       <RawLocaleProvider
         value={{ direction, locale, changeLocale: this.changeLocale }}>
-        <LocaleProvider>{children}</LocaleProvider>
+        <CommonProvider>{children}</CommonProvider>
       </RawLocaleProvider>
     );
   }
@@ -25,4 +23,4 @@ class StorybookLocaleProvider extends React.PureComponent<
   private changeLocale = () => false;
 }
 
-export default StorybookLocaleProvider;
+export default StorybookProvider;

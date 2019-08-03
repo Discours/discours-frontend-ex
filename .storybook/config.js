@@ -3,7 +3,7 @@ import { withInfo } from "@storybook/addon-info";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
 import "@storybook/addon-console";
-import StorybookLocaleProvider from "src/layouts/App/StorybookLocaleProvider";
+import StorybookProvider from "src/layouts/App/StorybookProvider";
 import messages from "src/i18n/translations.json";
 import { SUPPORTED_LOCALES } from "src/config/locales";
 import { addParameters } from "@storybook/react";
@@ -35,7 +35,7 @@ addParameters({
     { name: "Torch Red", value: "#FF1744" },
   ],
   i18n: {
-    provider: StorybookLocaleProvider,
+    provider: StorybookProvider,
     providerProps: {
       messages,
     },

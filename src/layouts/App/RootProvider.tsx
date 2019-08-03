@@ -1,9 +1,9 @@
 import * as React from "react";
-import LocaleProvider from "./LocaleProvider";
+import CommonProvider from "./CommonProvider";
 
 class RootProvider extends React.PureComponent {
   public render() {
-    return <LocaleProvider>{this.props.children}</LocaleProvider>;
+    return <CommonProvider>{this.props.children}</CommonProvider>;
   }
 }
 
