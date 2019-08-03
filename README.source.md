@@ -1,4 +1,4 @@
-[comment]: # "Редактируйте файл docs/_README.md"
+[comment]: # "Редактируйте файл README.source.md"
 
 [![Gitter](https://badges.gitter.im/Discours/community.svg)](https://gitter.im/Discours/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 {"gitdown": "badge", "name": "travis"}
