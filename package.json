@@ -119,6 +119,7 @@
     "rimraf": "^2.6.3",
     "start-server-and-test": "^1.7.11",
     "storybook-addon-i18n": "~5.1.9",
+    "storybook-addon-themes": "^5.2.0",
     "trucknet-commit": "^1.5.2",
     "ts-jest": "^24.0.0",
     "ts-node": "^8.3.0",

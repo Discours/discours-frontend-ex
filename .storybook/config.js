@@ -8,6 +8,8 @@ import messages from "src/i18n/translations.json";
 import { SUPPORTED_LOCALES } from "src/config/locales";
 import { addParameters } from "@storybook/react";
 import { withI18n } from "storybook-addon-i18n";
+import { withThemes } from "storybook-addon-themes";
+import { themes } from "src/config/theme";
 
 addDecorator(
   withInfo({
@@ -17,6 +19,7 @@ addDecorator(
 addDecorator(withKnobs);
 addDecorator(withA11y);
 addDecorator(withI18n);
+addDecorator(withThemes);
 
 addParameters({
   backgrounds: [
@@ -41,6 +44,7 @@ addParameters({
     },
     supportedLocales: SUPPORTED_LOCALES,
   },
+  themes,
 });
 
 const req = require.context("../src", true, /\.stories\.tsx$/);

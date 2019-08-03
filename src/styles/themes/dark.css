@@ -4,4 +4,6 @@
   --color-border: #fff;
   --color-background: #000;
   background-color: var(--color-background);
+  min-height: 100vh;
+  min-width: 100vh;
 }
