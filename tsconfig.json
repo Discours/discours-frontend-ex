@@ -12,10 +12,9 @@
     "lib": ["es2015", "es2017", "dom"],
     "baseUrl": ".",
     "typeRoots": ["node_modules/@types", "./@types"],
-    "isolatedModules": false, // https://github.com/microsoft/TypeScript/issues/32294
+    "isolatedModules": false,
     "target": "es5",
     "resolveJsonModule": true
-    // "module": "es6"
   },
   "include": ["src/**/*", "__tests__/**/*", "__utils__/**/*"]
 }
