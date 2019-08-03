@@ -3,6 +3,7 @@ const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const ProgressPlugin = require("webpack").ProgressPlugin;
 const { cssLoaderStorybook } = require("../config/webpack/loaders/css");
+const { storybookFsLoader } = require("../config/webpack/loaders/fs");
 const { mdLoadersStorybook } = require("../config/webpack/loaders/md");
 const { tsLoaderStorybook } = require("../config/webpack/loaders/ts");
 const { storybookCssPlugins } = require("../config/webpack/plugins/css");
@@ -26,6 +27,7 @@ module.exports = ({ config, mode }) => {
   config.module.rules = [
     tsLoaderStorybook,
     ...mdLoadersStorybook,
+    storybookFsLoader,
     cssLoaderStorybook,
   ];
 

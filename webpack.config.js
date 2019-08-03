@@ -8,7 +8,6 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const WebpackBar = require("webpackbar");
-const filesExts = require("./config/filesExts");
 const errorReportingPlugin = require("./config/errorReporting/webpack");
 require("ts-node").register({ compilerOptions: { module: "commonjs" } });
 const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
@@ -16,6 +15,7 @@ const { IS_DEV, IS_E2E } = require("./config/webpack/env");
 const { cssLoader } = require("./config/webpack/loaders/css");
 const { mdLoader } = require("./config/webpack/loaders/md");
 const { tsLoader } = require("./config/webpack/loaders/ts");
+const { fsLoader } = require("./config/webpack/loaders/fs");
 const { cssPlugins } = require("./config/webpack/plugins/css");
 
 const paths = {
@@ -108,15 +108,7 @@ module.exports = {
         include: /node_modules/,
         use: [require.resolve("react-hot-loader/webpack")],
       },
-      {
-        test: new RegExp(`\.(${filesExts.join("|")})$`),
-        use: [
-          {
-            loader: require.resolve("file-loader"),
-            options: { outputPath: "assets/images" },
-          },
-        ],
-      },
+      fsLoader,
       mdLoader,
       cssLoader,
     ],
