@@ -10,8 +10,8 @@
 @import "./themes/dark.css";
 
 :global [class^="discours-theme"] {
+  overflow: hidden;
   min-width: 100vh;
   min-height: 100vh;
-  overflow: hidden;
   background-color: var(--color-background);
 }
