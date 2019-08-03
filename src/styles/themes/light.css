@@ -1,9 +1,6 @@
-:global .discours-theme-dark {
+:global .discours-theme-light {
   --color-primary: #000;
   --color-text: #000;
   --color-border: #000;
   --color-background: #fff;
-  background-color: var(--color-background);
-  min-height: 100vh;
-  min-width: 100vh;
 }

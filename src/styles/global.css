@@ -6,3 +6,10 @@
 
 @import "./themes/light.css";
 @import "./themes/dark.css";
+
+:global [class^="discours-theme"] {
+  overflow: hidden;
+  background-color: var(--color-background);
+  min-height: 100vh;
+  min-width: 100vh;
+}
