@@ -71,7 +71,7 @@ if (DEV) {
 
 module.exports = {
   entry: paths.entry,
-  devtool: DEV ? "cheap-module-eval-source-map" : "hidden-source-map", // https://webpack.js.org/configuration/devtool/
+  devtool: DEV ? "cheap-module-eval-source-map" : "source-map", // https://webpack.js.org/configuration/devtool/
   devServer: {
     // https://webpack.js.org/configuration/dev-server/
     port: "3000",

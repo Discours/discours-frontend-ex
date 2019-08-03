@@ -7,6 +7,7 @@ module.exports = ({ config, mode }) => {
   config.module.rules = config.module.rules.filter(
     (r) => r.test.toString() !== /\.md$/.toString(),
   );
+  config.devtool = "cheap-module-eval-source-map";
   config.plugins = config.plugins.filter(
     (m) => m instanceof ProgressPlugin === false,
   ); // We are using Webpackbar, so no need in ProgressPlugin
@@ -25,6 +26,7 @@ module.exports = ({ config, mode }) => {
           options: {
             transpileOnly: true,
             useCache: true,
+            sourceMap: true,
           },
         },
         {
