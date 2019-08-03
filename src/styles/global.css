@@ -4,7 +4,7 @@
 /* https://github.com/csstools/postcss-normalize */
 @import "sanitize";
 
-@import "./themes/light.css";
+@import "./themes/default.css";
 @import "./themes/dark.css";
 
 :global [class^="discours-theme"] {

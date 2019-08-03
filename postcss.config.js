@@ -3,7 +3,7 @@ module.exports = {
     "postcss-normalize": {},
     "postcss-custom-properties": {
       preserve: true,
-      importFrom: "src/styles/themes/light.css",
+      importFrom: "src/styles/themes/default.css",
     },
     autoprefixer: {},
     cssnano: {

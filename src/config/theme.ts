@@ -1,7 +1,7 @@
 export const themes = [
   {
-    name: "light",
-    class: "discours-theme-light",
+    name: "default",
+    class: "discours-theme-default",
     color: "#fff",
     default: true,
   },
