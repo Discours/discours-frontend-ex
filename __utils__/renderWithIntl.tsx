@@ -3,7 +3,7 @@ import { LionessProvider } from "lioness";
 import * as React from "react";
 import translationsJson from "src/i18n/translations.json";
 
-const renderWithIntl = (ui: React.ReactElement, { locale = "en-GB" } = {}) => {
+const renderWithIntl = (ui: React.ReactElement, { locale = "ru" } = {}) => {
   return {
     ...render(
       <LionessProvider locale={locale} messages={translationsJson}>

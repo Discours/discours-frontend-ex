@@ -9,7 +9,7 @@ export interface WithLocale {
 }
 
 const { Provider, Consumer } = React.createContext<WithLocale>({
-  locale: "en-GB",
+  locale: DEFAULT_LOCALE.code,
   direction: "ltr",
   changeLocale: (locale: string) => locale,
 });

@@ -30,7 +30,7 @@
     "prebuild": "gettext-utils import-strings",
     "prestorybook": "gettext-utils import-strings",
     "prelint": "gettext-utils import-strings",
-    "precommit": "gettext-utils export-strings --default-locale=en-GB && git add src/i18n/*.po* && lint-staged",
+    "precommit": "gettext-utils export-strings --default-locale=ru && git add src/i18n/*.po* && lint-staged",
     "commit": "commit-prompt --no-verify",
     "lint": "npm run lint:tsc && npm run lint:tslint",
     "lint:tsc": "tsc -p tsconfig.json --noEmit",
