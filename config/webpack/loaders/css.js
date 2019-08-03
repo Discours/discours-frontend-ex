@@ -1,4 +1,4 @@
-const { DEV } = require("../env");
+const { IS_DEV } = require("../env");
 
 const cssLoader = {
   test: /\.css$/i,
@@ -17,7 +17,7 @@ const cssLoader = {
         importLoaders: 1, // https://github.com/postcss/postcss-loader#css-modules
         modules: {
           mode: "local",
-          localIdentName: DEV ? "[path][name]__[local]" : "[hash:base64]",
+          localIdentName: IS_DEV ? "[path]__[local]" : "[hash:base64]",
           hashPrefix: "discours",
         },
       },

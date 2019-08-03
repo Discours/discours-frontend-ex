@@ -12,7 +12,7 @@ const filesExts = require("./config/filesExts");
 const errorReportingPlugin = require("./config/errorReporting/webpack");
 require("ts-node").register({ compilerOptions: { module: "commonjs" } });
 const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
-const { DEV } = require("./config/webpack/env");
+const { IS_DEV, IS_E2E } = require("./config/webpack/env");
 const { cssLoader } = require("./config/webpack/loaders/css");
 const { mdLoader } = require("./config/webpack/loaders/md");
 const { tsLoader } = require("./config/webpack/loaders/ts");
@@ -58,7 +58,7 @@ const plugins = [
   errorReportingPlugin,
 ];
 
-if (DEV) {
+if (IS_DEV) {
   const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
   plugins.push(new webpack.NamedModulesPlugin());
@@ -72,7 +72,7 @@ if (DEV) {
 
 module.exports = {
   entry: paths.entry,
-  devtool: DEV ? "cheap-module-eval-source-map" : "source-map", // https://webpack.js.org/configuration/devtool/
+  devtool: IS_DEV ? "cheap-module-eval-source-map" : "source-map", // https://webpack.js.org/configuration/devtool/
   devServer: {
     // https://webpack.js.org/configuration/dev-server/
     port: "3000",
@@ -85,13 +85,13 @@ module.exports = {
       ignored: ["node_modules", "dist"],
     },
     stats: "minimal",
-    open: true,
+    open: IS_E2E ? false : true,
   },
-  mode: DEV ? "development" : "production",
+  mode: IS_DEV ? "development" : "production",
   output: {
     path: path.resolve(__dirname, paths.output),
-    filename: DEV ? "[name].js" : "assets/js/[name].[hash].js",
-    chunkFilename: DEV ? "[name].js" : "assets/js/[name].[hash].bundle.js",
+    filename: IS_DEV ? "[name].js" : "assets/js/[name].[hash].js",
+    chunkFilename: IS_DEV ? "[name].js" : "assets/js/[name].[hash].bundle.js",
   },
   plugins,
   resolve: {
