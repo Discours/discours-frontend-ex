@@ -16,6 +16,7 @@ const { IS_DEV, IS_E2E } = require("./config/webpack/env");
 const { cssLoader } = require("./config/webpack/loaders/css");
 const { mdLoader } = require("./config/webpack/loaders/md");
 const { tsLoader } = require("./config/webpack/loaders/ts");
+const { cssPlugins } = require("./config/webpack/plugins/css");
 
 const paths = {
   input: "src",
@@ -56,6 +57,7 @@ const plugins = [
     },
   }),
   errorReportingPlugin,
+  ...cssPlugins,
 ];
 
 if (IS_DEV) {

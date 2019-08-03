@@ -5,6 +5,7 @@ const ProgressPlugin = require("webpack").ProgressPlugin;
 const { cssLoaderStorybook } = require("../config/webpack/loaders/css");
 const { mdLoadersStorybook } = require("../config/webpack/loaders/md");
 const { tsLoaderStorybook } = require("../config/webpack/loaders/ts");
+const { storybookCssPlugins } = require("../config/webpack/plugins/css");
 
 module.exports = ({ config, mode }) => {
   // Config
@@ -17,6 +18,7 @@ module.exports = ({ config, mode }) => {
   ); // We are using Webpackbar, so no need in ProgressPlugin
   config.plugins.push(new HardSourceWebpackPlugin());
   config.plugins.push(new WebpackBar());
+  config.plugins.push(...storybookCssPlugins);
 
   config.resolve.plugins = [new TsconfigPathsPlugin()];
 
