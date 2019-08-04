@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import * as React from "react"; // TODO
+import React from "react";
 import classes from "./Typography.css";
 
 interface Props {

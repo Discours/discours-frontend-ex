@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 // tslint:disable-next-line import-name
 import Pages from "src/pages";
 

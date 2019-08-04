@@ -1,5 +1,5 @@
 import { T } from "lioness";
-import * as React from "react";
+import React from "react";
 import Typography from "src/components/discours-ui-kit/Typography";
 
 class NotFoundPage extends React.PureComponent {

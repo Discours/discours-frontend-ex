@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom/extend-expect";
 import { cleanup, render } from "@testing-library/react";
-import * as React from "react";
+import React from "react";
 import App from "./App";
 
 afterEach(cleanup);
