@@ -5,6 +5,16 @@
   margin-left: auto;
 }
 
+.container::after,
+.container::before {
+  display: table;
+  content: " ";
+}
+
+.container::after {
+  clear: both;
+}
+
 /* TODO */
 @media (min-width: 768px) {
   .container {
@@ -12,13 +22,13 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
