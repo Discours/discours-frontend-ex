@@ -67,7 +67,6 @@
     "clean-webpack-plugin": "^1.0.1",
     "copy-webpack-plugin": "^4.5.3",
     "css-loader": "^3.1.0",
-    "css-modules-typescript-loader": "^2.0.4",
     "cssnano": "^4.1.10",
     "date-fns": "^2.0.0-beta.3",
     "env-cmd": "^9.0.0",
@@ -136,6 +135,7 @@
     "ts-node": "^8.3.0",
     "tslint": "^5.16.0",
     "tslint-config-trucknet-io": "^1.8.2",
+    "typescript-plugin-css-modules": "^1.2.1",
     "webpack-dev-server": "^3.3.1",
     "ws": "^7.1.1"
   }

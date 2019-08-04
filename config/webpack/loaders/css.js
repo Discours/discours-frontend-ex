@@ -17,12 +17,6 @@ const cssLoader = {
       },
     },
     {
-      loader: "css-modules-typescript-loader",
-      options: {
-        mode: process.env.CI ? "verify" : "emit",
-      },
-    },
-    {
       loader: require.resolve("css-loader"),
       options: {
         import: true,

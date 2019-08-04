@@ -14,7 +14,15 @@
     "typeRoots": ["node_modules/@types", "./@types"],
     "isolatedModules": false,
     "target": "es5",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customMatcher": "\\.css$"
+        }
+      }
+    ]
   },
   "include": ["src/**/*", "__tests__/**/*", "__utils__/**/*"]
 }
