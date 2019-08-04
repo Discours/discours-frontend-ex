@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.left {
+  position: relative;
+  z-index: 1; /* TODO */
+  flex: 0 0 520px;
+  margin-bottom: 70px;
+}
+
+.heading {
+  margin-right: -50px;
+}
+
+.right {
+  flex: 1 1;
+  align-self: flex-end;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 991px) and (min-width: 641px) {
+  .left {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .left {
+    flex: 0 0 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .left {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .right {
+    flex: 0 0 100%;
+  }
+
+  .heading {
+    margin-right: 0;
+  }
+}
