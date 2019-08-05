@@ -17,6 +17,7 @@ const cssLoader = {
       },
     },
     {
+      // TODO hot reload
       loader: require.resolve("css-loader"),
       options: {
         import: true,

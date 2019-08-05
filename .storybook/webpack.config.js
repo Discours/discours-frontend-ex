@@ -26,7 +26,7 @@ module.exports = ({ config, mode }) => {
   // Loaders
   config.module.rules = [
     tsLoaderStorybook,
-    ...mdLoadersStorybook,
+    mdLoadersStorybook,
     storybookFsLoader,
     cssLoaderStorybook,
   ];

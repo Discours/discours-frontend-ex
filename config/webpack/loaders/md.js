@@ -12,19 +12,5 @@ const mdLoader = {
 
 module.exports = {
   mdLoader,
-  mdLoadersStorybook: [
-    {
-      test: mdLoader.test,
-      exclude: /README\.md$/,
-      use: mdLoader.use,
-    },
-    {
-      test: /README\.md$/,
-      use: [
-        {
-          loader: require.resolve("raw-loader"),
-        },
-      ],
-    },
-  ],
+  mdLoadersStorybook: mdLoader,
 };
