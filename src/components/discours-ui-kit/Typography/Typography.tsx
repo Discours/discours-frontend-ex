@@ -3,11 +3,16 @@ import React from "react";
 import classes from "./Typography.css";
 
 interface Props {
-  variant?: "body" | "heading3";
-  className?: string;
+  variant: "body" | "heading3";
+  className: string;
 }
 
 class Typography extends React.Component<Props> {
+  public static defaultProps: Props = {
+    variant: "body",
+    className: "",
+  };
+
   public render() {
     const TagName = this.getTagName();
     const className = this.getClassName();
@@ -27,7 +32,7 @@ class Typography extends React.Component<Props> {
   };
 
   private getClassName = () => {
-    const { variant = "body", className = "" } = this.props;
+    const { variant, className } = this.props;
 
     return classnames({
       [classes.common]: true,
