@@ -2,15 +2,21 @@ import classnames from "classnames";
 import React from "react";
 import classes from "./Typography.css";
 
-interface Props {
+export interface TypographyProps {
   variant: "body" | "heading3";
+  isInverse: boolean;
+  isInline: boolean;
+  isInheritColor: boolean;
   className: string;
 }
 
-class Typography extends React.Component<Props> {
-  public static defaultProps: Props = {
+class Typography extends React.Component<TypographyProps> {
+  public static defaultProps: TypographyProps = {
     variant: "body",
     className: "",
+    isInverse: false,
+    isInline: false,
+    isInheritColor: false,
   };
 
   public render() {
@@ -20,10 +26,10 @@ class Typography extends React.Component<Props> {
   }
 
   private getTagName = () => {
-    const { variant } = this.props;
+    const { variant, isInline } = this.props;
     switch (variant) {
       case "body":
-        return "p";
+        return isInline ? "span" : "p";
       case "heading3":
         return "h3";
       default:
@@ -32,10 +38,19 @@ class Typography extends React.Component<Props> {
   };
 
   private getClassName = () => {
-    const { variant, className } = this.props;
+    const {
+      variant,
+      className,
+      isInverse,
+      isInline,
+      isInheritColor,
+    } = this.props;
 
     return classnames({
       [classes.common]: true,
+      [classes.common__inverse]: isInverse,
+      [classes.common__inline]: isInline,
+      [classes.common__inherit]: isInheritColor,
       [classes.body]: variant === "body",
       [classes.heading]: variant.match(/^heading/),
       [classes.heading3]: variant === "heading3",

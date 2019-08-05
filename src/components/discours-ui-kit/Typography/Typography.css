@@ -1,7 +1,20 @@
 .common {
+  display: block;
   color: var(--color-text);
   font-family: Muller, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.428571429;
+}
+
+.common__inverse {
+  color: var(--color-text-inverse);
+}
+
+.common__inline {
+  display: inline;
+}
+
+.common__inherit {
+  color: inherit;
 }
 
 .body {
