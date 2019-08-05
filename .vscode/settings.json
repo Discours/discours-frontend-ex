@@ -9,5 +9,9 @@
   },
   "editor.formatOnSave": true,
   "jest.debugCodeLens.showWhenTestStateIn": ["fail", "unknown", "pass", "skip"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "npm.enableScriptExplorer": true,
+  "triggerTaskOnSave.tasks": {
+    "Fix current .css file with stylelint": ["**/*.css"]
+  }
 }
