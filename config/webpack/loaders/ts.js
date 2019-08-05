@@ -23,7 +23,7 @@ module.exports = {
     use: [
       ...tsLoader.use,
       {
-        loader: require.resolve("react-docgen-typescript-loader"),
+        loader: "react-docgen-typescript-loader",
       },
     ],
   },
