@@ -133,6 +133,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-css-modules": "^1.4.0",
     "stylelint-config-idiomatic-order": "^7.0.3",
+    "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-standard": "^18.3.0",
     "trucknet-commit": "^1.5.2",
     "ts-jest": "^24.0.0",
