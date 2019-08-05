@@ -4,6 +4,9 @@
 :root {
   --color-primary: #000;
   --color-text: #000;
+  --color-text-inverse: #fff;
   --color-border: #000;
+  --color-border-inverse: #fff;
   --color-background: #fff;
+  --color-background-inverse: #000;
 }

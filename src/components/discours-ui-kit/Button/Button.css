@@ -1,3 +1,64 @@
-.underlined {
-  text-decoration: underline;
+.common {
+  border: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-decoration: none;
 }
+
+.common:hover {
+  cursor: pointer;
+}
+
+.common__inverse {
+  --color-background: var(--color-background-inverse);
+  --color-border: var(--color-border-inverse);
+  --color-text: var(--color-text-inverse);
+}
+
+.link-regular:hover,
+.link-regular-fat:hover,
+.link-underline {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-border),
+    var(--color-border)
+  );
+  background-position: 0 96%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+.link-regular-fat:hover {
+  background-size: 100% 4px;
+}
+
+.link-underline {
+  transition: background-size 0.25s ease-in;
+}
+
+.link-underline:hover {
+  background-size: 100% 90%;
+  color: var(--color-text-inverse);
+}
+
+/* 
+.link-background {
+}
+
+.button-regular {
+}
+
+.button-primary {
+}
+
+.button-fat {
+}
+
+.button-corner {
+}
+
+.button-corner-left {
+}
+
+.button-corner-right {
+} */

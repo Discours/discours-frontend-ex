@@ -14,12 +14,12 @@ export const DATE_FORMATS = [
 
 export type FormattedDateDateFormat = (typeof DATE_FORMATS)[number];
 
-interface Props extends WithLocale {
+export interface FormattedDateProps extends WithLocale {
   date: Date;
   format: FormattedDateDateFormat;
 }
 
-export class FormattedDate extends React.Component<Props> {
+export class FormattedDate extends React.Component<FormattedDateProps> {
   public render() {
     return this.formatDate();
   }
