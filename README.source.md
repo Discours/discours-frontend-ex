@@ -8,6 +8,8 @@
 
 > Весь фронтэнд Дискурса в одном репозитории!
 
+[Дискурс](https://discours.io) (Пока что на старом проекте) | [Бэта Дискурс](https://beta.discours.io) (собирается из develop) | [Сторибук Дискурса](https://storybook.discours.io)
+
 {"gitdown": "contents"}
 
 ### Cheat Sheet

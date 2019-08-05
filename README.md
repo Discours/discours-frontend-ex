@@ -1,11 +1,14 @@
 [comment]: # "Редактируйте файл README.source.md"
 
 [![Gitter](https://badges.gitter.im/Discours/community.svg)](https://gitter.im/Discours/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f55a8a2f-cc4e-4c1d-9605-ce9a500a0b6f/deploy-status)](https://app.netlify.com/sites/beta-discours-io/deploys)
 [![Travis build status](http://img.shields.io/travis/Discours/discours-frontend-main/develop.svg?style=flat-square)](https://travis-ci.org/Discours/discours-frontend-main)
 [![Coverage Status](https://img.shields.io/coveralls/Discours/discours-frontend-main/develop.svg?style=flat-square)](https://coveralls.io/r/Discours/discours-frontend-main?branch=develop)
 [![Code Climate GPA](https://img.shields.io/codeclimate/github/Discours/discours-frontend-main.svg?style=flat-square)](https://codeclimate.com/github/Discours/discours-frontend-main)
 
 > Весь фронтэнд Дискурса в одном репозитории!
+
+[Дискурс](https://discours.io) (Пока что на старом проекте) | [Бэта Дискурс](https://beta.discours.io) (собирается из develop) | [Сторибук Дискурса](https://storybook.discours.io)
 
 * [Cheat Sheet](#cheat-sheet)
 * [Манифест разработки Дискурса](#)
