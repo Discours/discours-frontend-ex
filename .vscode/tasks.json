@@ -16,6 +16,12 @@
         "showReuseMessage": true,
         "clear": true
       }
+    },
+    {
+      "label": "Run test for a current open .spec file",
+      "type": "shell",
+      "command": "npm run test -- ${file}",
+      "group": "test"
     }
   ]
 }
