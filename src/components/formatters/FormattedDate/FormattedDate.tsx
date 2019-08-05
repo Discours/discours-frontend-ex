@@ -12,9 +12,11 @@ export const DATE_FORMATS = [
   "date-time-text",
 ] as const;
 
+export type FormattedDateDateFormat = (typeof DATE_FORMATS)[number];
+
 interface Props extends WithLocale {
   date: Date;
-  format: (typeof DATE_FORMATS)[number];
+  format: FormattedDateDateFormat;
 }
 
 export class FormattedDate extends React.Component<Props> {
