@@ -1,6 +1,7 @@
 [comment]: # "Редактируйте файл README.source.md"
 
 [![Gitter](https://badges.gitter.im/Discours/community.svg)](https://gitter.im/Discours/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f55a8a2f-cc4e-4c1d-9605-ce9a500a0b6f/deploy-status)](https://app.netlify.com/sites/beta-discours-io/deploys)
 {"gitdown": "badge", "name": "travis"}
 {"gitdown": "badge", "name": "coveralls"}
 {"gitdown": "badge", "name": "codeclimate-gpa"}
