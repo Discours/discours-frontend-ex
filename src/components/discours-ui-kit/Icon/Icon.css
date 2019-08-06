@@ -1,0 +1,25 @@
+.container {
+  display: inline;
+  color: var(--color-text);
+}
+
+.container__inline {
+  display: inline;
+}
+
+.container__inverse {
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+}
+
+.container svg {
+  width: 32px;
+}
+
+.container :global(.stroke-inverse) {
+  stroke: var(--color-text-inverse);
+}
+
+.container__inverse :global(.stroke-inverse) {
+  stroke: var(--color-text);
+}

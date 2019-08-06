@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" x="0px" y="0px" width="46.765999" height="48.759998" viewBox="0 0 46.766 48.759998" enable-background="new 0 0 46.766 46.75" 
+  xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(2.38073, 0, 0, 2.38073, 696.145325, -920.299744)">
+    <defs>
+      <rect id="SVGID_1_" x="-293.8" y="385.5" width="22.6" height="22.6"/>
+    </defs>
+  </g>
+  <line x1="0.088" y1="0.453" x2="46.618" y2="0.453" stroke="currentColor" />
+  <line x1="0.088" y1="8.254" x2="46.618" y2="8.254" stroke="currentColor" />
+  <line x1="0.088" y1="42.478" x2="46.618" y2="42.478" stroke="currentColor" />
+  <line x1="0.088" y1="48.734" x2="46.618" y2="48.734" stroke="currentColor"/>
+  <rect x="10.478" y="14.512" class="st3" width="23.264" height="20.238" fill="currentColor"/>
+  <line x1="12.967" y1="18.19" x2="18.369" y2="22.237" class="stroke-inverse" style="stroke-width: 0.5px;"/>
+  <line x1="25.845" y1="27.758" x2="31.247" y2="31.437" class="stroke-inverse" style="stroke-width: 0.5px;"/>
+  <line x1="31.247" y1="18.19" x2="25.845" y2="22.237" class="stroke-inverse" style="stroke-width: 0.5px;"/>
+  <line x1="18.369" y1="27.392" x2="12.967" y2="31.07" class="stroke-inverse" style="stroke-width: 0.5px;"/>
+</svg>
