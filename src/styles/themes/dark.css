@@ -1,10 +1,10 @@
 :global .discours-theme-dark {
   --color-primary: #fff;
+  --color-inverse: #000;
   --color-text: #fff;
+  --color-text-inverse: #000;
   --color-border: #fff;
+  --color-border-inverse: #000;
   --color-background: #000;
-
-  min-width: 100vh;
-  min-height: 100vh;
-  background-color: var(--color-background);
+  --color-background-inverse: #fff;
 }

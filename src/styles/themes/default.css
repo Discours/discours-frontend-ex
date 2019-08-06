@@ -3,6 +3,7 @@
 /* This vars will be taken by postcss-custom-properties to create fallback css properties */
 :root {
   --color-primary: #000;
+  --color-inverse: #fff;
   --color-text: #000;
   --color-text-inverse: #fff;
   --color-border: #000;

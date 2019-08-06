@@ -10,9 +10,8 @@
 }
 
 .common__inverse {
-  --color-background: var(--color-background-inverse);
-  --color-border: var(--color-border-inverse);
-  --color-text: var(--color-text-inverse);
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
 }
 
 .link-regular:hover,
@@ -28,6 +27,16 @@
   background-size: 100% 2px;
 }
 
+.common__inverse.link-regular:hover,
+.common__inverse.link-regular-fat:hover,
+.common__inverse.link-underline {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-border-inverse),
+    var(--color-border-inverse)
+  );
+}
+
 .link-regular-fat:hover {
   background-size: 100% 4px;
 }
@@ -39,6 +48,11 @@
 .link-underline:hover {
   background-size: 100% 90%;
   color: var(--color-text-inverse);
+}
+
+.common__inverse.link-underline:hover {
+  background-size: 100% 90%;
+  color: var(--color-text);
 }
 
 /* 
