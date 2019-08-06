@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require("extract-css-chunks-webpack-plugin");
 const { IS_DEV } = require("../env");
 const path = require("path");
 
@@ -14,10 +14,11 @@ const cssLoader = {
           // while for ./css/main.css the publicPath will be ../
           return path.relative(path.dirname(resourcePath), context) + "/";
         },
+        hot: IS_DEV,
+        reloadAll: true,
       },
     },
     {
-      // TODO hot reload
       loader: require.resolve("css-loader"),
       options: {
         import: true,
