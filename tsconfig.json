@@ -6,6 +6,8 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "sourceMap": true,
+    "module": "es6",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
     "jsx": "react",
