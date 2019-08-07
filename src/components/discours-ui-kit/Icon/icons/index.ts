@@ -1,3 +1,7 @@
+import brandFacebook from "./brand-facebook.svg";
+import brandTelegram from "./brand-telegram.svg";
+import brandTwitter from "./brand-twitter.svg";
+import brandVk from "./brand-vk.svg";
 import commentsLight from "./comments-light.svg";
 import comments from "./comments.svg";
 import donate from "./donate.svg";
@@ -22,6 +26,7 @@ import enter from "./enter.svg";
 import lamp from "./lamp.svg";
 import literature from "./literature.svg";
 import music from "./music.svg";
+import paperclip from "./paperclip.svg";
 import photo from "./photo.svg";
 import post from "./post.svg";
 import ratingLight from "./rating-light.svg";
@@ -33,6 +38,10 @@ import viewsLight from "./views-light.svg";
 import views from "./views.svg";
 
 export {
+  brandFacebook,
+  brandTelegram,
+  brandTwitter,
+  brandVk,
   commentsLight,
   comments,
   donate,
@@ -57,6 +66,7 @@ export {
   lamp,
   literature,
   music,
+  paperclip,
   post,
   photo,
   ratingLight,
