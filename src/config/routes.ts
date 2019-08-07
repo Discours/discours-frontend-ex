@@ -53,3 +53,11 @@ export const internalRoutes = {
   privateNotifications: "/in/notifications",
   privateIndex: "/in/editorial",
 };
+
+export const routes = {
+  ...externalRoutes,
+  ...internalRoutes,
+};
+
+export type InternalRoute = keyof typeof internalRoutes;
+export type ExternalRoute = keyof typeof externalRoutes;

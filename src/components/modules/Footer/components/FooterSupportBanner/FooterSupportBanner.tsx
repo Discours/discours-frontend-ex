@@ -16,7 +16,7 @@ class FooterSupportBanner extends React.Component {
               Дискурс существует благодаря вашему участию!
             </Typography>
             <div className={classes.buttons}>
-              <Button to="f" variant="link-underline">
+              <Button to="help" variant="link-underline">
                 Поддержать Дискурс
               </Button>{" "}
               <Button variant="link-underline">Стать автором</Button>
