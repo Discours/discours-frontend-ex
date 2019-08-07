@@ -1,5 +1,8 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+# TS build folder
+/build
+
 /storybook-static
 
 # Tmp
@@ -30,6 +33,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Compiled JS
-src/**/*.js.map

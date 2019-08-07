@@ -14,9 +14,11 @@
     "lib": ["es2015", "es2017", "dom"],
     "baseUrl": ".",
     "typeRoots": ["node_modules/@types", "./@types"],
+    "outDir": "./build",
     "isolatedModules": false,
     "target": "es5",
     "resolveJsonModule": true,
+    "allowJs": true,
     "plugins": [
       {
         "name": "typescript-plugin-css-modules",
