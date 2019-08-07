@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" x="0px" y="0px" width="23" height="24.5" viewBox="0 0 23 24.5" enable-background="new 0 0 46.917 46.75" xmlns="http://www.w3.org/2000/svg">
-  <line id="line5" style="fill:none;stroke:#000000;" x1="-0.001" y1="0.5" x2="22.999" y2="0.5"/>
-  <line id="line9" style="fill:none;stroke:#000000;" x1="-0.001" y1="4" x2="22.999" y2="4"/>
-  <line id="line11" style="fill:none;stroke:#000000;" x1="-0.001" y1="20.5" x2="22.999" y2="20.5"/>
-  <line id="line13" style="fill:none;stroke:#000000;" x1="-0.001" y1="24" x2="22.999" y2="24"/>
+<svg version="1.1" id="Layer_1" x="0px" y="0px" width="23" height="24.5" viewBox="0 0 23 24.5" 
+  xmlns="http://www.w3.org/2000/svg">
+  <line id="line5" stroke="currentColor" x1="-0.001" y1="0.5" x2="22.999" y2="0.5"/>
+  <line id="line9" stroke="currentColor" x1="-0.001" y1="4" x2="22.999" y2="4"/>
+  <line id="line11" stroke="currentColor" x1="-0.001" y1="20.5" x2="22.999" y2="20.5"/>
+  <line id="line13" stroke="currentColor" x1="-0.001" y1="24" x2="22.999" y2="24"/>
   <rect x="-0.001" y="6.4" width="8.3" height="10.5"/>
-  <line style="fill:none;stroke:#FFFFFF;stroke-width:1.65;" x1="6.099" y1="11.4" x2="2.799" y2="11.4"/>
-  <polygon style="fill:#FFFFFF;" points="3.299 13.4 3.299 9.4 -0.001 11.4"/>
-  <line style="fill:none;stroke:#000000;" x1="12.699" y1="7.6" x2="22.999" y2="7.6"/>
-  <line style="fill:none;stroke:#000000;" x1="12.799" y1="11.7" x2="23.099" y2="11.7"/>
-  <line style="fill:none;stroke:#000000;" x1="12.799" y1="15.8" x2="23.099" y2="15.8"/>
+  <line class="stroke-inverse" style="stroke-width: 0.5px;" x1="6.099" y1="11.4" x2="2.799" y2="11.4"/>
+  <polygon class="fill-inverse" points="3.299 13.4 3.299 9.4 -0.001 11.4"/>
+  <line stroke="currentColor" x1="12.699" y1="7.6" x2="22.999" y2="7.6"/>
+  <line stroke="currentColor" x1="12.799" y1="11.7" x2="23.099" y2="11.7"/>
+  <line stroke="currentColor" x1="12.799" y1="15.8" x2="23.099" y2="15.8"/>
 </svg>

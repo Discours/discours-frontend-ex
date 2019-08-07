@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
-<g>
-	<path fill="none" stroke="#000000" stroke-width="4" d="M19.479,19.876c0-9.31-7.546-16.855-16.855-16.855"/>
-	<path fill="none" stroke="#000000" stroke-width="4" d="M12.794,19.875c0-5.802-4.703-10.505-10.504-10.505"/>
-	<path fill="#231F20" d="M4.906,20.979c1.686,0,3.052-1.367,3.052-3.052c0-1.687-1.366-3.052-3.052-3.052s-3.052,1.365-3.052,3.052
+<svg version="1.1" id="Layer_1" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="22px" viewBox="0 0 22 22" xml:space="preserve">
+	<g>
+		<path fill="none" stroke="currentColor" stroke-width="4" d="M19.479,19.876c0-9.31-7.546-16.855-16.855-16.855"/>
+		<path fill="none" stroke="currentColor" stroke-width="4" d="M12.794,19.875c0-5.802-4.703-10.505-10.504-10.505"/>
+		<path fill="currentColor" d="M4.906,20.979c1.686,0,3.052-1.367,3.052-3.052c0-1.687-1.366-3.052-3.052-3.052s-3.052,1.365-3.052,3.052
 		C1.854,19.612,3.22,20.979,4.906,20.979"/>
-</g>
+	</g>
 </svg>

@@ -1,98 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1.1"
-   id="Layer_1"
-   x="0px"
-   y="0px"
-   width="46.765999"
-   height="48.759998"
-   viewBox="0 0 46.766 48.759998"
-   enable-background="new 0 0 46.766 46.75"
-   xml:space="preserve"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="editor-align-width.svg"><metadata
-     id="metadata27"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
-     id="defs25" /><sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
-     id="namedview23"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:zoom="5.0481283"
-     inkscape:cx="15.45927"
-     inkscape:cy="23.062729"
-     inkscape:window-x="279"
-     inkscape:window-y="85"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_1" /><line
-     x1="12.092"
-     y1="12.219433"
-     x2="35.091999"
-     y2="12.219433"
-     id="line5"
-     style="fill:none;stroke:#000000" /><rect
-     y="18.719433"
-     width="46.765999"
-     height="13"
-     id="rect7"
-     x="1.4052048e-09" /><line
-     x1="12.092"
-     y1="15.719434"
-     x2="35.091999"
-     y2="15.719434"
-     id="line9"
-     style="fill:none;stroke:#000000" /><line
-     x1="12.092"
-     y1="35.053429"
-     x2="35.091999"
-     y2="35.053429"
-     id="line11"
-     style="fill:none;stroke:#000000" /><line
-     x1="12.092"
-     y1="38.553429"
-     x2="35.091999"
-     y2="38.553429"
-     id="line13"
-     style="fill:none;stroke:#000000" /><line
-     x1="34.382999"
-     y1="25.219431"
-     x2="37.682999"
-     y2="25.219431"
-     id="line15"
-     style="fill:none;stroke:#ffffff;stroke-width:1.64999998" /><polygon
-     points="36.034,22.677 36.034,26.683 39.332,24.657 "
-     id="polygon17"
-     style="fill:#ffffff"
-     transform="translate(0,0.53943211)" /><line
-     x1="11.966"
-     y1="25.219431"
-     x2="8.665"
-     y2="25.219431"
-     id="line19"
-     style="fill:none;stroke:#ffffff;stroke-width:1.64999998" /><polygon
-     points="10.314,22.677 10.314,26.683 7.017,24.657 "
-     id="polygon21"
-     style="fill:#ffffff"
-     transform="translate(0,0.53943211)" /></svg>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:cc="http://creativecommons.org/ns#" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+  xmlns:svg="http://www.w3.org/2000/svg" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" 
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="Layer_1" x="0px" y="0px" width="46.765999" height="48.759998" viewBox="0 0 46.766 48.759998" xml:space="preserve" inkscape:version="0.91 r13725" sodipodi:docname="editor-align-width.svg">
+  <metadata id="metadata27">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs id="defs25" />
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="640" inkscape:window-height="480" id="namedview23" showgrid="false" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" inkscape:zoom="5.0481283" inkscape:cx="15.45927" inkscape:cy="23.062729" inkscape:window-x="279" inkscape:window-y="85" inkscape:window-maximized="0" inkscape:current-layer="Layer_1" />
+  <line x1="12.092" y1="12.219433" x2="35.091999" y2="12.219433" id="line5" stroke="currentColor" />
+  <rect y="18.719433" width="46.765999" height="13" id="rect7" x="1.4052048e-09" />
+  <line x1="12.092" y1="15.719434" x2="35.091999" y2="15.719434" id="line9" stroke="currentColor" />
+  <line x1="12.092" y1="35.053429" x2="35.091999" y2="35.053429" id="line11" stroke="currentColor" />
+  <line x1="12.092" y1="38.553429" x2="35.091999" y2="38.553429" id="line13" stroke="currentColor" />
+  <line x1="34.382999" y1="25.219431" x2="37.682999" y2="25.219431" id="line15" class="stroke-inverse" style="stroke-width: 0.5px;" />
+  <polygon points="36.034,22.677 36.034,26.683 39.332,24.657 " id="polygon17" class="fill-inverse" transform="translate(0,0.53943211)" />
+  <line x1="11.966" y1="25.219431" x2="8.665" y2="25.219431" id="line19" class="stroke-inverse" style="stroke-width: 0.5px;" />
+  <polygon points="10.314,22.677 10.314,26.683 7.017,24.657 " id="polygon21" class="fill-inverse" transform="translate(0,0.53943211)" />
+</svg>

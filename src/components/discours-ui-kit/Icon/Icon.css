@@ -1,5 +1,5 @@
 .container {
-  display: inline;
+  display: block;
   color: var(--color-text);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .container svg {
-  width: 32px;
+  width: 20px;
 }
 
 .container :global(.stroke-inverse) {
@@ -22,4 +22,12 @@
 
 .container__inverse :global(.stroke-inverse) {
   stroke: var(--color-text);
+}
+
+.container :global(.fill-inverse) {
+  fill: var(--color-text-inverse);
+}
+
+.container__inverse :global(.fill-inverse) {
+  fill: var(--color-text);
 }
