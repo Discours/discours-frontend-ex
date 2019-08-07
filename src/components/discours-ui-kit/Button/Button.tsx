@@ -24,7 +24,8 @@ interface ButtonProps {
   variant: ButtonVariant;
   isInverse: boolean;
   to?: string;
-  typographyProps?: TypographyProps;
+  typographyProps?: Partial<TypographyProps>;
+  style?: React.CSSProperties;
   onClick?(event?: React.MouseEvent<HTMLButtonElement>): void;
 }
 
@@ -35,9 +36,9 @@ class Button extends React.Component<ButtonProps> {
   };
 
   public render() {
-    const { onClick } = this.props;
+    const { onClick, style } = this.props;
     return (
-      <button className={this.getClassName()} onClick={onClick}>
+      <button style={style} className={this.getClassName()} onClick={onClick}>
         {this.renderTypography()}
       </button>
     );

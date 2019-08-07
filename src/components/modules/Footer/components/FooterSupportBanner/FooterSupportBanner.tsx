@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
 import Typography from "src/components/discours-ui-kit/Typography";
 import bannerBig from "./banner-big.jpg";
@@ -14,7 +15,12 @@ class FooterSupportBanner extends React.Component {
             <Typography variant="heading3" className={classes.heading}>
               Дискурс существует благодаря вашему участию!
             </Typography>
-            <Typography>Ура</Typography>
+            <div className={classes.buttons}>
+              <Button to="f" variant="link-underline">
+                Поддержать Дискурс
+              </Button>{" "}
+              <Button variant="link-underline">Стать автором</Button>
+            </div>
           </div>
           <div className={classes.right}>
             <picture>

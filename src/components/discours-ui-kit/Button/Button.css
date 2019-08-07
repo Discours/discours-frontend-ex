@@ -1,4 +1,6 @@
 .common {
+  display: inline-block;
+  padding: 0;
   border: 0;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -12,6 +14,12 @@
 .common__inverse {
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
+}
+
+.link-regular,
+.link-regular-fat,
+.link-underline {
+  white-space: nowrap;
 }
 
 .link-regular:hover,
@@ -55,14 +63,22 @@
   color: var(--color-text);
 }
 
+.button-primary {
+  padding: 5px 15px;
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+}
+
+.button-primary.common__inverse {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
 /* 
 .link-background {
 }
 
 .button-regular {
-}
-
-.button-primary {
 }
 
 .button-fat {

@@ -4,6 +4,14 @@
   flex-wrap: nowrap;
 }
 
+.buttons {
+  display: flex;
+}
+
+.buttons > *:first-of-type {
+  margin-right: 75px;
+}
+
 .left {
   position: relative;
   z-index: 1; /* TODO */
@@ -53,5 +61,14 @@
 
   .heading {
     margin-right: 0;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .buttons > *:first-of-type {
+    margin-right: 35px;
   }
 }
