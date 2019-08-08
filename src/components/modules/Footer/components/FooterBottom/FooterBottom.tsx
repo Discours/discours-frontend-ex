@@ -11,7 +11,6 @@ import {
   brandVk,
 } from "src/components/discours-ui-kit/Icon/icons";
 import Typography from "src/components/discours-ui-kit/Typography";
-import Visible from "src/components/discours-ui-kit/Visible";
 import FormattedDate from "src/components/formatters/FormattedDate";
 import classes from "./FooterBottom.css";
 
