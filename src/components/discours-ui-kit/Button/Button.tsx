@@ -36,6 +36,7 @@ interface ButtonProps {
   };
   typographyProps?: Partial<TypographyProps>;
   style?: React.CSSProperties;
+  className?: string;
   onClick?(event?: React.MouseEvent<HTMLButtonElement>): void;
 }
 
@@ -43,6 +44,7 @@ class Button extends React.Component<ButtonProps> {
   public static defaultProps: ButtonProps = {
     variant: "link-regular",
     isInverse: false,
+    className: "",
   };
 
   public render() {
@@ -111,12 +113,13 @@ class Button extends React.Component<ButtonProps> {
   };
 
   private getClassName = () => {
-    const { variant, isInverse } = this.props;
+    const { variant, isInverse, className } = this.props;
 
     return classnames({
       [classes.common]: true,
       [classes.common__inverse]: isInverse,
       [classes[variant]]: true,
+      [className]: true,
     });
   };
 }

@@ -53,3 +53,9 @@ it("should replace :id to id", async () => {
   const button = getByText("test").parentElement;
   expect(button).toHaveAttribute("href", "/articles/3");
 });
+
+it("should forward className", async () => {
+  const { getByText } = render(<Button className="test">Test</Button>);
+  const text = getByText("Test").parentElement;
+  expect(text).toHaveClass("test");
+});
