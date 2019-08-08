@@ -1,5 +1,6 @@
 import { storiesOf } from "@storybook/react";
 import React from "react";
+import { MemoryRouter } from "react-router";
 import FooterSupportBanner from "./FooterSupportBanner";
 import READMEMd from "./README.md";
 
@@ -11,4 +12,8 @@ stories.addParameters({
   },
 });
 
-stories.add("default", () => <FooterSupportBanner />);
+stories.add("default", () => (
+  <MemoryRouter>
+    <FooterSupportBanner />
+  </MemoryRouter>
+));
