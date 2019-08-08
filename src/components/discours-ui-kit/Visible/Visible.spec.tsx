@@ -42,6 +42,7 @@ it("should rerender on resize event from window", () => {
   const { queryByText } = render(<Visible upFrom="md">test</Visible>);
   expect(queryByText("test")).toBeInTheDocument();
   // Simulate window resize event
+  // @ts-ignore
   window.innerWidth = 500;
   window.dispatchEvent(new Event("resize"));
   expect(queryByText("test")).not.toBeInTheDocument();
