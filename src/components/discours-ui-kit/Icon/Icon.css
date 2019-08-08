@@ -4,7 +4,7 @@
 }
 
 .container__inline {
-  display: inline;
+  display: inline-block;
 }
 
 .container__inverse {
@@ -13,7 +13,12 @@
 }
 
 .container svg {
-  width: 20px;
+  height: 18px;
+}
+
+.container__fixed_width {
+  width: 22px;
+  text-align: center;
 }
 
 .container :global(.stroke-inverse) {

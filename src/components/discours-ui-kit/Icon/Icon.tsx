@@ -6,6 +6,7 @@ import classes from "./Icon.css";
 interface IconProps {
   src: string;
   isInverse: boolean;
+  isFixedWidth: boolean;
   isInline: boolean;
 }
 
@@ -13,6 +14,7 @@ class Icon extends React.Component<IconProps> {
   public static defaultProps = {
     isInverse: false,
     isInline: false,
+    isFixedWidth: false,
   };
 
   public render() {
@@ -22,18 +24,19 @@ class Icon extends React.Component<IconProps> {
         afterInjection={this.handleAfterInjection}
         className={this.getClassName()}
         src={src}
-        wrapper="div"
+        wrapper="span"
       />
     );
   }
 
   private getClassName = () => {
-    const { isInverse, isInline } = this.props;
+    const { isInverse, isInline, isFixedWidth } = this.props;
 
     return classnames({
       [classes.container]: true,
       [classes.container__inverse]: isInverse,
       [classes.container__inline]: isInline,
+      [classes.container__fixed_width]: isFixedWidth,
     });
   };
 
