@@ -2,7 +2,7 @@
   display: block;
   color: var(--color-text);
   font-family: Muller, Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: 1.428571429;
+  line-height: 1.4;
 }
 
 .common__inverse {
@@ -21,6 +21,16 @@
   margin-top: 0;
   margin-bottom: 10px; /* TODO */
   font-size: 18px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+@media (--viewport-xs-max) {
+  .small {
+    font-size: 9px;
+  }
 }
 
 .heading {
