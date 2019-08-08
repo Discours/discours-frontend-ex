@@ -10,6 +10,7 @@ export const DATE_FORMATS = [
   "time",
   "date-time-digits",
   "date-time-text",
+  "year",
 ] as const;
 
 export type FormattedDateDateFormat = (typeof DATE_FORMATS)[number];
@@ -45,6 +46,8 @@ export class FormattedDate extends React.Component<FormattedDateProps> {
         return "P p";
       case "date-time-text":
         return "PPP p";
+      case "year":
+        return "yyyy";
       default:
         return "P";
     }

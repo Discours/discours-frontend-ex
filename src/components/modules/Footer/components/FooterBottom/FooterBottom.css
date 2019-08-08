@@ -1,0 +1,33 @@
+.container__outer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--color-background-inverse);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: baseline;
+  order: 2;
+}
+
+@media (--viewport-sm-max) {
+  .column__right {
+    width: 100%;
+    flex-grow: 1;
+    order: 1;
+  }
+}
+
+.link {
+  margin-bottom: 15px;
+}

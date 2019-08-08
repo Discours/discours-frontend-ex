@@ -21,6 +21,7 @@ export const internalRoutes = {
   dogma: "/dogma",
   almanac: "/almanac",
   search: "/search",
+  termsOfUse: "/terms-of-use",
   // Profiles
   author: "/:id",
   profile: "/profile",
