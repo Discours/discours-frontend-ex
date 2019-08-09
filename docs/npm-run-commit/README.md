@@ -1,0 +1,6 @@
+- `git checkout "feature/#31337"`
+- `asciinema rec docs/npm-run-commit/npm-run-commit.cast`
+- `npm run commit`
+- `CTRL+d`
+- `npm install -g svg-term-cli`
+- `cat docs/npm-run-commit/npm-run-commit.cast | svg-term --out docs/npm-run-commit/npm-run-commit.svg --window`
