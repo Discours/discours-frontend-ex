@@ -1,5 +1,6 @@
 // File should be .js, 'cause it is imported to postcss.config.js
 
+// tslint:disable object-literal-sort-keys
 const breakpoints = {
   xs: 0,
   sm: 600,
@@ -22,3 +23,4 @@ module.exports = {
     "--viewport-xl-min": `(min-width: ${breakpoints.xl}px)`,
   },
 };
+// tslint:enable object-literal-sort-keys

@@ -36,7 +36,7 @@ interface ButtonProps {
   };
   typographyProps?: Partial<TypographyProps>;
   style?: React.CSSProperties;
-  className?: string;
+  className: string;
   onClick?(event?: React.MouseEvent<HTMLButtonElement>): void;
 }
 
