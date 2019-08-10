@@ -1,16 +1,12 @@
 import React from "react";
 import Pages from "src/pages";
 
-interface IProps {}
-
-class Body extends React.Component<IProps> {
+class Body extends React.Component {
   public render() {
     return (
-      <React.Fragment>
-        <main>
-          <Pages />
-        </main>
-      </React.Fragment>
+      <main>
+        <Pages />
+      </main>
     );
   }
 }
