@@ -27,10 +27,11 @@
 - Проект должен запускаться в IE9 и выше, но заботимся о поддержке Edge и выше. [Подробнее](#browser-support).
 - `npm run commit` вместо `git commit` (Выводит интерактивный промпт для коммита). [Подробнее](#npm-run-commit).
 - PR в ветку `develop` из веток `feature/#id` или `bugfix/#id`. [Подробнее](#git-flow).
-- [storybook](https://storybook.js.org) для верстки компонентов и страниц очень помогает.
+- [storybook](https://storybook.js.org) для верстки компонентов и страниц очень помогает. [А что у вас там есть?](#storybook)
 - [react-testing-library](https://testing-library.com/react) для интеграционного тестирования компонентов (если там есть какая-то логика) для полной уверенности в своём коде.
+- Стили пишем в `.css` файлах, но активно используем переменные из стандарта [css-custom-properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) и [css-custom-media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media).
 - [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`.
-- UI Kit компоненты в `src/components/discours-ui-kit`, вёрстка — в `src/components/modules`, логика — в `src/containers`. [Подробнее](./src/components/README.md).
+- UI Kit компоненты в `src/components/discours-ui-kit`, вёрстка — в `src/components/modules`, логика — в `src/layouts` и в `src/pages`. [Подробнее](./src/README.md).
 - Свойства `.css` [идеоматически сортируются](https://github.com/necolas/idiomatic-css#declaration-order) перед коммитом. [Зачем?](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
 
 > [Оригинал](https://github.com/Discours/discours-welcome)
@@ -57,7 +58,31 @@
 <a name="storybook"></a>
 ### Storybook
 
-This repo includes [Storybook](https://storybook.js.org/) - a great way to develop components. [Try a tutorial](https://www.learnstorybook.com/) to get started, if you are not familiar with this instrument.
+> `npm run storybook` для запуска или [посмотреть он-лайн](https://storybook.discours.io)
+
+Основной инструмент разработки компонентов в этом проекте — [Storybook](https://storybook.js.org/). С помощью сторибука мы можем разрабатывать компоненты по отдельности, не думая как и откуда нам должны приходить данные.
+
+[Tutorial по сторибукам](https://www.learnstorybook.com/), если вы никогда не работали с этим инструментом.
+
+В сторибуке мы можем видеть наш компонент во всех возможных вариантах отображения. Например, если у нас есть кнопка с тремя стилями, можно создать три сторибука под каждый конкретный стиль.
+
+В наших сторибуках есть несколько весьма полезных инструментов:
+
+![Storybook themes selector interface](./docs/storybook-examples/themes.png)
+
+- Информация о компоненте. У многих компонентов (особенно в `discours-ui-kit`) есть файл `README.md` с описанием функциональности и дизайна компонента. В таком случае, оно отображается, если нажать на кнопку `Show info` в правом верхнем углу сторибука.
+
+![Storybook themes selector interface](./docs/storybook-examples/themes.png)
+
+- Выбор тем. Каждый компонент можно посмотреть в разных темах. При разработке компонента, нам надо быть уверенным в том, что он смотрится хорошо во всех темах.
+
+![Storybook responsive selector interface](./docs/storybook-examples/responsive.png)
+
+- Предпросмотр в размер мобильного экрана. Не лучше родного функционала, что есть в Developer Tools любого браузера, но быстрее и удобно вызываются.
+
+![Storybook locale selector interface](./docs/storybook-examples/locale.png)
+
+- Смена языка, на котором отображается компонент.
 
 <a name="component-testing"></a>
 ### Component Testing
