@@ -3,7 +3,7 @@ import React from "react";
 import { MemoryRouter } from "react-router";
 import Footer from "./Footer";
 
-const stories = storiesOf("modules/Footer", module);
+const stories = storiesOf("layouts/Footer", module);
 
 stories.add("default", () => (
   <MemoryRouter>

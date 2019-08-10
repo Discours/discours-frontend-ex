@@ -4,7 +4,7 @@ import { MemoryRouter } from "react-router";
 import FooterSupportBanner from "./FooterSupportBanner";
 import READMEMd from "./README.md";
 
-const stories = storiesOf("modules/Footer/FooterSupportBanner", module);
+const stories = storiesOf("layouts/Footer/FooterSupportBanner", module);
 
 stories.addParameters({
   info: {
