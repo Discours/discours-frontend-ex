@@ -1,0 +1,30 @@
+.common {
+  width: 100%;
+  max-width: 750px;
+  height: 37px;
+  padding: 5px 50px 5px 10px; /* TODO */
+  border: 2px solid var(--color-border); /* TODO border width */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-weight: bold; /* TODO */
+}
+
+.common::placeholder {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder#Accessibility_concerns */
+
+  /* Да, мы используем неправильно placeholder */
+
+  color: var(--color-text);
+  font-weight: bold; /* TODO */
+  opacity: 1;
+}
+
+.common__inverse {
+  border-color: var(--color-border-inverse);
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+}
+
+.common__inverse::placeholder {
+  color: var(--color-text-inverse);
+}
