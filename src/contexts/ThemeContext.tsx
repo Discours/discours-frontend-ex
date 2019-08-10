@@ -12,7 +12,7 @@ const { Provider, Consumer } = React.createContext<WithLocale>({
   setActiveTheme: (theme: ThemeName) => {},
 });
 
-export class ThemeContextProvider extends React.Component<{}, WithLocale> {
+export class ThemeContextProvider extends React.PureComponent<{}, WithLocale> {
   constructor(props: {}) {
     super(props);
     this.state = {

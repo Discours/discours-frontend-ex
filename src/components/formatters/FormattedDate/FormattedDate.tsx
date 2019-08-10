@@ -20,7 +20,7 @@ export interface FormattedDateProps extends WithLocale {
   format: FormattedDateDateFormat;
 }
 
-export class FormattedDate extends React.Component<FormattedDateProps> {
+export class FormattedDate extends React.PureComponent<FormattedDateProps> {
   public render() {
     return this.formatDate();
   }

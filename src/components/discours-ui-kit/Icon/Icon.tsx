@@ -10,7 +10,7 @@ interface IconProps {
   isInline: boolean;
 }
 
-class Icon extends React.Component<IconProps> {
+class Icon extends React.PureComponent<IconProps> {
   public static defaultProps = {
     isInverse: false,
     isInline: false,

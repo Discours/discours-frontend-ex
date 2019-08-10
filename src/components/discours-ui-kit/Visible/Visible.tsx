@@ -13,7 +13,7 @@ interface VisibleState {
   width: number;
 }
 
-class Visible extends React.Component<VisibleProps, VisibleState> {
+class Visible extends React.PureComponent<VisibleProps, VisibleState> {
   public constructor(props: VisibleProps, state: VisibleState) {
     super(props, state);
     this.state = {

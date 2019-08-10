@@ -9,7 +9,7 @@ import bannerBig from "./banner-big.jpg";
 import bannerSmall from "./banner-small.jpg";
 import classes from "./FooterSupportBanner.css";
 
-class FooterSupportBanner extends React.Component {
+class FooterSupportBanner extends React.PureComponent {
   public render() {
     return (
       <Container>

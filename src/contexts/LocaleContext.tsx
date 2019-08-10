@@ -16,7 +16,7 @@ const { Provider, Consumer } = React.createContext<WithLocale>({
 
 export { Provider as RawLocaleProvider };
 
-export class LocaleContextProvider extends React.Component<{}, WithLocale> {
+export class LocaleContextProvider extends React.PureComponent<{}, WithLocale> {
   constructor(props: {}) {
     super(props);
     const defaultLocale = this.getDefaultLocale();

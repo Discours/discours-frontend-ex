@@ -14,7 +14,7 @@ import Typography from "src/components/discours-ui-kit/Typography";
 import FormattedDate from "src/components/formatters/FormattedDate";
 import classes from "./FooterBottom.css";
 
-class FooterBottom extends React.Component {
+class FooterBottom extends React.PureComponent {
   public render() {
     return (
       <div className={classes.container__outer}>

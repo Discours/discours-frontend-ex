@@ -7,7 +7,7 @@ import { ThemeContextProvider } from "src/contexts/ThemeContext";
 import Body from "src/layouts/Body";
 import CommonProvider from "./CommonProvider";
 
-class App extends React.Component {
+class App extends React.PureComponent {
   public render() {
     return (
       <Router>

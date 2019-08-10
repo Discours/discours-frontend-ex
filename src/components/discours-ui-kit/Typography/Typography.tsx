@@ -10,7 +10,7 @@ export interface TypographyProps {
   className: string;
 }
 
-class Typography extends React.Component<TypographyProps> {
+class Typography extends React.PureComponent<TypographyProps> {
   public static defaultProps: TypographyProps = {
     variant: "body",
     className: "",

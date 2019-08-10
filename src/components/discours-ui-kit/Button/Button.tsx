@@ -40,7 +40,7 @@ interface ButtonProps {
   onClick?(event?: React.MouseEvent<HTMLButtonElement>): void;
 }
 
-class Button extends React.Component<ButtonProps> {
+class Button extends React.PureComponent<ButtonProps> {
   public static defaultProps: ButtonProps = {
     variant: "link-regular",
     isInverse: false,
