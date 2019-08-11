@@ -12,6 +12,8 @@ stories.addParameters({
   },
 });
 
+stories.add("sync spinning", () => <Icon src={icons.sync} isSpinning />);
+
 for (const [name, icon] of Object.entries(icons)) {
   stories.add(name, () => <Icon src={icon} />);
   stories.add(`${name} inverse`, () => <Icon isInverse src={icon} />);

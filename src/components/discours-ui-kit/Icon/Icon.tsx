@@ -8,6 +8,11 @@ interface IconProps {
   isInverse: boolean;
   isFixedWidth: boolean;
   isInline: boolean;
+  isSpinning: boolean;
+  /**
+   * Required, if Icon has semantic meaning
+   */
+  title?: string;
 }
 
 class Icon extends React.PureComponent<IconProps> {
@@ -15,29 +20,44 @@ class Icon extends React.PureComponent<IconProps> {
     isInverse: false,
     isInline: false,
     isFixedWidth: false,
+    isSpinning: false,
   };
 
   public render() {
-    const { src } = this.props;
+    const { src, title } = this.props;
     return (
-      <ReactSVG
-        afterInjection={this.handleAfterInjection}
-        className={this.getClassName()}
-        src={src}
-        wrapper="span"
-      />
+      <>
+        <ReactSVG
+          afterInjection={this.handleAfterInjection}
+          aria-hidden="true"
+          className={this.getClassName()}
+          src={src}
+          wrapper="span"
+          title={title}
+        />
+        {this.getSrOnlyTitle()}
+      </>
     );
   }
 
   private getClassName = () => {
-    const { isInverse, isInline, isFixedWidth } = this.props;
+    const { isInverse, isInline, isFixedWidth, isSpinning } = this.props;
 
     return classnames({
       [classes.container]: true,
       [classes.container__inverse]: isInverse,
+      [classes.container__spinning]: isSpinning,
       [classes.container__inline]: isInline,
       [classes.container__fixed_width]: isFixedWidth,
     });
+  };
+
+  private getSrOnlyTitle = () => {
+    const { title } = this.props;
+    if (!title) {
+      return null;
+    }
+    return <span className={classnames(classes["sr-only"])}>{title}</span>;
   };
 
   private handleAfterInjection = (error: Error | null, svg?: Element) => {
