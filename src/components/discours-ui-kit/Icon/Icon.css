@@ -4,6 +4,7 @@
 }
 
 .container__spinning {
+  display: inline-block;
   animation: spin 2s infinite linear;
 }
 
