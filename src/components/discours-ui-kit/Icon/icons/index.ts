@@ -33,6 +33,7 @@ import ratingLight from "./rating-light.svg";
 import rating from "./rating.svg";
 import rss from "./rss.svg";
 import search from "./search.svg";
+import sync from "./sync.svg";
 import video from "./video.svg";
 import viewsLight from "./views-light.svg";
 import views from "./views.svg";
@@ -73,6 +74,7 @@ export {
   rating,
   rss,
   search,
+  sync,
   video,
   viewsLight,
   views,

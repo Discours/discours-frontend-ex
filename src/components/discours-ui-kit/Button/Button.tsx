@@ -1,6 +1,8 @@
 import classnames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
+import Icon from "src/components/discours-ui-kit/Icon";
+import { sync } from "src/components/discours-ui-kit/Icon/icons";
 import Typography, {
   TypographyProps,
 } from "src/components/discours-ui-kit/Typography";
@@ -30,6 +32,7 @@ export type ButtonVariant = (typeof VARIANTS)[number];
 interface ButtonProps {
   variant: ButtonVariant;
   isInverse: boolean;
+  isLoading: boolean;
   to?: InternalRoute | ExternalRoute;
   toProps?: {
     [prop: string]: string;
@@ -44,6 +47,7 @@ class Button extends React.PureComponent<ButtonProps> {
   public static defaultProps: ButtonProps = {
     variant: "link-regular",
     isInverse: false,
+    isLoading: false,
     className: "",
   };
 
@@ -61,7 +65,7 @@ class Button extends React.PureComponent<ButtonProps> {
         style={style}
         className={this.getClassName()}
         to={this.getLinkTo()}>
-        {this.renderTypography()}
+        {this.renderContent()}
       </Link>
     );
   };
@@ -85,7 +89,7 @@ class Button extends React.PureComponent<ButtonProps> {
     const { onClick, style } = this.props;
     return (
       <button style={style} className={this.getClassName()} onClick={onClick}>
-        {this.renderTypography()}
+        {this.renderContent()}
       </button>
     );
   };
@@ -99,8 +103,12 @@ class Button extends React.PureComponent<ButtonProps> {
     return isExternalLink ? "_blank" : "_self";
   };
 
-  private renderTypography = () => {
-    const { children, isInverse, typographyProps } = this.props;
+  private renderContent = () => {
+    const { children, isInverse, typographyProps, isLoading } = this.props;
+    if (isLoading) {
+      // TODO intl
+      return <Icon src={sync} isSpinning title="Loading..." />;
+    }
     return (
       <Typography
         {...typographyProps}

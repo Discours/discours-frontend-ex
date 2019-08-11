@@ -59,3 +59,8 @@ it("should forward className", async () => {
   const text = getByText("Test").parentElement;
   expect(text).toHaveClass("test");
 });
+
+it("should not render the text, when isLoading is true", async () => {
+  const { queryByText } = render(<Button isLoading>Test</Button>);
+  expect(queryByText("Test")).not.toBeInTheDocument();
+});
