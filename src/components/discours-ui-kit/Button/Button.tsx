@@ -34,6 +34,7 @@ interface ButtonProps {
   isInverse: boolean;
   isLoading: boolean;
   to?: InternalRoute | ExternalRoute;
+  type?: "button" | "submit" | "reset";
   toProps?: {
     [prop: string]: string;
   };
@@ -86,9 +87,13 @@ class Button extends React.PureComponent<ButtonProps> {
   };
 
   private renderButton = () => {
-    const { onClick, style } = this.props;
+    const { onClick, style, type } = this.props;
     return (
-      <button style={style} className={this.getClassName()} onClick={onClick}>
+      <button
+        style={style}
+        className={this.getClassName()}
+        onClick={onClick}
+        type={type}>
         {this.renderContent()}
       </button>
     );

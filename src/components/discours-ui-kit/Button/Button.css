@@ -74,12 +74,20 @@
   color: var(--color-text);
 }
 
+.button-regular {
+  padding: 5px 10px; /* TODO */
+  border: 2px solid var(--color-border); /* TODO border width */
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-weight: bold; /* TODO */
+  text-align: center;
+}
+
 /* 
 .link-background {
 }
 
-.button-regular {
-}
+
 
 .button-fat {
 }
