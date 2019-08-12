@@ -1,7 +1,21 @@
-.common {
+.container {
+  display: flex;
   width: 100%;
   max-width: 750px;
   height: 37px;
+}
+
+* + .common {
+  border-left-width: 0 !important;
+}
+
+.common + * {
+  border-left-width: 0;
+}
+
+.common {
+  height: 100%;
+  flex-grow: 1;
   padding: 5px 50px 5px 10px; /* TODO */
   border: 2px solid var(--color-border); /* TODO border width */
   background-color: var(--color-background);

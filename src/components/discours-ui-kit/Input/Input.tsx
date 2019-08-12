@@ -4,9 +4,12 @@ import classes from "./Input.css";
 
 interface InputProps {
   isInverse: boolean;
+  name: string;
   className: string;
   type: string;
   placeholder: string;
+  prepend?: React.ReactNode;
+  append?: React.ReactNode;
 }
 
 class Input extends React.PureComponent<InputProps> {
@@ -17,13 +20,18 @@ class Input extends React.PureComponent<InputProps> {
   };
 
   public render() {
-    const { type, placeholder } = this.props;
+    const { type, placeholder, prepend, append, name } = this.props;
     return (
-      <input
-        className={this.getClassName()}
-        placeholder={placeholder}
-        type={type}
-      />
+      <div className={classnames(classes.container)}>
+        {prepend ? prepend : null}
+        <input
+          className={this.getClassName()}
+          placeholder={placeholder}
+          name={name}
+          type={type}
+        />
+        {append ? append : null}
+      </div>
     );
   }
 
