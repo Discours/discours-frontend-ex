@@ -5,6 +5,10 @@
   line-height: 1.4;
 }
 
+.common__italics {
+  font-style: italic;
+}
+
 .common__danger {
   color: var(--color-danger);
 }

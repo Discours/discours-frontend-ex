@@ -7,6 +7,7 @@ export interface TypographyProps {
   isInverse: boolean;
   isInline: boolean;
   isInheritColor: boolean;
+  isItalics: boolean;
   className: string;
   color: "regular" | "danger";
 }
@@ -18,6 +19,7 @@ class Typography extends React.PureComponent<TypographyProps> {
     isInverse: false,
     isInline: false,
     isInheritColor: false,
+    isItalics: false,
     color: "regular",
   };
 
@@ -45,10 +47,12 @@ class Typography extends React.PureComponent<TypographyProps> {
       isInline,
       color,
       isInheritColor,
+      isItalics,
     } = this.props;
 
     return classnames({
       [classes.common]: true,
+      [classes.common__italics]: isItalics,
       [classes.common__danger]: color === "danger",
       [classes.common__inverse]: isInverse,
       [classes.common__inline]: isInline,
