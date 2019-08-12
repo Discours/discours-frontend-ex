@@ -11,7 +11,8 @@
   cursor: pointer;
 }
 
-.common__inverse {
+.common.common__inverse {
+  border-color: var(--color-border-inverse);
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
 }
@@ -77,8 +78,6 @@
 .button-regular {
   padding: 5px 10px; /* TODO */
   border: 2px solid var(--color-border); /* TODO border width */
-  background-color: var(--color-background);
-  color: var(--color-text);
   font-weight: bold; /* TODO */
   text-align: center;
 }
