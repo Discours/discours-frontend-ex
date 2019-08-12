@@ -7,6 +7,15 @@
   text-decoration: none;
 }
 
+.common__inline {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 .common:hover {
   cursor: pointer;
 }

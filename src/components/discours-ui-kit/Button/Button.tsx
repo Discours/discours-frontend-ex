@@ -32,6 +32,7 @@ export type ButtonVariant = (typeof VARIANTS)[number];
 interface ButtonProps {
   variant: ButtonVariant;
   isInverse: boolean;
+  isInline: boolean;
   isLoading: boolean;
   to?: InternalRoute | ExternalRoute;
   type?: "button" | "submit" | "reset";
@@ -49,6 +50,7 @@ class Button extends React.PureComponent<ButtonProps> {
     variant: "link-regular",
     isInverse: false,
     isLoading: false,
+    isInline: false,
     className: "",
   };
 
@@ -129,11 +131,12 @@ class Button extends React.PureComponent<ButtonProps> {
   };
 
   private getClassName = () => {
-    const { variant, isInverse, className } = this.props;
+    const { variant, isInverse, className, isInline } = this.props;
 
     return classnames({
       [classes.common]: true,
       [classes.common__inverse]: isInverse,
+      [classes.common__inline]: isInline,
       [classes[variant]]: true,
       [className]: true,
     });
