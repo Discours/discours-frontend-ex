@@ -16,3 +16,6 @@ stories.add("default", () => <Typography>{text("text", "Hello")}</Typography>);
 stories.add("inverse", () => (
   <Typography isInverse>{text("text", "Hello")}</Typography>
 ));
+stories.add("danger", () => (
+  <Typography color="danger">{text("text", "Hello")}</Typography>
+));

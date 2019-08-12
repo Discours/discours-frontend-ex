@@ -5,6 +5,10 @@
   line-height: 1.4;
 }
 
+.common__danger {
+  color: var(--color-danger);
+}
+
 .common__inverse {
   color: var(--color-text-inverse);
 }
