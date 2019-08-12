@@ -87,12 +87,13 @@ class Button extends React.PureComponent<ButtonProps> {
   };
 
   private renderButton = () => {
-    const { onClick, style, type } = this.props;
+    const { onClick, style, type, isLoading } = this.props;
     return (
       <button
         style={style}
         className={this.getClassName()}
         onClick={onClick}
+        disabled={isLoading}
         type={type}>
         {this.renderContent()}
       </button>
