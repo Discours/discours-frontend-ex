@@ -1,8 +1,12 @@
-.container {
+.group {
   display: flex;
   width: 100%;
   max-width: 750px;
   height: 37px;
+}
+
+.error {
+  height: 1.5rem;
 }
 
 * + .common {
