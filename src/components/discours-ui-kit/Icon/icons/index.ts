@@ -38,6 +38,8 @@ import video from "./video.svg";
 import viewsLight from "./views-light.svg";
 import views from "./views.svg";
 
+const submit = editorLead;
+
 export {
   brandFacebook,
   brandTelegram,
@@ -74,6 +76,7 @@ export {
   rating,
   rss,
   search,
+  submit,
   sync,
   video,
   viewsLight,
