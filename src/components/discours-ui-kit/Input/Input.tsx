@@ -14,7 +14,7 @@ interface InputProps {
   append?: React.ReactNode;
 }
 
-class Input extends React.Component<InputProps> {
+class Input extends React.PureComponent<InputProps> {
   public static defaultProps = {
     isInverse: false,
     className: "",
