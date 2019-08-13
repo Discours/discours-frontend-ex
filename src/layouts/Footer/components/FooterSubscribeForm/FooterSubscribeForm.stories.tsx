@@ -1,6 +1,7 @@
 import { action } from "@storybook/addon-actions";
 import { storiesOf } from "@storybook/react";
 import React from "react";
+import { sleep } from "src/utils/timers";
 import FooterSubscribeForm, {
   FooterSubscribeFormProps,
 } from "./FooterSubscribeForm";
@@ -9,18 +10,16 @@ const onReset = action("onReset");
 
 const stories = storiesOf("layouts/Footer/FooterSubscribeForm", module);
 
-const onSubmitFailing: FooterSubscribeFormProps["onSubmit"] = (
+const onSubmitFailing: FooterSubscribeFormProps["onSubmit"] = async (
   fields,
   form,
-): Promise<void> =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      action("submitted");
-      form.setSubmitting(false);
-      form.setFieldError("email", "Email уже существует");
-      reject();
-    }, 1000);
-  });
+) => {
+  await sleep(1000);
+  action("submitted");
+  form.setSubmitting(false);
+  form.setFieldError("email", "Email уже существует");
+  throw new Error("Failed!");
+};
 
 stories.add("failing", () => (
   <div
@@ -36,18 +35,16 @@ stories.add("failing", () => (
   </div>
 ));
 
-const onSubmitSucceeding: FooterSubscribeFormProps["onSubmit"] = (
+const onSubmitSucceeding: FooterSubscribeFormProps["onSubmit"] = async (
   fields,
   form,
-): Promise<void> =>
-  new Promise((resolve, reject) => {
-    setTimeout(() => {
-      action("submitted");
-      form.setSubmitting(false);
-      form.resetForm();
-      resolve();
-    }, 1000);
-  });
+) => {
+  await sleep(1000);
+  action("submitted");
+  form.setSubmitting(false);
+  form.resetForm();
+  return;
+};
 
 stories.add("succeeding", () => (
   <div

@@ -32,7 +32,7 @@ class FooterSubscribeForm extends React.PureComponent<
 > {
   public render() {
     return (
-      <div>
+      <>
         <Typography isInverse>
           <T message="Подпишитесь на рассылку лучших публикаций" />
         </Typography>
@@ -46,14 +46,14 @@ class FooterSubscribeForm extends React.PureComponent<
             render={this.renderFormik}
           />
         )}
-      </div>
+      </>
     );
   }
 
   private renderSuccessMessage = () => (
     <>
       <Typography isItalics isInverse variant="small">
-        <T message="Спасибо! Ваш адрес добавлен в рассылку!" />
+        <T message="Спасибо! Ваш адрес добавлен в рассылку!" />{" "}
         <Button
           variant="link-underline"
           typographyProps={{ variant: "small", isItalics: true }}
