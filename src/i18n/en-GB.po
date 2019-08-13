@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Fri Aug 02 2019 18:12:31 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Tue Aug 13 2019 05:55:19 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
@@ -11,6 +11,92 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "Last-Translator: \n"
 "Language: en-GB\n"
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:27
+msgid "О Дискурсе"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:30
+msgid "Авторы"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:33
+msgid "Предложить идею"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:39
+msgid "Facebook"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:43
+msgid "VK"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:47
+msgid "Twitter"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:51
+msgid "Telegram"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:56
+msgid "Яндекс Дзен"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:59
+msgid "Подкаст"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:62
+msgid "RSS"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:73
+msgid ""
+"Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
+"искусстве и обществе."
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:78
+msgid "Пользовательское соглашение"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:81
+msgid "© Дискурс"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:37
+msgid "Подпишитесь на рассылку лучших публикаций"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:56
+msgid "Спасибо! Ваш адрес добавлен в рассылку!"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:63
+msgid "Хочу добавить еще один!"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:20
+msgid "Дискурс существует благодаря вашему участию!"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:25
+msgid "Дискурс существует благодаря вам!"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:34
+msgid "Поддержать Дискурс"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:46
+msgid "Поддержать"
+msgstr ""
+
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:51
+msgid "Стать автором"
+msgstr ""
 
 #: src/pages/NotFound.tsx:9
 msgctxt "errorCodes.404.title"
