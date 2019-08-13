@@ -17,6 +17,7 @@ const { mdLoader } = require("./config/webpack/loaders/md");
 const { tsLoader } = require("./config/webpack/loaders/ts");
 const { fsLoader } = require("./config/webpack/loaders/fs");
 const { cssPlugins } = require("./config/webpack/plugins/css");
+const { devPlugins } = require("./config/webpack/plugins/dev");
 
 const paths = {
   input: "src",
@@ -61,11 +62,7 @@ const plugins = [
 ];
 
 if (IS_DEV) {
-  const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
-
-  plugins.push(new webpack.NamedModulesPlugin());
-  plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }));
-  plugins.push(new HardSourceWebpackPlugin());
+  plugins.push(...devPlugins);
 } else {
   plugins.push(
     new BundleAnalyzerPlugin({ openAnalyzer: false, analyzerMode: "static" }),
