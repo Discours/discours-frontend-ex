@@ -20,10 +20,18 @@
   order: 2;
 }
 
+.column__right {
+  max-width: 300px;
+}
+
 @media (--viewport-sm-max) {
   .column__right {
+    display: flex;
     width: 100%;
+    max-width: 100%;
+    flex-direction: "column";
     flex-grow: 1;
+    align-items: center;
     order: 1;
   }
 }

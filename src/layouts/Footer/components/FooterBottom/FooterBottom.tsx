@@ -12,6 +12,8 @@ import {
 } from "src/components/discours-ui-kit/Icon/icons";
 import Typography from "src/components/discours-ui-kit/Typography";
 import FormattedDate from "src/components/formatters/FormattedDate";
+// tslint:disable-next-line: no-relative-imports
+import FooterSubscribeFormContainer from "../../containers/FooterSubscribeFormContainer";
 import classes from "./FooterBottom.css";
 
 class FooterBottom extends React.PureComponent {
@@ -61,7 +63,7 @@ class FooterBottom extends React.PureComponent {
               </Button>
             </div>
             <div className={classnames(classes.column, classes.column__right)}>
-              <Button>TODO: форма</Button>
+              <FooterSubscribeFormContainer />
             </div>
           </div>
         </Container>
