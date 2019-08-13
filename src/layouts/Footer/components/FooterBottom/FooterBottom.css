@@ -8,8 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: 17px;
-  font-weight: 500;
 }
 
 .column {
@@ -21,7 +19,7 @@
 }
 
 .column__right {
-  max-width: 300px;
+  max-width: 320px;
 }
 
 @media (--viewport-sm-max) {

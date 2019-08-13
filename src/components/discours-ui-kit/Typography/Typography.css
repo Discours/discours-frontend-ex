@@ -1,7 +1,18 @@
+@font-face {
+  font-display: swap;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: normal; /* 400 */
+  src: local("Muller"),
+    url("/assets/fonts/Muller/Muller-Regular.woff2") format("woff2"),
+    url("/assets/fonts/Muller/Muller-Regular.woff") format("woff");
+}
+
 .common {
   display: block;
   color: var(--color-text);
   font-family: Muller, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
   line-height: 1.4;
 }
 
@@ -49,7 +60,6 @@
 
 .heading3 {
   font-size: 36px;
-  font-weight: 600;
 }
 
 @media screen and (max-width: 991px) {
