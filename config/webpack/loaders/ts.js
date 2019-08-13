@@ -1,7 +1,7 @@
 const path = require("path");
 
 const tsLoader = {
-  test: /\.tsx?$/,
+  test: /\.tsx?$|.orig.js$/,
   exclude: /node_modules/,
   use: [
     {
