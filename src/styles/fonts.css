@@ -1,0 +1,16 @@
+html {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-base);
+  line-height: var(--line-height-base);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: normal; /* 400 */
+  src: local("Muller"),
+    url("../assets/fonts/Muller/Muller-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Muller/Muller-Regular.woff") format("woff");
+}

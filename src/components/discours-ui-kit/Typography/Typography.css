@@ -1,22 +1,11 @@
-@font-face {
-  font-display: swap;
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: normal; /* 400 */
-  src: local("Muller"),
-    url("/assets/fonts/Muller/Muller-Regular.woff2") format("woff2"),
-    url("/assets/fonts/Muller/Muller-Regular.woff") format("woff");
-}
-
 .common {
   display: block;
   color: var(--color-text);
-  font-family: Muller, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.4;
+  font-size: 1rem;
 }
 
 .common__italics {
+  /* TODO move to variant */
   font-style: italic;
 }
 
@@ -39,37 +28,39 @@
 .body {
   margin-top: 0;
   margin-bottom: 10px; /* TODO */
-  font-size: 18px;
 }
 
 .small {
-  font-size: 14px;
+  font-size: 0.7rem;
 }
 
-@media (--viewport-xs-max) {
+.big {
+  font-size: 1.2rem;
+}
+
+@media screen and (--viewport-xs-max) {
   .small {
-    font-size: 9px;
+    font-size: 0.5rem;
   }
 }
 
 .heading {
   margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 1.1;
 }
 
 .heading3 {
-  font-size: 36px;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (--viewport-sm-max) {
   .heading3 {
-    font-size: 28px;
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (--viewport-xs-max) {
   .heading3 {
-    font-size: 19px;
+    font-size: 1.1rem;
   }
 }

@@ -40,9 +40,9 @@
     var(--color-border),
     var(--color-border)
   );
-  background-position: 0 96%;
+  background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 100% 2px; /* TODO */
 }
 
 .common__inverse.link-regular:hover,

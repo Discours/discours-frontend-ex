@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Tue Aug 13 2019 05:55:19 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Tue Aug 13 2019 17:12:38 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
@@ -86,15 +86,15 @@ msgstr ""
 msgid "Дискурс существует благодаря вам!"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:34
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:35
 msgid "Поддержать Дискурс"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:46
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:51
 msgid "Поддержать"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:51
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:56
 msgid "Стать автором"
 msgstr ""
 

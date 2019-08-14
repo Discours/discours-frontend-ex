@@ -30,10 +30,15 @@ class FooterSupportBanner extends React.PureComponent {
                 <Button
                   to="help"
                   variant="link-underline"
+                  typographyProps={{ variant: "big" }}
                   className={classnames(classes.button__first)}>
                   <T message="Поддержать Дискурс" />
                 </Button>{" "}
-                <Button variant="link-underline">Стать автором</Button>
+                <Button
+                  typographyProps={{ variant: "big" }}
+                  variant="link-underline">
+                  Стать автором
+                </Button>
               </Visible>
               <Visible only={["xs"]}>
                 <Button

@@ -5,9 +5,10 @@
 
 /* https://github.com/csstools/postcss-normalize */
 
-@import "sanitize";
+@import "./vendor.css";
 @import "./themes/default.css";
 @import "./themes/dark.css";
+@import "fonts.css";
 
 :global [class^="discours-theme"] {
   overflow: hidden;

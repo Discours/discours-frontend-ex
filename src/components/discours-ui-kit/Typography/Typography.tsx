@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./Typography.css";
 
 export interface TypographyProps {
-  variant: "body" | "heading3" | "small";
+  variant: "body" | "heading3" | "small" | "big";
   isInverse: boolean;
   isInline: boolean;
   isInheritColor: boolean;
@@ -61,6 +61,7 @@ class Typography extends React.PureComponent<TypographyProps> {
       [classes.heading]: variant.match(/^heading/),
       [classes.heading3]: variant === "heading3",
       [classes.small]: variant === "small",
+      [classes.big]: variant === "big",
       [className]: true,
     });
   };

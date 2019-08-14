@@ -2,6 +2,7 @@
 
 /* This vars will be taken by postcss-custom-properties to create fallback css properties */
 :root {
+  /* colors */
   --color-primary: #000;
   --color-inverse: #fff;
   --color-text: #000;
@@ -11,4 +12,11 @@
   --color-background: #fff;
   --color-background-inverse: #000;
   --color-danger: red;
+
+  /* fonts */
+  --font-family-primary: Muller, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-secondary: Spectral, Georgia, Times New Roman, Times, serif;
+  --font-size-base: 18px;
+  --letter-spacing-base: 0;
+  --line-height-base: 1.1;
 }
