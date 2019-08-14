@@ -17,6 +17,7 @@ import classes from "./Button.css";
 export const VARIANTS = [
   "link-regular",
   "link-regular-fat",
+  "link-text",
   "link-underline",
   "link-background",
   "button-regular",
@@ -29,7 +30,7 @@ export const VARIANTS = [
 
 export type ButtonVariant = (typeof VARIANTS)[number];
 
-interface ButtonProps {
+export interface ButtonProps {
   variant: ButtonVariant;
   isInverse: boolean;
   isInline: boolean;
