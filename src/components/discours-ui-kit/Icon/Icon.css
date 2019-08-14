@@ -3,8 +3,7 @@
   color: var(--color-text);
 }
 
-.container__spinning {
-  display: inline-block;
+.container__spinning svg {
   animation: spin 2s infinite linear;
 }
 
