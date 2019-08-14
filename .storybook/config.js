@@ -1,3 +1,4 @@
+import React from "react";
 import { addDecorator, configure } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withA11y } from "@storybook/addon-a11y";
@@ -6,6 +7,7 @@ import "@storybook/addon-console";
 import StorybookProvider from "src/layouts/App/StorybookProvider";
 import messages from "src/i18n/translations.json";
 import { SUPPORTED_LOCALES } from "src/config/locales";
+import { MemoryRouter } from "react-router";
 import { addParameters } from "@storybook/react";
 import { withI18n } from "storybook-addon-i18n";
 import { withThemes } from "storybook-addon-themes";
@@ -20,6 +22,15 @@ addDecorator(withKnobs);
 addDecorator(withA11y);
 addDecorator(withI18n);
 addDecorator(withThemes);
+addDecorator((story) =>
+  React.createElement(
+    MemoryRouter,
+    {
+      initialEntries: ["/"],
+    },
+    story(),
+  ),
+);
 
 addParameters({
   i18n: {
