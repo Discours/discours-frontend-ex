@@ -46,7 +46,7 @@
   );
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 100% 2px; /* TODO */
+  background-size: 100% var(--border-width-regular);
 }
 
 .common__inverse.link-regular:hover,
@@ -60,7 +60,7 @@
 }
 
 .link-regular-fat:hover {
-  background-size: 100% 4px;
+  background-size: 100% var(--border-width-bold);
 }
 
 .link-underline {
@@ -90,8 +90,8 @@
 
 .button-regular {
   padding: 5px 10px; /* TODO */
-  border: 2px solid var(--color-border); /* TODO border width */
-  font-weight: bold; /* TODO */
+  border: var(--border-width-regular) solid var(--color-border);
+  font-weight: bold;
   text-align: center;
 }
 

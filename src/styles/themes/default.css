@@ -19,4 +19,8 @@
   --font-size-base: 18px;
   --letter-spacing-base: 0;
   --line-height-base: 1.1;
+
+  /* sizes */
+  --border-width-regular: 0.1rem;
+  --border-width-bold: 0.2rem;
 }
