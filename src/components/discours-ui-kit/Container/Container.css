@@ -1,6 +1,6 @@
 .container {
-  padding-right: 15px; /* TODO */
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15,21 +15,32 @@
   clear: both;
 }
 
-/* TODO */
-@media (min-width: 768px) {
+@media screen and (--viewport-sm-min) {
+  .container {
+    width: 590px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (--viewport-md-min) {
   .container {
-    width: 970px;
+    width: 940px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (--viewport-lg-min) {
   .container {
     width: 1170px;
+  }
+}
+
+@media screen and (--viewport-xl-min) {
+  .container {
+    width: 1900px;
   }
 }

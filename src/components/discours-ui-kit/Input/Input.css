@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   max-width: 750px;
-  height: 37px;
+  height: 2rem;
 }
 
 .error {
@@ -21,7 +21,7 @@
   height: 100%;
   flex-grow: 1;
   padding: 0.15rem 0.5rem;
-  border: var(--border-width-regular) solid var(--color-border); /* TODO border width */
+  border: var(--border-width-regular) solid var(--color-border);
   background-color: var(--color-background);
   color: var(--color-text);
   font-size: inherit;

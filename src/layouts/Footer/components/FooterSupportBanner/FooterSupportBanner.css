@@ -7,18 +7,18 @@
 
 .buttons {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .left {
   position: relative;
-  z-index: 1; /* TODO */
+  z-index: var(--z-index-1);
   flex: 0 0 400px;
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 
 .heading {
-  margin-right: -40px;
+  margin-right: -2rem;
 }
 
 .right {
@@ -32,16 +32,16 @@
 }
 
 .button__first {
-  margin-right: 65px;
+  margin-right: 3rem;
 }
 
 .button__mobile {
-  min-width: 160px;
+  min-width: 9rem;
 }
 
 @media screen and (--viewport-md-min) {
   .left {
-    margin-bottom: 70px;
+    margin-bottom: 4rem;
   }
 }
 
@@ -75,6 +75,6 @@
   }
 
   .button__first {
-    margin-right: 35px;
+    margin-right: 2rem;
   }
 }

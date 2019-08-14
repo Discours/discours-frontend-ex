@@ -78,7 +78,7 @@
 }
 
 .button-primary {
-  padding: 5px 15px;
+  padding: 0.3rem 0.7rem;
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
 }
@@ -89,7 +89,7 @@
 }
 
 .button-regular {
-  padding: 5px 10px; /* TODO */
+  padding: 0.3rem 0.5rem;
   border: var(--border-width-regular) solid var(--color-border);
   font-weight: bold;
   text-align: center;

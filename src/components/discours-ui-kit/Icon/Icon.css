@@ -18,11 +18,11 @@
 }
 
 .container svg {
-  height: 18px;
+  height: 1rem;
 }
 
 .container__fixed_width {
-  width: 22px;
+  width: 1.2rem;
   text-align: center;
 }
 
