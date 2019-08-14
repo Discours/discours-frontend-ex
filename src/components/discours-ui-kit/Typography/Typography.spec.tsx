@@ -16,16 +16,18 @@ it("should render p tag by default", async () => {
   const text = getByText("Test");
   expect(text).toBeInstanceOf(HTMLParagraphElement);
   expect(text).toBeInTheDocument();
-  expect(text).toHaveClass("body");
+  expect(text).toHaveClass("font__primary");
 });
 
-it("should render h3 for heading3 variant", async () => {
+it("should render h3 for heading3 semanticLevel", async () => {
   const { getByText } = render(
-    <Typography variant="heading3">Test</Typography>,
+    <Typography size="heading3" semanticLevel="heading3">
+      Test
+    </Typography>,
   );
   const text = getByText("Test");
   expect(text).toBeInstanceOf(HTMLHeadingElement);
   expect(text).toBeInTheDocument();
   expect(text).toHaveClass("heading");
-  expect(text).toHaveClass("heading3");
+  expect(text).toHaveClass("size__heading3");
 });

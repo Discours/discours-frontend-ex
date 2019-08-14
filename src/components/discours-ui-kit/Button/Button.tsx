@@ -121,10 +121,12 @@ class Button extends React.PureComponent<ButtonProps> {
     }
     return (
       <Typography
-        {...typographyProps}
+        size="inherit"
+        font="inherit"
         isInline
-        isInheritColor
-        isInverse={isInverse}>
+        color="inherit"
+        isInverse={isInverse}
+        {...typographyProps}>
         {children}
       </Typography>
     );

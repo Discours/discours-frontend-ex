@@ -52,11 +52,10 @@ class FooterSubscribeForm extends React.PureComponent<
 
   private renderSuccessMessage = () => (
     <>
-      <Typography isItalics isInverse variant="small">
+      <Typography font="secondary-italics" isInverse size="small">
         <T message="Спасибо! Ваш адрес добавлен в рассылку!" />{" "}
         <Button
           variant="link-underline"
-          typographyProps={{ variant: "small", isItalics: true }}
           isInverse
           isInline
           onClick={this.props.onReset}>

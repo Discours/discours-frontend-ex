@@ -1,66 +1,125 @@
 .common {
   display: block;
-  color: var(--color-text);
-  font-size: 1rem;
-}
-
-.common__italics {
-  /* TODO move to variant */
-  font-style: italic;
-}
-
-.common__danger {
-  color: var(--color-danger);
-}
-
-.common__inverse {
-  color: var(--color-text-inverse);
 }
 
 .common__inline {
   display: inline;
 }
 
-.common__inherit {
+/* fonts */
+
+.font__inherit {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.font__primary {
+  font-family: var(--font-family-primary);
+}
+
+.font__primary-bold {
+  font-family: var(--font-family-primary);
+  font-weight: bold;
+}
+
+.font__secondary {
+  font-family: var(--font-family-secondary);
+}
+
+.font__secondary-italics {
+  font-family: var(--font-family-secondary);
+  font-style: italic;
+}
+
+.font__secondary-bold {
+  font-family: var(--font-family-secondary);
+  font-weight: bold;
+}
+
+.font__secondary-bold-italics {
+  font-family: var(--font-family-secondary);
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* colors */
+
+.color__regular {
+  color: var(--color-text);
+}
+
+.color__danger {
+  color: var(--color-danger);
+}
+
+.color__inverse {
+  color: var(--color-text-inverse);
+}
+
+.color__inherit {
   color: inherit;
 }
 
-.body {
-  margin-top: 0;
-  margin-bottom: 10px; /* TODO */
+/* sizes */
+
+.size__inherit {
+  font-size: inherit;
 }
 
-.small {
+.size__regular {
+  font-size: 1rem;
+}
+
+.size__small {
   font-size: 0.7rem;
 }
 
-.big {
-  font-size: 1.2rem;
-}
-
 @media screen and (--viewport-xs-max) {
-  .small {
+  .size__small {
     font-size: 0.5rem;
   }
 }
 
-.heading {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.size__big {
+  font-size: 1.2rem;
 }
 
-.heading3 {
+.size__heading1 {
+  font-size: 2.8rem;
+}
+
+.size__heading3 {
   font-size: 2rem;
 }
 
 @media screen and (--viewport-sm-max) {
-  .heading3 {
+  .size__heading1 {
+    font-size: 2rem;
+  }
+  .size__heading3 {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (--viewport-xs-max) {
-  .heading3 {
+  .size__heading1 {
+    font-size: 1.4rem;
+  }
+  .size__heading3 {
     font-size: 1.1rem;
   }
+}
+
+/* margins */
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.common {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.heading {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

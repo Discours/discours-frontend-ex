@@ -2,24 +2,36 @@ import classnames from "classnames";
 import React from "react";
 import classes from "./Typography.css";
 
+export const FONTS = [
+  "primary",
+  "primary-bold",
+  "secondary",
+  "secondary-italics",
+  "secondary-bold",
+  "secondary-bold-italics",
+  "inherit",
+] as const;
+
+export type TypographyFont = (typeof FONTS)[number];
+
 export interface TypographyProps {
-  variant: "body" | "heading3" | "small" | "big";
+  size: "regular" | "heading1" | "heading3" | "small" | "big" | "inherit";
+  semanticLevel: "text" | "heading1" | "heading3";
+  font: TypographyFont;
   isInverse: boolean;
   isInline: boolean;
-  isInheritColor: boolean;
-  isItalics: boolean;
   className: string;
-  color: "regular" | "danger";
+  color: "regular" | "danger" | "inherit";
 }
 
 class Typography extends React.PureComponent<TypographyProps> {
   public static defaultProps: TypographyProps = {
-    variant: "body",
+    size: "regular",
+    semanticLevel: "text",
+    font: "primary",
     className: "",
     isInverse: false,
     isInline: false,
-    isInheritColor: false,
-    isItalics: false,
     color: "regular",
   };
 
@@ -30,8 +42,10 @@ class Typography extends React.PureComponent<TypographyProps> {
   }
 
   private getTagName = () => {
-    const { variant, isInline } = this.props;
-    switch (variant) {
+    const { semanticLevel, isInline } = this.props;
+    switch (semanticLevel) {
+      case "heading1":
+        return "h1";
       case "heading3":
         return "h3";
       default:
@@ -41,27 +55,23 @@ class Typography extends React.PureComponent<TypographyProps> {
 
   private getClassName = () => {
     const {
-      variant,
+      size,
+      font,
+      semanticLevel,
       className,
       isInverse,
       isInline,
       color,
-      isInheritColor,
-      isItalics,
     } = this.props;
 
     return classnames({
       [classes.common]: true,
-      [classes.common__italics]: isItalics,
-      [classes.common__danger]: color === "danger",
-      [classes.common__inverse]: isInverse,
+      [classes[`font__${font}`]]: true,
+      [classes[`color__${color}`]]: true,
+      [classes.color__inverse]: isInverse,
       [classes.common__inline]: isInline,
-      [classes.common__inherit]: isInheritColor,
-      [classes.body]: variant === "body",
-      [classes.heading]: variant.match(/^heading/),
-      [classes.heading3]: variant === "heading3",
-      [classes.small]: variant === "small",
-      [classes.big]: variant === "big",
+      [classes[`size__${size}`]]: true,
+      [classes.heading]: semanticLevel.match(/^heading/),
       [className]: true,
     });
   };

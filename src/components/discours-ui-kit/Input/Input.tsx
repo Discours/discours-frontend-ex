@@ -44,7 +44,7 @@ class Input extends React.PureComponent<InputProps> {
         </div>
         <div className={classnames(classes.error)}>
           {form.touched[name] && form.errors[name] && (
-            <Typography color="danger" isInline variant="small">
+            <Typography color="danger" isInline size="small">
               {form.errors[name]}
             </Typography>
           )}

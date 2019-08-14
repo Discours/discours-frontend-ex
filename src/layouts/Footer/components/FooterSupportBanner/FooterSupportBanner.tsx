@@ -16,12 +16,18 @@ class FooterSupportBanner extends React.PureComponent {
         <div className={classes.container}>
           <div className={classes.left}>
             <Visible upFrom="sm">
-              <Typography variant="heading3" className={classes.heading}>
+              <Typography
+                size="heading3"
+                font="primary-bold"
+                className={classes.heading}>
                 <T message="Дискурс существует благодаря вашему участию!" />
               </Typography>
             </Visible>
             <Visible only={["xs"]}>
-              <Typography variant="heading3" className={classes.heading}>
+              <Typography
+                size="heading3"
+                font="primary-bold"
+                className={classes.heading}>
                 <T message="Дискурс существует благодаря вам!" />
               </Typography>
             </Visible>
@@ -30,12 +36,12 @@ class FooterSupportBanner extends React.PureComponent {
                 <Button
                   to="help"
                   variant="link-underline"
-                  typographyProps={{ variant: "big" }}
+                  typographyProps={{ size: "big", font: "primary-bold" }}
                   className={classnames(classes.button__first)}>
                   <T message="Поддержать Дискурс" />
                 </Button>{" "}
                 <Button
-                  typographyProps={{ variant: "big" }}
+                  typographyProps={{ size: "big", font: "primary-bold" }}
                   variant="link-underline">
                   Стать автором
                 </Button>

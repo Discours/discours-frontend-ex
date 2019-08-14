@@ -25,7 +25,6 @@
   background-color: var(--color-background);
   color: var(--color-text);
   font-size: inherit;
-  font-weight: bold; /* TODO */
 }
 
 .common::placeholder {
@@ -35,8 +34,6 @@
 
   color: var(--color-text);
   font-size: inherit;
-  font-weight: bold; /* TODO */
-  line-height: var(--line-height-base);
   opacity: 1;
 }
 

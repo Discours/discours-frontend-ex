@@ -14,3 +14,16 @@ html {
     url("../assets/fonts/Muller/Muller-Regular.woff2") format("woff2"),
     url("../assets/fonts/Muller/Muller-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-display: swap;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: bold; /* 700 */
+  src: local("Muller"),
+    url("../assets/fonts/Muller/Muller-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Muller/Muller-Bold.woff") format("woff");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Spectral:400,400i&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Spectral:700,700i&display=swap&subset=cyrillic");

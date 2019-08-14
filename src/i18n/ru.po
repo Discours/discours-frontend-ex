@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Tue Aug 13 2019 17:12:38 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Wed Aug 14 2019 05:46:10 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
@@ -61,11 +61,11 @@ msgstr ""
 "Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
 "искусстве и обществе."
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:78
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:75
 msgid "Пользовательское соглашение"
 msgstr "Пользовательское соглашение"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:81
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:78
 msgid "© Дискурс"
 msgstr "© Дискурс"
 
@@ -77,27 +77,27 @@ msgstr "Подпишитесь на рассылку лучших публика
 msgid "Спасибо! Ваш адрес добавлен в рассылку!"
 msgstr "Спасибо! Ваш адрес добавлен в рассылку!"
 
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:63
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:62
 msgid "Хочу добавить еще один!"
 msgstr "Хочу добавить еще один!"
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:20
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:23
 msgid "Дискурс существует благодаря вашему участию!"
 msgstr "Дискурс существует благодаря вашему участию!"
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:25
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:31
 msgid "Дискурс существует благодаря вам!"
 msgstr "Дискурс существует благодаря вам!"
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:35
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:41
 msgid "Поддержать Дискурс"
 msgstr "Поддержать Дискурс"
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:51
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:57
 msgid "Поддержать"
 msgstr "Поддержать"
 
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:56
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:62
 msgid "Стать автором"
 msgstr "Стать автором"
 

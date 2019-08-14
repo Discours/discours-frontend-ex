@@ -69,12 +69,9 @@ class FooterBottom extends React.PureComponent {
         </Container>
         <Container>
           <hr />
-          <Typography isInverse isInline variant="small">
+          <Typography isInverse isInline size="small">
             <T message="Независимый журнал с открытой горизонтальной редакцией о культуре, науке, искусстве и обществе." />{" "}
-            <Button
-              isInverse
-              to="termsOfUse"
-              typographyProps={{ variant: "small" }}>
+            <Button isInverse to="termsOfUse">
               <T message="Пользовательское соглашение" />
             </Button>
             {". "}
