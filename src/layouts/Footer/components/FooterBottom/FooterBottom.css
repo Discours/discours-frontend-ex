@@ -22,7 +22,7 @@
   max-width: 320px;
 }
 
-@media (--viewport-sm-max) {
+@media screen and (--viewport-sm-max) {
   .column__right {
     display: flex;
     width: 100%;

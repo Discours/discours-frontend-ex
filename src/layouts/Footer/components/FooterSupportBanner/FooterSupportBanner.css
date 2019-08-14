@@ -38,19 +38,19 @@
   min-width: 160px;
 }
 
-@media (--viewport-md-min) {
+@media screen and (--viewport-md-min) {
   .left {
     margin-bottom: 70px;
   }
 }
 
-@media (--viewport-md-min) {
+@media screen and (--viewport-md-min) {
   .left {
     flex: 0 0 520px;
   }
 }
 
-@media (--viewport-xs-max) {
+@media screen and (--viewport-xs-max) {
   .container {
     flex-wrap: wrap;
   }
