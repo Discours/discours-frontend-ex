@@ -12,15 +12,15 @@ stories.addParameters({
   },
 });
 
-for (const font of FONTS) {
-  stories.add(font, () => (
-    <Typography font={font}>{text("text", "Hello")}</Typography>
-  ));
-}
-
 stories.add("inverse", () => (
   <Typography isInverse>{text("text", "Hello")}</Typography>
 ));
 stories.add("danger", () => (
   <Typography color="danger">{text("text", "Hello")}</Typography>
 ));
+
+for (const font of FONTS) {
+  stories.add(`font/${font}`, () => (
+    <Typography font={font}>{text("text", "Hello")}</Typography>
+  ));
+}
