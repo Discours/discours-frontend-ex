@@ -12,19 +12,19 @@ stories.addParameters({
   },
 });
 
-stories.add("small", () => (
+stories.add("size/small", () => (
   <Modal size="small" buttonText={text("button", "Открыть")}>
     <div style={{ height: 300 }}>Модалочка</div>
   </Modal>
 ));
 
-stories.add("medium", () => (
+stories.add("size/medium", () => (
   <Modal size="medium" buttonText={text("button", "Открыть")}>
     <div style={{ height: 300 }}>Модалочка</div>
   </Modal>
 ));
 
-stories.add("large", () => (
+stories.add("size/large", () => (
   <Modal size="large" buttonText={text("button", "Открыть")}>
     <div style={{ height: 300 }}>Модалочка</div>
   </Modal>
