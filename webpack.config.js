@@ -12,10 +12,10 @@ const errorReportingPlugin = require("./config/errorReporting/webpack");
 require("ts-node").register({ compilerOptions: { module: "commonjs" } });
 const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
 const { IS_DEV, IS_E2E } = require("./config/webpack/env");
-const { cssLoader } = require("./config/webpack/loaders/css");
-const { mdLoader } = require("./config/webpack/loaders/md");
-const { tsLoader } = require("./config/webpack/loaders/ts");
-const { fsLoader } = require("./config/webpack/loaders/fs");
+const { cssLoaders } = require("./config/webpack/loaders/css");
+const { mdLoaders } = require("./config/webpack/loaders/md");
+const { tsLoaders } = require("./config/webpack/loaders/ts");
+const { assetsLoaders } = require("./config/webpack/loaders/assets");
 const { cssPlugins } = require("./config/webpack/plugins/css");
 const { devPlugins } = require("./config/webpack/plugins/dev");
 
@@ -99,15 +99,15 @@ module.exports = {
   },
   module: {
     rules: [
-      tsLoader,
+      ...tsLoaders,
       {
         test: /\.jsx?$/,
         include: /node_modules/,
         use: [require.resolve("react-hot-loader/webpack")],
       },
-      fsLoader,
-      mdLoader,
-      cssLoader,
+      ...assetsLoaders,
+      ...mdLoaders,
+      ...cssLoaders,
     ],
   },
 };

@@ -1,10 +1,10 @@
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const ProgressPlugin = require("webpack").ProgressPlugin;
-const { cssLoaderStorybook } = require("../config/webpack/loaders/css");
-const { storybookFsLoader } = require("../config/webpack/loaders/fs");
-const { mdLoadersStorybook } = require("../config/webpack/loaders/md");
-const { tsLoaderStorybook } = require("../config/webpack/loaders/ts");
+const { storybookCssLoaders } = require("../config/webpack/loaders/css");
+const { storybookAssetsLoaders } = require("../config/webpack/loaders/assets");
+const { storybookMdLoaders } = require("../config/webpack/loaders/md");
+const { storybookTsLoaders } = require("../config/webpack/loaders/ts");
 const { storybookCssPlugins } = require("../config/webpack/plugins/css");
 const { devPlugins } = require("../config/webpack/plugins/dev");
 
@@ -25,10 +25,10 @@ module.exports = ({ config, mode }) => {
 
   // Loaders
   config.module.rules = [
-    tsLoaderStorybook,
-    mdLoadersStorybook,
-    storybookFsLoader,
-    cssLoaderStorybook,
+    ...storybookTsLoaders,
+    ...storybookMdLoaders,
+    ...storybookAssetsLoaders,
+    ...storybookCssLoaders,
   ];
 
   return config;
