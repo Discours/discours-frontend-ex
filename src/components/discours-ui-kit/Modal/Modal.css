@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  border: var(--border-width-regular) solid var(--color-border);
+  border: var(--border-width-bold) solid var(--color-border);
   background-color: var(--color-background);
 }
 

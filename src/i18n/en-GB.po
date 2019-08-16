@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Wed Aug 14 2019 05:46:10 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Wed Aug 14 2019 19:50:02 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
@@ -11,6 +11,51 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "Last-Translator: \n"
 "Language: en-GB\n"
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:20
+#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:62
+msgid "Стать автором"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:23
+msgid "Опубликовать материал"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:26
+msgid "Если публикацию поддержат другие авторы, она выйдет в журнале"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:29
+msgid "Манифест"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:34
+msgid "Статья"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:38
+msgid "Литература"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:42
+msgid "Изображения"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:46
+msgid "Музыка"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:50
+msgid "Видео"
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:55
+msgid "Как устроен Дискурс "
+msgstr ""
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:60
+msgid "Как написать хороший текст"
+msgstr ""
 
 #: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:27
 msgid "О Дискурсе"
@@ -92,10 +137,6 @@ msgstr ""
 
 #: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:57
 msgid "Поддержать"
-msgstr ""
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:62
-msgid "Стать автором"
 msgstr ""
 
 #: src/pages/NotFound.tsx:9
