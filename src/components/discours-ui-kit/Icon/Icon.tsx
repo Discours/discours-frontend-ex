@@ -11,7 +11,6 @@ interface IconProps {
   >;
   isInverse: boolean;
   isFixedWidth: boolean;
-  isInline: boolean;
   isSpinning: boolean;
   /**
    * Required, if Icon has semantic meaning
@@ -23,7 +22,6 @@ interface IconProps {
 class Icon extends React.PureComponent<IconProps> {
   public static defaultProps = {
     isInverse: false,
-    isInline: false,
     isFixedWidth: false,
     isSpinning: false,
   };
@@ -50,13 +48,12 @@ class Icon extends React.PureComponent<IconProps> {
   };
 
   private getClassName = () => {
-    const { isInverse, isInline, isFixedWidth, isSpinning } = this.props;
+    const { isInverse, isFixedWidth, isSpinning } = this.props;
 
     return classnames({
       [classes.container]: true,
       [classes.container__inverse]: isInverse,
       [classes.container__spinning]: isSpinning,
-      [classes.container__inline]: isInline,
       [classes.container__fixed_width]: isFixedWidth,
     });
   };

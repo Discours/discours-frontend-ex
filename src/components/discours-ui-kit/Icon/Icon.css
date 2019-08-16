@@ -1,19 +1,14 @@
 .container {
-  display: block;
+  display: inline-block;
   height: 1em;
   color: var(--color-text);
   font-size: inherit;
-  vertical-align: top;
+  vertical-align: -10%;
 }
 
 .container__spinning {
   animation: spin 2s infinite linear;
 }
-
-.container__inline {
-  display: inline-block;
-}
-
 .container__inverse {
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);

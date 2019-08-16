@@ -24,31 +24,36 @@ class SendContentItemModal extends React.PureComponent {
           <Typography>
             <T message="Если публикацию поддержат другие авторы, она выйдет в журнале" />
           </Typography>
-          <Button variant="link-background" to="manifest">
-            <T message="Манифест" />
-          </Button>
-          <div>
-            <Button to="editArticle">
-              <Icon component={post} />
+          <div className={classnames(classes.icons)}>
+            <Button to="editArticle" variant="link-background">
+              <Icon fontSize="5rem" component={post} />
+              <br />
               <T message="Статья" />
             </Button>
-            <Button to="editExpoItem">
-              <Icon component={literature} />
+            <Button to="editExpoItem" variant="link-background">
+              <Icon fontSize="5rem" component={literature} />
+              <br />
               <T message="Литература" />
             </Button>
-            <Button to="editExpoItem">
-              <Icon component={photo} />
+            <Button to="editExpoItem" variant="link-background">
+              <Icon fontSize="5rem" component={photo} />
+              <br />
               <T message="Изображения" />
             </Button>
-            <Button to="editExpoItem">
-              <Icon component={music} />
+            <Button to="editExpoItem" variant="link-background">
+              <Icon fontSize="5rem" component={music} />
+              <br />
               <T message="Музыка" />
             </Button>
-            <Button to="editExpoItem">
-              <Icon component={video} />
+            <Button to="editExpoItem" variant="link-background">
+              <Icon fontSize="5rem" component={video} />
+              <br />
               <T message="Видео" />
             </Button>
           </div>
+          <Button variant="link-background" to="manifest">
+            <T message="Манифест" />
+          </Button>
           <br />
           <Button variant="link-background" to="guide">
             <T message="Как устроен Дискурс " />

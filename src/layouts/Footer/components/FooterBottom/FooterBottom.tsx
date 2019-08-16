@@ -34,34 +34,19 @@ class FooterBottom extends React.PureComponent {
             </div>
             <div className={classes.column}>
               <Button isInverse to="facebook" className={classes.link}>
-                <Icon
-                  isFixedWidth
-                  component={brandFacebook}
-                  isInverse
-                  isInline
-                />{" "}
+                <Icon isFixedWidth component={brandFacebook} isInverse />{" "}
                 <T message="Facebook" />
               </Button>
               <Button isInverse to="vk" className={classes.link}>
-                <Icon isFixedWidth isInverse isInline component={brandVk} />{" "}
+                <Icon isFixedWidth isInverse component={brandVk} />{" "}
                 <T message="VK" />
               </Button>
               <Button isInverse to="twitter" className={classes.link}>
-                <Icon
-                  isFixedWidth
-                  component={brandTwitter}
-                  isInverse
-                  isInline
-                />{" "}
+                <Icon isFixedWidth component={brandTwitter} isInverse />{" "}
                 <T message="Twitter" />
               </Button>
               <Button isInverse to="telegram" className={classes.link}>
-                <Icon
-                  isFixedWidth
-                  component={brandTelegram}
-                  isInverse
-                  isInline
-                />{" "}
+                <Icon isFixedWidth component={brandTelegram} isInverse />{" "}
                 <T message="Telegram" />
               </Button>
             </div>

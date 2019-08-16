@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Fri Aug 16 2019 11:30:12 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Fri Aug 16 2019 12:06:50 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
@@ -26,15 +26,11 @@ msgstr "Опубликовать материал"
 msgid "Если публикацию поддержат другие авторы, она выйдет в журнале"
 msgstr "Если публикацию поддержат другие авторы, она выйдет в журнале"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:28
-msgid "Манифест"
-msgstr "Манифест"
-
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:33
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:31
 msgid "Статья"
 msgstr "Статья"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:37
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:36
 msgid "Литература"
 msgstr "Литература"
 
@@ -42,19 +38,23 @@ msgstr "Литература"
 msgid "Изображения"
 msgstr "Изображения"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:45
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:46
 msgid "Музыка"
 msgstr "Музыка"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:49
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:51
 msgid "Видео"
 msgstr "Видео"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:54
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:55
+msgid "Манифест"
+msgstr "Манифест"
+
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:59
 msgid "Как устроен Дискурс "
 msgstr "Как устроен Дискурс "
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:59
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:64
 msgid "Как написать хороший текст"
 msgstr "Как написать хороший текст"
 
@@ -70,35 +70,35 @@ msgstr "Авторы"
 msgid "Предложить идею"
 msgstr "Предложить идею"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:43
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:38
 msgid "Facebook"
 msgstr "Facebook"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:47
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:42
 msgid "VK"
 msgstr "VK"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:56
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:46
 msgid "Twitter"
 msgstr "Twitter"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:65
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:50
 msgid "Telegram"
 msgstr "Telegram"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:70
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:55
 msgid "Яндекс Дзен"
 msgstr "Яндекс Дзен"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:73
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:58
 msgid "Подкаст"
 msgstr "Подкаст"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:76
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:61
 msgid "RSS"
 msgstr "RSS"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:87
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:72
 msgid ""
 "Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
 "искусстве и обществе."
@@ -106,11 +106,11 @@ msgstr ""
 "Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
 "искусстве и обществе."
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:89
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:74
 msgid "Пользовательское соглашение"
 msgstr "Пользовательское соглашение"
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:92
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:77
 msgid "© Дискурс"
 msgstr "© Дискурс"
 
