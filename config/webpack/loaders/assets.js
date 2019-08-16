@@ -10,6 +10,25 @@ const assetsLoaders = [
       },
     ],
   },
+  {
+    test: /\.svg$/,
+    use: [
+      {
+        loader: "@svgr/webpack",
+        options: {
+          icon: false,
+          dimensions: false,
+          titleProp: true,
+          svgoConfig: {
+            plugins: {
+              prefixIds: false,
+              prefixClassNames: false,
+            },
+          },
+        },
+      },
+    ],
+  },
 ];
 
 module.exports = {

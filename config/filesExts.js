@@ -6,7 +6,6 @@ module.exports = [
   "eot",
   "otf",
   "webp",
-  "svg",
   "ttf",
   "woff",
   "woff2",
