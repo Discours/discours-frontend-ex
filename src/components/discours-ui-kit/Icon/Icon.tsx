@@ -57,14 +57,7 @@ class Icon extends React.PureComponent<IconProps> {
     if (!title) {
       return null;
     }
-    return <span className={classnames(classes["sr-only"])}>{title}</span>;
-  };
-
-  private handleAfterInjection = (error: Error | null, svg?: Element) => {
-    if (!error) {
-      return;
-    }
-    console.error(error);
+    return <span className={classnames("sr-only")}>{title}</span>;
   };
 }
 
