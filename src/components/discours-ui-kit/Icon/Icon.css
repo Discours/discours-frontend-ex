@@ -1,9 +1,11 @@
 .container {
   display: block;
+  height: 1em;
   color: var(--color-text);
+  font-size: inherit;
 }
 
-.container__spinning svg {
+.container__spinning {
   animation: spin 2s infinite linear;
 }
 
@@ -14,10 +16,6 @@
 .container__inverse {
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
-}
-
-.container svg {
-  height: 1rem;
 }
 
 .container__fixed_width {

@@ -1,10 +1,14 @@
 import classnames from "classnames";
 import React from "react";
-import ReactSVG from "react-svg";
 import classes from "./Icon.css";
+export * from "./icons";
 
 interface IconProps {
-  src: string;
+  component: React.ComponentType<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string;
+    }
+  >;
   isInverse: boolean;
   isFixedWidth: boolean;
   isInline: boolean;
@@ -13,6 +17,7 @@ interface IconProps {
    * Required, if Icon has semantic meaning
    */
   title?: string;
+  fontSize?: string;
 }
 
 class Icon extends React.PureComponent<IconProps> {
@@ -24,21 +29,25 @@ class Icon extends React.PureComponent<IconProps> {
   };
 
   public render() {
-    const { src, title } = this.props;
+    const { component: Component, title } = this.props;
     return (
       <>
-        <ReactSVG
-          afterInjection={this.handleAfterInjection}
-          aria-hidden="true"
+        <Component
           className={this.getClassName()}
-          src={src}
-          wrapper="span"
+          aria-hidden="true"
+          style={this.getStyle()}
           title={title}
         />
+
         {this.getSrOnlyTitle()}
       </>
     );
   }
+
+  private getStyle = () => {
+    const { fontSize } = this.props;
+    return { fontSize };
+  };
 
   private getClassName = () => {
     const { isInverse, isInline, isFixedWidth, isSpinning } = this.props;
