@@ -3,6 +3,7 @@
   height: 1em;
   color: var(--color-text);
   font-size: inherit;
+  vertical-align: top;
 }
 
 .container__spinning {

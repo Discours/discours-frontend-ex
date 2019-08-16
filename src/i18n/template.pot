@@ -2,118 +2,118 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Wed Aug 14 2019 19:50:02 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Fri Aug 16 2019 11:30:12 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:20
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:19
 #: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:62
 msgid "Стать автором"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:23
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:22
 msgid "Опубликовать материал"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:26
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:25
 msgid "Если публикацию поддержат другие авторы, она выйдет в журнале"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:29
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:28
 msgid "Манифест"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:34
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:33
 msgid "Статья"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:38
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:37
 msgid "Литература"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:42
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:41
 msgid "Изображения"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:46
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:45
 msgid "Музыка"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:50
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:49
 msgid "Видео"
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:55
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:54
 msgid "Как устроен Дискурс "
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:60
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:59
 msgid "Как написать хороший текст"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:27
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:26
 msgid "О Дискурсе"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:30
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:29
 msgid "Авторы"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:33
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:32
 msgid "Предложить идею"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:39
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:43
 msgid "Facebook"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:43
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:47
 msgid "VK"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:47
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:56
 msgid "Twitter"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:51
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:65
 msgid "Telegram"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:56
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:70
 msgid "Яндекс Дзен"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:59
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:73
 msgid "Подкаст"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:62
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:76
 msgid "RSS"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:73
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:87
 msgid ""
 "Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
 "искусстве и обществе."
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:75
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:89
 msgid "Пользовательское соглашение"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:78
+#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:92
 msgid "© Дискурс"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:37
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:36
 msgid "Подпишитесь на рассылку лучших публикаций"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:56
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:55
 msgid "Спасибо! Ваш адрес добавлен в рассылку!"
 msgstr ""
 
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:62
+#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:61
 msgid "Хочу добавить еще один!"
 msgstr ""
 

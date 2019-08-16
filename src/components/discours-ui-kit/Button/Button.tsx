@@ -1,8 +1,7 @@
 import classnames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
-import Icon from "src/components/discours-ui-kit/Icon";
-import { sync } from "src/components/discours-ui-kit/Icon/icons";
+import Icon, { sync } from "src/components/discours-ui-kit/Icon";
 import Typography, {
   TypographyProps,
 } from "src/components/discours-ui-kit/Typography";
@@ -115,9 +114,13 @@ class Button extends React.PureComponent<ButtonProps> {
   private renderContent = () => {
     const { children, isInverse, typographyProps, isLoading } = this.props;
     if (isLoading) {
-      // TODO intl
       return (
-        <Icon src={sync} isInverse={isInverse} isSpinning title="Loading..." />
+        <Icon
+          component={sync}
+          isInverse={isInverse}
+          isSpinning
+          title="Загрузка..."
+        />
       );
     }
     return (

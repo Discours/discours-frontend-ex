@@ -2,14 +2,13 @@ import classnames from "classnames";
 import { T } from "lioness";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
-import Icon from "src/components/discours-ui-kit/Icon";
-import {
+import Icon, {
   literature,
   music,
   photo,
   post,
   video,
-} from "src/components/discours-ui-kit/Icon/icons";
+} from "src/components/discours-ui-kit/Icon";
 import Modal from "src/components/discours-ui-kit/Modal";
 import Typography from "src/components/discours-ui-kit/Typography";
 import classes from "./SendContentItemModal.css";
@@ -30,23 +29,23 @@ class SendContentItemModal extends React.PureComponent {
           </Button>
           <div>
             <Button to="editArticle">
-              <Icon src={post} />
+              <Icon component={post} />
               <T message="Статья" />
             </Button>
             <Button to="editExpoItem">
-              <Icon src={literature} />
+              <Icon component={literature} />
               <T message="Литература" />
             </Button>
             <Button to="editExpoItem">
-              <Icon src={photo} />
+              <Icon component={photo} />
               <T message="Изображения" />
             </Button>
             <Button to="editExpoItem">
-              <Icon src={music} />
+              <Icon component={music} />
               <T message="Музыка" />
             </Button>
             <Button to="editExpoItem">
-              <Icon src={video} />
+              <Icon component={video} />
               <T message="Видео" />
             </Button>
           </div>

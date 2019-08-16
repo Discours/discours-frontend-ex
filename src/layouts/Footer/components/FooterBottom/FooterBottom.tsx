@@ -3,13 +3,12 @@ import { T } from "lioness";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
-import Icon from "src/components/discours-ui-kit/Icon";
-import {
+import Icon, {
   brandFacebook,
   brandTelegram,
   brandTwitter,
   brandVk,
-} from "src/components/discours-ui-kit/Icon/icons";
+} from "src/components/discours-ui-kit/Icon";
 import Typography from "src/components/discours-ui-kit/Typography";
 import FormattedDate from "src/components/formatters/FormattedDate";
 // tslint:disable-next-line: no-relative-imports
@@ -35,19 +34,34 @@ class FooterBottom extends React.PureComponent {
             </div>
             <div className={classes.column}>
               <Button isInverse to="facebook" className={classes.link}>
-                <Icon isFixedWidth src={brandFacebook} isInverse isInline />{" "}
+                <Icon
+                  isFixedWidth
+                  component={brandFacebook}
+                  isInverse
+                  isInline
+                />{" "}
                 <T message="Facebook" />
               </Button>
               <Button isInverse to="vk" className={classes.link}>
-                <Icon isFixedWidth isInverse isInline src={brandVk} />{" "}
+                <Icon isFixedWidth isInverse isInline component={brandVk} />{" "}
                 <T message="VK" />
               </Button>
               <Button isInverse to="twitter" className={classes.link}>
-                <Icon isFixedWidth src={brandTwitter} isInverse isInline />{" "}
+                <Icon
+                  isFixedWidth
+                  component={brandTwitter}
+                  isInverse
+                  isInline
+                />{" "}
                 <T message="Twitter" />
               </Button>
               <Button isInverse to="telegram" className={classes.link}>
-                <Icon isFixedWidth src={brandTelegram} isInverse isInline />{" "}
+                <Icon
+                  isFixedWidth
+                  component={brandTelegram}
+                  isInverse
+                  isInline
+                />{" "}
                 <T message="Telegram" />
               </Button>
             </div>
