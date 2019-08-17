@@ -1,8 +1,6 @@
 import format from "date-fns/format";
+import ru from "date-fns/locale/ru/index.js";
 import React from "react";
-
-import { WithLocale, withLocale } from "src/contexts/LocaleContext";
-import { DATE_FNS_LOCALES, getDateFnsLocale } from "src/utils/locale";
 
 export const DATE_FORMATS = [
   "date-digits",
@@ -15,7 +13,7 @@ export const DATE_FORMATS = [
 
 export type FormattedDateDateFormat = (typeof DATE_FORMATS)[number];
 
-export interface FormattedDateProps extends WithLocale {
+export interface FormattedDateProps {
   date: Date;
   format: FormattedDateDateFormat;
 }
@@ -26,9 +24,9 @@ export class FormattedDate extends React.PureComponent<FormattedDateProps> {
   }
 
   private formatDate = () => {
-    const { date, locale } = this.props;
+    const { date } = this.props;
     return format(date, this.getDateFnsFormatFrom(), {
-      locale: DATE_FNS_LOCALES[getDateFnsLocale(locale)],
+      locale: ru,
     });
   };
 
@@ -54,4 +52,4 @@ export class FormattedDate extends React.PureComponent<FormattedDateProps> {
   };
 }
 
-export default withLocale(FormattedDate);
+export default FormattedDate;
