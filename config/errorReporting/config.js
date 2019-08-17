@@ -1,5 +1,6 @@
 var version = require("../../package.json").version;
 
+var GIT_HASH = process.env.GIT_HASH;
 var SENTRY_ENV = process.env.SENTRY_ENV;
 var SENTRY_DSN = process.env.SENTRY_DSN;
 var NODE_ENV = process.env.NODE_ENV;
@@ -14,7 +15,7 @@ if (isProduction && !hasDsn) {
 }
 
 module.exports = {
-  release: isProduction ? version : version + "-dev",
+  release: isProduction ? version : version + "-" + GIT_HASH,
   dryRun: NODE_ENV !== "production",
   environment: SENTRY_ENV,
   dsn: SENTRY_DSN,

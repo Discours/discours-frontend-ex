@@ -1,3 +1,5 @@
+require("./config/errorReporting/setEnvGitHash");
+
 const path = require("path");
 const webpack = require("webpack");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
@@ -46,6 +48,7 @@ const plugins = [
     // undefined - for required
     SENTRY_DSN: null,
     SENTRY_ENV: null,
+    GIT_HASH: null,
   }),
   new HtmlWebpackPlugin({
     template: path.resolve(__dirname, paths.template),
