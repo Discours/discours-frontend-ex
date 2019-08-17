@@ -3,10 +3,10 @@ import { T } from "lioness";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Icon, {
+  article,
   literature,
   music,
   photo,
-  post,
   video,
 } from "src/components/discours-ui-kit/Icon";
 import Modal from "src/components/discours-ui-kit/Modal";
@@ -26,7 +26,7 @@ class SendContentItemModal extends React.PureComponent {
           </Typography>
           <div className={classnames(classes.icons)}>
             <Button to="editArticle" variant="link-background">
-              <Icon fontSize="5rem" component={post} />
+              <Icon fontSize="5rem" component={article} />
               <br />
               <T message="Статья" />
             </Button>
