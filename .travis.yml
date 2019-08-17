@@ -21,6 +21,7 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - npm run lint
+  - npm run build
   - npm run test:ci
   - npm run test:e2e:ci
 after_script:
