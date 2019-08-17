@@ -79,6 +79,7 @@ class Modal extends React.PureComponent<ModalProps, ModalState> {
       isOpened: false,
     });
     document.removeEventListener("keypress", this.handleKeyDown);
+    document.body.style.overflow = "auto";
   };
 
   private openModal = () => {
@@ -86,6 +87,7 @@ class Modal extends React.PureComponent<ModalProps, ModalState> {
       isOpened: true,
     });
     document.addEventListener("keypress", this.handleKeyDown);
+    document.body.style.overflow = "hidden";
   };
 
   private handleKeyDown = (event: KeyboardEvent) => {
