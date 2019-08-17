@@ -133,7 +133,6 @@
     "react-docgen-typescript-loader": "^3.1.1",
     "rimraf": "^2.6.3",
     "start-server-and-test": "^1.10.0",
-    "storybook-addon-i18n": "~5.1.9",
     "storybook-addon-themes": "^5.2.0",
     "stylelint": "^10.1.0",
     "stylelint-config-css-modules": "^1.4.0",
