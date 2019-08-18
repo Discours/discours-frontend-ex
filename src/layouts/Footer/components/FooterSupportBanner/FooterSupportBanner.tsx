@@ -71,7 +71,6 @@ class FooterSupportBanner extends React.PureComponent {
               />
               <img
                 className={classes.image}
-                // TODO intl
                 alt="Винтажный баннер с людьми"
                 src={bannerBig}
               />

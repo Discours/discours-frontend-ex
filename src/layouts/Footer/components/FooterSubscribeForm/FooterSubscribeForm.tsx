@@ -68,7 +68,6 @@ class FooterSubscribeForm extends React.PureComponent<
     isSubmitting,
   }: FormikProps<FooterSubscribeFormValues>) => (
     <Form style={{ width: "100%" }}>
-      {/* TODO intl */}
       <Input
         type="email"
         name="email"
