@@ -1,5 +1,4 @@
 import classnames from "classnames";
-
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";

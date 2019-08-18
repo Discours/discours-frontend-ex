@@ -12,11 +12,3 @@ it("should render right date for default locale", () => {
   );
   expect(getByText("10.02.2018")).toBeInTheDocument();
 });
-
-it("should render right date for en-GB locale", () => {
-  const { getByText } = render(
-    // @ts-ignore
-    <FormattedDate date={date} format="date-digits" locale="en-GB" />,
-  );
-  expect(getByText("02/10/2018")).toBeInTheDocument();
-});
