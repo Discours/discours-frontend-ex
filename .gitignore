@@ -11,9 +11,6 @@
 # dependencies
 /node_modules
 
-# i18n
-/src/i18n/translations.json
-
 # testing
 /coverage
 
