@@ -59,8 +59,7 @@ class SendContentItemModal extends React.PureComponent {
             <T message="Как устроен Дискурс " />
           </Button>
           <br />
-          {/* TODO add route */}
-          <Button variant="link-background" to="index">
+          <Button variant="link-background" to="howToWrite">
             <T message="Как написать хороший текст" />
           </Button>
         </div>

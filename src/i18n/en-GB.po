@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Fri Aug 16 2019 12:06:50 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Sun Aug 18 2019 22:56:28 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Project-Id-Version: discours-frontend-main 0.0.1\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Как устроен Дискурс "
 msgstr ""
 
-#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:64
+#: src/components/modals/SendContentItemModal/SendContentItemModal.tsx:63
 msgid "Как написать хороший текст"
 msgstr ""
 
