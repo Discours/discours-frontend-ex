@@ -1,5 +1,4 @@
 import { Form, Formik, FormikActions, FormikProps } from "formik";
-import { T } from "lioness";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Icon from "src/components/discours-ui-kit/Icon";
@@ -34,7 +33,7 @@ class FooterSubscribeForm extends React.PureComponent<
     return (
       <>
         <Typography isInverse>
-          <T message="Подпишитесь на рассылку лучших публикаций" />
+          Подпишитесь на рассылку лучших публикаций
         </Typography>
         {this.props.isSubmitted ? (
           this.renderSuccessMessage()
@@ -53,13 +52,13 @@ class FooterSubscribeForm extends React.PureComponent<
   private renderSuccessMessage = () => (
     <>
       <Typography font="secondary-italics" isInverse size="small">
-        <T message="Спасибо! Ваш адрес добавлен в рассылку!" />{" "}
+        Спасибо! Ваш адрес добавлен в рассылку!{" "}
         <Button
           variant="link-underline"
           isInverse
           isInline
           onClick={this.props.onReset}>
-          <T message="Хочу добавить еще один!" />
+          Хочу добавить еще один!
         </Button>
       </Typography>
     </>

@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { T } from "lioness";
+
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
@@ -20,7 +20,7 @@ class FooterSupportBanner extends React.PureComponent {
                 size="heading3"
                 font="primary-bold"
                 className={classes.heading}>
-                <T message="Дискурс существует благодаря вашему участию!" />
+                Дискурс существует благодаря вашему участию!
               </Typography>
             </Visible>
             <Visible only={["xs"]}>
@@ -28,7 +28,7 @@ class FooterSupportBanner extends React.PureComponent {
                 size="heading3"
                 font="primary-bold"
                 className={classes.heading}>
-                <T message="Дискурс существует благодаря вам!" />
+                Дискурс существует благодаря вам!
               </Typography>
             </Visible>
             <div className={classes.buttons}>
@@ -38,7 +38,7 @@ class FooterSupportBanner extends React.PureComponent {
                   variant="link-underline"
                   typographyProps={{ size: "big", font: "primary-bold" }}
                   className={classnames(classes.button__first)}>
-                  <T message="Поддержать Дискурс" />
+                  Поддержать Дискурс
                 </Button>{" "}
                 <Button
                   typographyProps={{ size: "big", font: "primary-bold" }}
@@ -54,12 +54,12 @@ class FooterSupportBanner extends React.PureComponent {
                     classes.button__first,
                     classes.button__mobile,
                   )}>
-                  <T message="Поддержать" />
+                  Поддержать
                 </Button>{" "}
                 <Button
                   variant="button-primary"
                   className={classnames(classes.button__mobile)}>
-                  <T message="Стать автором" />
+                  Стать автором
                 </Button>
               </Visible>
             </div>
