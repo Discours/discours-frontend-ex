@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Wed Aug 14 2019 05:46:10 GMT+0300 (Israel Daylight Time)\n"
+"POT-Creation-Date: Sun Aug 18 2019 09:17:22 GMT+0300 (Israel Daylight Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
@@ -12,96 +12,3 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "Last-Translator: \n"
 "Language: ru\n"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:27
-msgid "О Дискурсе"
-msgstr "О Дискурсе"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:30
-msgid "Авторы"
-msgstr "Авторы"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:33
-msgid "Предложить идею"
-msgstr "Предложить идею"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:39
-msgid "Facebook"
-msgstr "Facebook"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:43
-msgid "VK"
-msgstr "VK"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:47
-msgid "Twitter"
-msgstr "Twitter"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:51
-msgid "Telegram"
-msgstr "Telegram"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:56
-msgid "Яндекс Дзен"
-msgstr "Яндекс Дзен"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:59
-msgid "Подкаст"
-msgstr "Подкаст"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:62
-msgid "RSS"
-msgstr "RSS"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:73
-msgid ""
-"Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
-"искусстве и обществе."
-msgstr ""
-"Независимый журнал с открытой горизонтальной редакцией о культуре, науке, "
-"искусстве и обществе."
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:75
-msgid "Пользовательское соглашение"
-msgstr "Пользовательское соглашение"
-
-#: src/layouts/Footer/components/FooterBottom/FooterBottom.tsx:78
-msgid "© Дискурс"
-msgstr "© Дискурс"
-
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:37
-msgid "Подпишитесь на рассылку лучших публикаций"
-msgstr "Подпишитесь на рассылку лучших публикаций"
-
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:56
-msgid "Спасибо! Ваш адрес добавлен в рассылку!"
-msgstr "Спасибо! Ваш адрес добавлен в рассылку!"
-
-#: src/layouts/Footer/components/FooterSubscribeForm/FooterSubscribeForm.tsx:62
-msgid "Хочу добавить еще один!"
-msgstr "Хочу добавить еще один!"
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:23
-msgid "Дискурс существует благодаря вашему участию!"
-msgstr "Дискурс существует благодаря вашему участию!"
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:31
-msgid "Дискурс существует благодаря вам!"
-msgstr "Дискурс существует благодаря вам!"
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:41
-msgid "Поддержать Дискурс"
-msgstr "Поддержать Дискурс"
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:57
-msgid "Поддержать"
-msgstr "Поддержать"
-
-#: src/layouts/Footer/components/FooterSupportBanner/FooterSupportBanner.tsx:62
-msgid "Стать автором"
-msgstr "Стать автором"
-
-#: src/pages/NotFound.tsx:9
-msgctxt "errorCodes.404.title"
-msgid "404!"
-msgstr "404!"
