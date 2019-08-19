@@ -11,8 +11,6 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const WebpackBar = require("webpackbar");
 const errorReportingPlugin = require("./config/errorReporting/webpack");
-require("ts-node").register({ compilerOptions: { module: "commonjs" } });
-const { SUPPORTED_LOCALES } = require("./src/config/locales.ts");
 const { IS_DEV, IS_E2E } = require("./config/webpack/env");
 const { cssLoader } = require("./config/webpack/loaders/css");
 const { mdLoader } = require("./config/webpack/loaders/md");
@@ -33,13 +31,9 @@ const paths = {
 };
 
 const TITLE = "Дискурс";
-const LANGUAGES_REGEX = new RegExp(
-  `(${SUPPORTED_LOCALES.join("|")})($|\.js$|\/index\.js$)`,
-);
 
 const plugins = [
   new WebpackBar(),
-  new webpack.ContextReplacementPlugin(/date-fns[/\\]locale$/, LANGUAGES_REGEX),
   new CleanWebpackPlugin([paths.output]),
   new CopyWebpackPlugin([paths.static]),
   new CaseSensitivePathsWebpackPlugin({ debug: false }),

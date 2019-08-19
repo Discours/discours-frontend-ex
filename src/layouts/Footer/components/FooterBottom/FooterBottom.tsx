@@ -1,5 +1,4 @@
 import classnames from "classnames";
-import { T } from "lioness";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
@@ -24,42 +23,41 @@ class FooterBottom extends React.PureComponent {
           <div className={classes.container}>
             <div className={classes.column}>
               <Button isInverse to="manifest" className={classes.link}>
-                <T message="О Дискурсе" />
+                О Дискурсе
               </Button>
               <Button isInverse to="manifest" className={classes.link}>
-                <T message="Авторы" />
+                Авторы
               </Button>
               <Button isInverse to="manifest" className={classes.link}>
-                <T message="Предложить идею" />
+                Предложить идею
               </Button>
             </div>
             <div className={classes.column}>
               <Button isInverse to="facebook" className={classes.link}>
                 <Icon isFixedWidth src={brandFacebook} isInverse isInline />{" "}
-                <T message="Facebook" />
+                Facebook
               </Button>
               <Button isInverse to="vk" className={classes.link}>
-                <Icon isFixedWidth isInverse isInline src={brandVk} />{" "}
-                <T message="VK" />
+                <Icon isFixedWidth isInverse isInline src={brandVk} /> VK
               </Button>
               <Button isInverse to="twitter" className={classes.link}>
                 <Icon isFixedWidth src={brandTwitter} isInverse isInline />{" "}
-                <T message="Twitter" />
+                Twitter
               </Button>
               <Button isInverse to="telegram" className={classes.link}>
                 <Icon isFixedWidth src={brandTelegram} isInverse isInline />{" "}
-                <T message="Telegram" />
+                Telegram
               </Button>
             </div>
             <div className={classes.column}>
               <Button isInverse to="yandexZen" className={classes.link}>
-                <T message="Яндекс Дзен" />
+                Яндекс Дзен
               </Button>
               <Button isInverse to="podcast" className={classes.link}>
-                <T message="Подкаст" />
+                Подкаст
               </Button>
               <Button isInverse to="rss" className={classes.link}>
-                <T message="RSS" />
+                RSS
               </Button>
             </div>
             <div className={classnames(classes.column, classes.column__right)}>
@@ -70,13 +68,12 @@ class FooterBottom extends React.PureComponent {
         <Container>
           <hr />
           <Typography isInverse isInline size="small">
-            <T message="Независимый журнал с открытой горизонтальной редакцией о культуре, науке, искусстве и обществе." />{" "}
+            Независимый журнал с открытой горизонтальной редакцией о культуре,
+            науке, искусстве и обществе.{" "}
             <Button isInverse to="termsOfUse">
-              <T message="Пользовательское соглашение" />
+              Пользовательское соглашение
             </Button>
-            {". "}
-            <T message="©&nbsp;Дискурс" />
-            {", 2015-"}
+            . ©&nbsp;Дискурс, 2015-
             <FormattedDate format="year" date={new Date()} />
           </Typography>
         </Container>

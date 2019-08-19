@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Discours/community.svg)](https://gitter.im/Discours/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f55a8a2f-cc4e-4c1d-9605-ce9a500a0b6f/deploy-status)](https://app.netlify.com/sites/beta-discours-io/deploys)
-[![Travis build status](http://img.shields.io/travis/Discours/discours-frontend-main/develop.svg?style=flat-square)](https://travis-ci.org/Discours/discours-frontend-main)
+[![Travis build status](http://img.shields.io/travis/Discours/discours-frontend-main/develop.svg)](https://travis-ci.org/Discours/discours-frontend-main)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c61cc1cb7a21e15787e0/maintainability)](https://codeclimate.com/github/Discours/discours-frontend-main/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c61cc1cb7a21e15787e0/test_coverage)](https://codeclimate.com/github/Discours/discours-frontend-main/test_coverage)
 
@@ -31,7 +31,6 @@
 - [storybook](https://storybook.js.org) для верстки компонентов и страниц очень помогает. [А что у вас там есть?](#storybook)
 - [react-testing-library](https://testing-library.com/react) для интеграционного тестирования компонентов (если там есть какая-то логика) для полной уверенности в своём коде. [Про тестирование](#testing).
 - Стили пишем в `.css` файлах, но активно используем переменные из стандарта [css-custom-properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) и [css-custom-media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media). [О вёрстке](./src/styles/README.md).
-- [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`.
 - UI Kit компоненты в `src/components/discours-ui-kit`, вёрстка — в `src/components/modules`, логика — в `src/layouts` и в `src/pages`. [О структуре проекта](./src/README.md).
 - Свойства `.css` [идеоматически сортируются](https://github.com/necolas/idiomatic-css#declaration-order) перед коммитом. [Зачем?](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
 - Всё, что нужно для сборки приложения, устанавливается в _production_ dependencies. [Но не красиво же!](#deps)
@@ -55,7 +54,7 @@
 1. Дискурс — проект для удобной разработки новых features. Команда Дискурса стремится создать проект, в котором не надо читать весь код для реализации конкретной функциональности. Мы стремимся создать максимально изолированную среду разработки, используя которую каждая фича разрабатывается отдельно. На frontend проектах мы используем [storybook](https://storybook.js.org/) для разработки компонентов и [react-testing-library](https://testing-library.com/docs/react-testing-library/intro) для интеграционного тестирования функциональности компонентов. На backend проектах — разрабатываем используя тесты.
 1. Дискурс — проект с открытым манифестом разработки. Каждый желающий может прислать изменения в [данный манифест](https://github.com/Discours/discours-welcome/blob/master/MANIFEST.md).
 1. Дискурс — проект доступный. Верстка в проекте должна учитывать пользователей с ограниченными возможностями, то есть необходимо использовать [ARIA аттрибуты](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA). В storybooks всех фронтэнд проектов установлен плагин [@storybook/addon-a11y](https://www.npmjs.com/package/@storybook/addon-a11y), который показывает недостающие ARIA аттрибуты.
-1. Дискурс — проект без гос. цензуры. Но большая часть наш��х читателей из РФ, где РосКомНадзор частенько бомбит славный город Воронеж и даже иногда [блокирует сам себя](https://lenta.ru/news/2016/12/12/127001/). Инфраструктура проекта должна быть распределенной, но должна поддерживать быструю смену IP адресов всего, до чего необходимо достучаться пользователю (фронтэнд, бэкэнд, rss микросервис, другие микросервисы доступные пользователю). Нельзя создавать vendor lock на решения, которые не позволяют быстро сменить IP (Cloudflare, Netlify).
+1. Дискурс — проект без гос. цензуры. Но большая часть наших читателей из РФ, где РосКомНадзор частенько бомбит славный город Воронеж и даже иногда [блокирует сам себя](https://lenta.ru/news/2016/12/12/127001/). Инфраструктура проекта должна быть распределенной, но должна поддерживать быструю смену IP адресов всего, до чего необходимо достучаться пользователю (фронтэнд, бэкэнд, rss микросервис, другие микросервисы доступные пользователю). Нельзя создавать vendor lock на решения, которые не позволяют быстро сменить IP (Cloudflare, Netlify).
 
 <a name="storybook"></a>
 ### Storybook
@@ -81,10 +80,6 @@
 ![Storybook responsive selector interface](./docs/storybook-examples/responsive.png)
 
 - Предпросмотр в размер мобильного экрана. Не лучше родного функционала, что есть в Developer Tools любого браузера, но быстрее и удобно вызываются.
-
-![Storybook locale selector interface](./docs/storybook-examples/locale.png)
-
-- Смена языка, на котором отображается компонент.
 
 <a name="testing"></a>
 
