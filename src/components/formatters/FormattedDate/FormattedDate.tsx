@@ -1,8 +1,4 @@
-import format from "date-fns/format";
 import React from "react";
-
-import { WithLocale, withLocale } from "src/contexts/LocaleContext";
-import { DATE_FNS_LOCALES, getDateFnsLocale } from "src/utils/locale";
 
 export const DATE_FORMATS = [
   "date-digits",
@@ -15,7 +11,7 @@ export const DATE_FORMATS = [
 
 export type FormattedDateDateFormat = (typeof DATE_FORMATS)[number];
 
-export interface FormattedDateProps extends WithLocale {
+export interface FormattedDateProps {
   date: Date;
   format: FormattedDateDateFormat;
 }
@@ -26,32 +22,54 @@ export class FormattedDate extends React.PureComponent<FormattedDateProps> {
   }
 
   private formatDate = () => {
-    const { date, locale } = this.props;
-    return format(date, this.getDateFnsFormatFrom(), {
-      locale: DATE_FNS_LOCALES[getDateFnsLocale(locale)],
-    });
+    const { date } = this.props;
+    return new Intl.DateTimeFormat("ru", this.getIntlOptions()).format(date);
   };
 
-  private getDateFnsFormatFrom = () => {
-    // https://date-fns.org/v2.0.0-beta.3/docs/format
+  private getIntlOptions = (): Intl.DateTimeFormatOptions => {
     const { format: formatStr } = this.props;
     switch (formatStr) {
       case "date-digits":
-        return "P";
+        return {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        };
       case "date-text":
-        return "PPP";
+        return {
+          year: "numeric",
+          month: "long",
+          day: "2-digit",
+        };
       case "time":
-        return "p";
+        return {
+          hour: "2-digit",
+          minute: "2-digit",
+        };
       case "date-time-digits":
-        return "P p";
+        return {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        };
       case "date-time-text":
-        return "PPP p";
+        return {
+          year: "numeric",
+          month: "long",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        };
       case "year":
-        return "yyyy";
+        return {
+          year: "numeric",
+        };
       default:
-        return "P";
+        return {};
     }
   };
 }
 
-export default withLocale(FormattedDate);
+export default FormattedDate;

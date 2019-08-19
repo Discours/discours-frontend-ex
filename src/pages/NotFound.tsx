@@ -1,14 +1,9 @@
-import { T } from "lioness";
 import React from "react";
 import Typography from "src/components/discours-ui-kit/Typography";
 
 class NotFoundPage extends React.PureComponent {
   public render() {
-    return (
-      <Typography>
-        <T context="errorCodes.404.title" message="404!" />
-      </Typography>
-    );
+    return <Typography>404!</Typography>;
   }
 }
 
