@@ -4,12 +4,9 @@ import { withInfo } from "@storybook/addon-info";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
 import "@storybook/addon-console";
-import StorybookProvider from "src/layouts/App/StorybookProvider";
-import messages from "src/i18n/translations.json";
-import { SUPPORTED_LOCALES } from "src/config/locales";
 import { MemoryRouter } from "react-router";
 import { addParameters } from "@storybook/react";
-import { withI18n } from "storybook-addon-i18n";
+import CommonProvider from "../src/layouts/App/CommonProvider";
 import { withThemes } from "storybook-addon-themes";
 import { themes } from "src/config/theme";
 
@@ -20,7 +17,6 @@ addDecorator(
 );
 addDecorator(withKnobs);
 addDecorator(withA11y);
-addDecorator(withI18n);
 addDecorator(withThemes);
 addDecorator((story) =>
   React.createElement(
@@ -33,15 +29,10 @@ addDecorator((story) =>
 );
 
 addParameters({
-  i18n: {
-    provider: StorybookProvider,
-    providerProps: {
-      messages,
-    },
-    supportedLocales: SUPPORTED_LOCALES,
-  },
   themes,
 });
+
+addDecorator((story) => React.createElement(CommonProvider, {}, story()));
 
 const req = require.context("../src", true, /\.stories\.tsx$/);
 function loadStories() {

@@ -3,20 +3,42 @@ import { cleanup, render } from "@testing-library/react";
 import React from "react";
 import FormattedDate from "./FormattedDate";
 
-const date = new Date("2018-02-10");
-
+const date = new Date(Date.UTC(2018, 1, 10, 14, 42));
 afterEach(cleanup);
-it("should render right date for default locale", () => {
+it("should format date with date-digits format", () => {
   const { getByText } = render(
     <FormattedDate date={date} format="date-digits" />,
   );
   expect(getByText("10.02.2018")).toBeInTheDocument();
 });
 
-it("should render right date for en-GB locale", () => {
+it("should format date with date-text format", () => {
   const { getByText } = render(
-    // @ts-ignore
-    <FormattedDate date={date} format="date-digits" locale="en-GB" />,
+    <FormattedDate date={date} format="date-text" />,
   );
-  expect(getByText("02/10/2018")).toBeInTheDocument();
+  expect(getByText("10 февраля 2018 г.")).toBeInTheDocument();
+});
+
+it("should format date with time format", () => {
+  const { getByText } = render(<FormattedDate date={date} format="time" />);
+  expect(getByText("14:42")).toBeInTheDocument();
+});
+
+it("should format date with date-time-digits format", () => {
+  const { getByText } = render(
+    <FormattedDate date={date} format="date-time-digits" />,
+  );
+  expect(getByText("10.02.2018, 14:42")).toBeInTheDocument();
+});
+
+it("should format date with date-time-text format", () => {
+  const { getByText } = render(
+    <FormattedDate date={date} format="date-time-text" />,
+  );
+  expect(getByText("10 февраля 2018 г., 14:42")).toBeInTheDocument();
+});
+
+it("should format date with year format", () => {
+  const { getByText } = render(<FormattedDate date={date} format="year" />);
+  expect(getByText("2018")).toBeInTheDocument();
 });

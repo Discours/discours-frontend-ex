@@ -10,7 +10,8 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json"],
   collectCoverageFrom: ["src/**/*.ts?(x)", "!src/**/*.stories.ts?(x)"],
   modulePaths: ["<rootDir>/"],
-  setupFiles: ["jest-date-mock"],
+  globalSetup: "./config/jest-global-setup.js",
+  setupFiles: ["jest-date-mock", "./config/jest-setup.js"],
   moduleNameMapper: {
     // https://jestjs.io/docs/en/webpack#handling-static-assets
     "\\.md$": "<rootDir>/__mocks__/mdMock.js",
