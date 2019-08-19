@@ -114,9 +114,8 @@ class Button extends React.PureComponent<ButtonProps> {
   private renderContent = () => {
     const { children, isInverse, typographyProps, isLoading } = this.props;
     if (isLoading) {
-      // TODO intl
       return (
-        <Icon src={sync} isInverse={isInverse} isSpinning title="Loading..." />
+        <Icon src={sync} isInverse={isInverse} isSpinning title="Загрузка..." />
       );
     }
     return (

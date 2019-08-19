@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/Discours/community.svg)](https://gitter.im/Discours/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f55a8a2f-cc4e-4c1d-9605-ce9a500a0b6f/deploy-status)](https://app.netlify.com/sites/beta-discours-io/deploys)
-{"gitdown": "badge", "name": "travis"}
+[![Travis build status](http://img.shields.io/travis/Discours/discours-frontend-main/develop.svg)](https://travis-ci.org/Discours/discours-frontend-main)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c61cc1cb7a21e15787e0/maintainability)](https://codeclimate.com/github/Discours/discours-frontend-main/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c61cc1cb7a21e15787e0/test_coverage)](https://codeclimate.com/github/Discours/discours-frontend-main/test_coverage)
 
@@ -22,7 +22,6 @@
 - [storybook](https://storybook.js.org) для верстки компонентов и страниц очень помогает. [А что у вас там есть?](#storybook)
 - [react-testing-library](https://testing-library.com/react) для интеграционного тестирования компонентов (если там есть какая-то логика) для полной уверенности в своём коде. [Про тестирование](#testing).
 - Стили пишем в `.css` файлах, но активно используем переменные из стандарта [css-custom-properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) и [css-custom-media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media). [О вёрстке](./src/styles/README.md).
-- [lioness](https://github.com/alexanderwallin/lioness) для i18n, короче говоря, пишем весь текст через тэг `<T />`.
 - UI Kit компоненты в `src/components/discours-ui-kit`, вёрстка — в `src/components/modules`, логика — в `src/layouts` и в `src/pages`. [О структуре проекта](./src/README.md).
 - Свойства `.css` [идеоматически сортируются](https://github.com/necolas/idiomatic-css#declaration-order) перед коммитом. [Зачем?](https://dev.to/thekashey/happy-potter-and-the-order-of-css-5ec)
 - Всё, что нужно для сборки приложения, устанавливается в _production_ dependencies. [Но не красиво же!](#deps)
@@ -54,10 +53,6 @@
 ![Storybook responsive selector interface](./docs/storybook-examples/responsive.png)
 
 - Предпросмотр в размер мобильного экрана. Не лучше родного функционала, что есть в Developer Tools любого браузера, но быстрее и удобно вызываются.
-
-![Storybook locale selector interface](./docs/storybook-examples/locale.png)
-
-- Смена языка, на котором отображается компонент.
 
 <a name="testing"></a>
 

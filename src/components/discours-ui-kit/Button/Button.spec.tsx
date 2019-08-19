@@ -67,7 +67,7 @@ it("should not render the text, when isLoading is true", async () => {
 
 it("should be disable, when isLoading is true to prevent double click", async () => {
   const { getByTitle } = render(<Button isLoading>Test</Button>);
-  const text = getByTitle("Loading...");
+  const text = getByTitle("Загрузка...");
   const button = text.parentElement;
   expect(button).toHaveAttribute("disabled", "");
 });
