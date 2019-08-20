@@ -10,7 +10,6 @@ const mainTsLoader = {
         transpileOnly: true,
         useCache: true,
         sourceMap: true,
-        getCustomTransformers: path.join(__dirname, "../polyfills.js"),
       },
     },
   ],
