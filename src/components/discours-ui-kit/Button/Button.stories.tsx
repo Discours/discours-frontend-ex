@@ -14,13 +14,13 @@ stories.addParameters({
 });
 
 for (const v of VARIANTS) {
-  stories.add(`${v}`, () => (
+  stories.add(`variant/${v}`, () => (
     <Button onClick={action("click")} variant={v}>
       {text("buttonText", "Нажми меня!")}
     </Button>
   ));
 
-  stories.add(`${v} inverse`, () => (
+  stories.add(`variant/${v}/inverse`, () => (
     <Button onClick={action("click")} variant={v} isInverse>
       {text("buttonText", "Нажми меня!")}
     </Button>

@@ -22,6 +22,7 @@ export const internalRoutes = {
   almanac: "/almanac",
   search: "/search",
   termsOfUse: "/terms-of-use",
+  howToWrite: "/how-to-write",
   // Profiles
   author: "/:id",
   profile: "/profile",

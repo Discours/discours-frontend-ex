@@ -2,6 +2,7 @@
   display: inline-block;
   padding: 0;
   border: 0;
+  margin-bottom: 0.5rem;
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: inherit;
@@ -12,12 +13,8 @@
 }
 
 .common__inline {
-  display: inline-block;
-  padding: 0;
-  border: 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  text-decoration: none;
+  display: inline;
+  margin: 0;
 }
 
 .common:hover {
@@ -95,9 +92,22 @@
   text-align: center;
 }
 
-/* 
-.link-background {
+.link-background:hover {
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
 }
+
+.link-background.common__inverse {
+  background-color: transparent;
+  color: var(--color-text-inverse);
+}
+
+.link-background.common__inverse:hover {
+  background-color: var(--color-background-inverse);
+}
+
+/* 
+
 
 
 

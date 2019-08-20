@@ -1,9 +1,10 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
 import Typography from "src/components/discours-ui-kit/Typography";
 import Visible from "src/components/discours-ui-kit/Visible";
+import SendContentItemModal from "src/modals/SendContentItemModal";
 import bannerBig from "./banner-big.jpg";
 import bannerSmall from "./banner-small.jpg";
 import classes from "./FooterSupportBanner.css";
@@ -36,28 +37,26 @@ class FooterSupportBanner extends React.PureComponent {
                   to="help"
                   variant="link-underline"
                   typographyProps={{ size: "big", font: "primary-bold" }}
-                  className={classnames(classes.button__first)}>
+                  className={cn(classes.button__first)}>
                   Поддержать Дискурс
                 </Button>{" "}
-                <Button
-                  typographyProps={{ size: "big", font: "primary-bold" }}
-                  variant="link-underline">
-                  Стать автором
-                </Button>
+                <SendContentItemModal
+                  buttonProps={{
+                    typographyProps: { size: "big", font: "primary-bold" },
+                    variant: "link-underline",
+                  }}
+                />
               </Visible>
               <Visible only={["xs"]}>
                 <Button
                   to="help"
                   variant="button-primary"
-                  className={classnames(
-                    classes.button__first,
-                    classes.button__mobile,
-                  )}>
+                  className={cn(classes.button__first, classes.button__mobile)}>
                   Поддержать
                 </Button>{" "}
                 <Button
                   variant="button-primary"
-                  className={classnames(classes.button__mobile)}>
+                  className={cn(classes.button__mobile)}>
                   Стать автором
                 </Button>
               </Visible>

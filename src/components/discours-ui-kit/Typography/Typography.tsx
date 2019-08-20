@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import classes from "./Typography.css";
 
@@ -64,7 +64,7 @@ class Typography extends React.PureComponent<TypographyProps> {
       color,
     } = this.props;
 
-    return classnames({
+    return cn({
       [classes.common]: true,
       [classes[`font__${font}`]]: true,
       [classes[`color__${color}`]]: true,

@@ -15,6 +15,7 @@ module.exports = {
   moduleNameMapper: {
     // https://jestjs.io/docs/en/webpack#handling-static-assets
     "\\.md$": "<rootDir>/__mocks__/mdMock.js",
+    "\\.svg$": "<rootDir>/__mocks__/svgMock.js",
     "\\.(css)$": "identity-obj-proxy",
     [`\\.(${filesExts.join("|")})$`]: "<rootDir>/__mocks__/fileMock.js",
     ...pathsToModuleNameMapper(compilerOptions.paths || {}, {

@@ -1,14 +1,13 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
-import Icon from "src/components/discours-ui-kit/Icon";
-import {
+import Icon, {
   brandFacebook,
   brandTelegram,
   brandTwitter,
   brandVk,
-} from "src/components/discours-ui-kit/Icon/icons";
+} from "src/components/discours-ui-kit/Icon";
 import Typography from "src/components/discours-ui-kit/Typography";
 import FormattedDate from "src/components/formatters/FormattedDate";
 // tslint:disable-next-line: no-relative-imports
@@ -34,18 +33,17 @@ class FooterBottom extends React.PureComponent {
             </div>
             <div className={classes.column}>
               <Button isInverse to="facebook" className={classes.link}>
-                <Icon isFixedWidth src={brandFacebook} isInverse isInline />{" "}
+                <Icon isFixedWidth component={brandFacebook} isInverse />{" "}
                 Facebook
               </Button>
               <Button isInverse to="vk" className={classes.link}>
-                <Icon isFixedWidth isInverse isInline src={brandVk} /> VK
+                <Icon isFixedWidth isInverse component={brandVk} /> VK
               </Button>
               <Button isInverse to="twitter" className={classes.link}>
-                <Icon isFixedWidth src={brandTwitter} isInverse isInline />{" "}
-                Twitter
+                <Icon isFixedWidth component={brandTwitter} isInverse /> Twitter
               </Button>
               <Button isInverse to="telegram" className={classes.link}>
-                <Icon isFixedWidth src={brandTelegram} isInverse isInline />{" "}
+                <Icon isFixedWidth component={brandTelegram} isInverse />{" "}
                 Telegram
               </Button>
             </div>
@@ -60,7 +58,7 @@ class FooterBottom extends React.PureComponent {
                 RSS
               </Button>
             </div>
-            <div className={classnames(classes.column, classes.column__right)}>
+            <div className={cn(classes.column, classes.column__right)}>
               <FooterSubscribeFormContainer />
             </div>
           </div>

@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import { Field, FieldProps as FormikFieldProps } from "formik";
 import React from "react";
 import Typography from "src/components/discours-ui-kit/Typography";
@@ -32,7 +32,7 @@ class Input extends React.PureComponent<InputProps> {
     const Tag = this.getTagName();
     return (
       <div>
-        <div className={classnames(classes.group)}>
+        <div className={cn(classes.group)}>
           {prepend ? prepend : null}
           <Tag
             className={this.getClassName()}
@@ -42,7 +42,7 @@ class Input extends React.PureComponent<InputProps> {
           />
           {append ? append : null}
         </div>
-        <div className={classnames(classes.error)}>
+        <div className={cn(classes.error)}>
           {form.touched[name] && form.errors[name] && (
             <Typography color="danger" isInline size="small">
               {form.errors[name]}
@@ -64,7 +64,7 @@ class Input extends React.PureComponent<InputProps> {
   private getClassName = () => {
     const { isInverse, className } = this.props;
 
-    return classnames({
+    return cn({
       [classes.common]: true,
       [classes.common__inverse]: isInverse,
       [className]: true,
