@@ -20,32 +20,52 @@ class SendContentItemModal extends React.PureComponent {
           <Typography semanticLevel="heading3" size="heading3">
             Опубликовать материал
           </Typography>
-          <Typography>
+          <Typography font="primary-bold">
             Если публикацию поддержат другие авторы, она выйдет в журнале
           </Typography>
           <div className={classnames(classes.icons)}>
-            <Button to="editArticle" variant="link-background">
-              <Icon fontSize="5rem" component={article} />
+            <Button
+              to="editArticle"
+              variant="link-background"
+              className={classnames(classes.icon)}>
+              <Icon fontSize="5rem" component={article} isFixedWidth />
+              <br />
               <br />
               Статья
             </Button>
-            <Button to="editExpoItem" variant="link-background">
-              <Icon fontSize="5rem" component={literature} />
+            <Button
+              to="editExpoItem"
+              variant="link-background"
+              className={classnames(classes.icon)}>
+              <Icon fontSize="5rem" component={literature} isFixedWidth />
+              <br />
               <br />
               Литература
             </Button>
-            <Button to="editExpoItem" variant="link-background">
-              <Icon fontSize="5rem" component={photo} />
+            <Button
+              to="editExpoItem"
+              variant="link-background"
+              className={classnames(classes.icon)}>
+              <Icon fontSize="5rem" component={photo} isFixedWidth />
+              <br />
               <br />
               Изображения
             </Button>
-            <Button to="editExpoItem" variant="link-background">
-              <Icon fontSize="5rem" component={music} />
+            <Button
+              to="editExpoItem"
+              variant="link-background"
+              className={classnames(classes.icon)}>
+              <Icon fontSize="5rem" component={music} isFixedWidth />
+              <br />
               <br />
               Музыка
             </Button>
-            <Button to="editExpoItem" variant="link-background">
-              <Icon fontSize="5rem" component={video} />
+            <Button
+              to="editExpoItem"
+              variant="link-background"
+              className={classnames(classes.icon)}>
+              <Icon fontSize="5rem" component={video} isFixedWidth />
+              <br />
               <br />
               Видео
             </Button>
