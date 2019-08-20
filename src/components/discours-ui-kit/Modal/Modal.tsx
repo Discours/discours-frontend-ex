@@ -6,7 +6,7 @@ import classes from "./Modal.css";
 interface ModalProps {
   size: "small" | "medium" | "large";
   className?: string;
-  buttonProps?: ButtonProps;
+  buttonProps?: Partial<ButtonProps>;
   buttonText: React.ReactNode;
 }
 

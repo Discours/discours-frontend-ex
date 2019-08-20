@@ -4,6 +4,7 @@ import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
 import Typography from "src/components/discours-ui-kit/Typography";
 import Visible from "src/components/discours-ui-kit/Visible";
+import SendContentItemModal from "src/components/modals/SendContentItemModal";
 import bannerBig from "./banner-big.jpg";
 import bannerSmall from "./banner-small.jpg";
 import classes from "./FooterSupportBanner.css";
@@ -39,11 +40,12 @@ class FooterSupportBanner extends React.PureComponent {
                   className={cn(classes.button__first)}>
                   Поддержать Дискурс
                 </Button>{" "}
-                <Button
-                  typographyProps={{ size: "big", font: "primary-bold" }}
-                  variant="link-underline">
-                  Стать автором
-                </Button>
+                <SendContentItemModal
+                  buttonProps={{
+                    typographyProps: { size: "big", font: "primary-bold" },
+                    variant: "link-underline",
+                  }}
+                />
               </Visible>
               <Visible only={["xs"]}>
                 <Button
