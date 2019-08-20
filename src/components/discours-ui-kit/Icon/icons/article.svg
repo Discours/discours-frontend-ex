@@ -1,8 +1,9 @@
-<svg width="55" height="72" viewBox="0 0 55 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V12.24V72H54.6667V0H10.9333H0ZM45.7378 63.18H9.11111V19.8V9H20.2267H45.92V63.18H45.7378Z" fill="black"/>
-<path d="M40.9781 19.1232H13.6592V21.8551H40.9781V19.1232Z" fill="black"/>
-<path d="M40.9781 32.7827H13.6592V35.5145H40.9781V32.7827Z" fill="black"/>
-<path d="M36.8802 39.6124H13.6592V42.3443H36.8802V39.6124Z" fill="black"/>
-<path d="M28.6846 46.4421H13.6592V49.174H28.6846V46.4421Z" fill="black"/>
-<path d="M32.7824 25.9529H13.6592V28.6848H32.7824V25.9529Z" fill="black"/>
+<svg width="55" height="72" viewBox="0 0 55 72" fill="none" 
+  xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0V12.24V72H54.6667V0H10.9333H0ZM45.7378 63.18H9.11111V19.8V9H20.2267H45.92V63.18H45.7378Z" fill="currentColor"/>
+  <path d="M40.9781 19.1232H13.6592V21.8551H40.9781V19.1232Z" fill="currentColor"/>
+  <path d="M40.9781 32.7827H13.6592V35.5145H40.9781V32.7827Z" fill="currentColor"/>
+  <path d="M36.8802 39.6124H13.6592V42.3443H36.8802V39.6124Z" fill="currentColor"/>
+  <path d="M28.6846 46.4421H13.6592V49.174H28.6846V46.4421Z" fill="currentColor"/>
+  <path d="M32.7824 25.9529H13.6592V28.6848H32.7824V25.9529Z" fill="currentColor"/>
 </svg>
