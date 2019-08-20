@@ -11,7 +11,7 @@
 [Дискурс](https://discours.io) (Пока что на старом проекте) | [Бэта Дискурс](https://beta.discours.io) (собирается из develop) | [Сторибук Дискурса](https://storybook.discours.io)
 
 - [Cheat Sheet](#cheat-sheet)
-- [Манифест разработки Дискурса](#)
+- [Манифест разработки Дискурса](#manifest)
 - [Storybook](#storybook)
 - [Тестирование](#-1)
 - [Поддержка браузеров](#-2)
@@ -37,7 +37,7 @@
 
 > [Оригинал](https://github.com/Discours/discours-welcome)
 
-<a name=""></a>
+<a name="manifest"></a>
 
 ### Манифест разработки Дискурса
 
