@@ -4,7 +4,7 @@ import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
 import Typography from "src/components/discours-ui-kit/Typography";
 import Visible from "src/components/discours-ui-kit/Visible";
-import SendContentItemModal from "src/components/modals/SendContentItemModal";
+import SendContentItemModal from "src/modals/SendContentItemModal";
 import bannerBig from "./banner-big.jpg";
 import bannerSmall from "./banner-small.jpg";
 import classes from "./FooterSupportBanner.css";
