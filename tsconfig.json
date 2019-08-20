@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "strict": true,
     "jsx": "react",
-    "lib": ["es2015", "es2017", "dom"],
+    "lib": ["es2015", "es2016", "es2017", "dom"],
     "baseUrl": ".",
     "typeRoots": ["node_modules/@types", "./@types"],
     "outDir": "./build",
