@@ -27,6 +27,8 @@ stories.add("with manual fontSize", () => (
 for (const [name, icon] of Object.entries(icons)) {
   stories.add(`icon/${name}`, () => <Icon component={icon} />);
   stories.add(`icon/${name}/inverse`, () => (
-    <Icon isInverse component={icon} />
+    <div style={{ backgroundColor: "black" }}>
+      <Icon isInverse component={icon} />
+    </div>
   ));
 }

@@ -1,7 +1,6 @@
 .container {
   display: inline-block;
   height: 1em;
-  color: var(--color-text);
   font-size: inherit;
   vertical-align: -10%;
 }
@@ -14,7 +13,7 @@
 }
 
 .container__fixed_width {
-  width: 1.2rem;
+  width: 1.2em;
   text-align: center;
 }
 
