@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Icon, {
@@ -16,18 +16,18 @@ class SendContentItemModal extends React.PureComponent {
   public render() {
     return (
       <Modal size="large" buttonText="Стать автором">
-        <div className={classnames(classes.container)}>
+        <div className={cn(classes.container)}>
           <Typography semanticLevel="heading3" size="heading3">
             Опубликовать материал
           </Typography>
           <Typography font="primary-bold">
             Если публикацию поддержат другие авторы, она выйдет в журнале
           </Typography>
-          <div className={classnames(classes.icons)}>
+          <div className={cn(classes.icons)}>
             <Button
               to="editArticle"
               variant="link-background"
-              className={classnames(classes.icon)}>
+              className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={article} isFixedWidth />
               <br />
               <br />
@@ -36,7 +36,7 @@ class SendContentItemModal extends React.PureComponent {
             <Button
               to="editExpoItem"
               variant="link-background"
-              className={classnames(classes.icon)}>
+              className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={literature} isFixedWidth />
               <br />
               <br />
@@ -45,7 +45,7 @@ class SendContentItemModal extends React.PureComponent {
             <Button
               to="editExpoItem"
               variant="link-background"
-              className={classnames(classes.icon)}>
+              className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={photo} isFixedWidth />
               <br />
               <br />
@@ -54,7 +54,7 @@ class SendContentItemModal extends React.PureComponent {
             <Button
               to="editExpoItem"
               variant="link-background"
-              className={classnames(classes.icon)}>
+              className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={music} isFixedWidth />
               <br />
               <br />
@@ -63,7 +63,7 @@ class SendContentItemModal extends React.PureComponent {
             <Button
               to="editExpoItem"
               variant="link-background"
-              className={classnames(classes.icon)}>
+              className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={video} isFixedWidth />
               <br />
               <br />

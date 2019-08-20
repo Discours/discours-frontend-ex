@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
@@ -36,7 +36,7 @@ class FooterSupportBanner extends React.PureComponent {
                   to="help"
                   variant="link-underline"
                   typographyProps={{ size: "big", font: "primary-bold" }}
-                  className={classnames(classes.button__first)}>
+                  className={cn(classes.button__first)}>
                   Поддержать Дискурс
                 </Button>{" "}
                 <Button
@@ -49,15 +49,12 @@ class FooterSupportBanner extends React.PureComponent {
                 <Button
                   to="help"
                   variant="button-primary"
-                  className={classnames(
-                    classes.button__first,
-                    classes.button__mobile,
-                  )}>
+                  className={cn(classes.button__first, classes.button__mobile)}>
                   Поддержать
                 </Button>{" "}
                 <Button
                   variant="button-primary"
-                  className={classnames(classes.button__mobile)}>
+                  className={cn(classes.button__mobile)}>
                   Стать автором
                 </Button>
               </Visible>
