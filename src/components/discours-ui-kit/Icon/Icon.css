@@ -10,7 +10,6 @@
   animation: spin 2s infinite linear;
 }
 .container__inverse {
-  background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
 }
 

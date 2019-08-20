@@ -73,7 +73,11 @@ class FooterSubscribeForm extends React.PureComponent<
         isInverse
         placeholder="Ваш e-mail"
         append={
-          <Button isLoading={isSubmitting} variant="button-regular" isInverse>
+          <Button
+            isLoading={isSubmitting}
+            variant="button-regular"
+            isInverse
+            isInline>
             <Icon isInverse component={submit} />
           </Button>
         }
