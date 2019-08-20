@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button, { ButtonProps } from "src/components/discours-ui-kit/Button";
 import classes from "./Modal.css";
@@ -45,19 +45,19 @@ class Modal extends React.PureComponent<ModalProps, ModalState> {
       return null;
     }
     return (
-      <div className={classnames(className, classes.container)}>
+      <div className={cn(className, classes.container)}>
         {/* tslint:disable-next-line react-a11y-event-has-role */}
         <div
           onClick={this.closeModal}
           aria-hidden="true"
-          className={classnames(classes.backdrop)}
+          className={cn(classes.backdrop)}
         />
         <div className={this.getBodyClassName()} role="dialog">
           <Button
             variant="link-text"
             onClick={this.closeModal}
             typographyProps={{ size: "heading3" }}
-            className={classnames(classes.close)}>
+            className={cn(classes.close)}>
             ×
           </Button>
           {children}
@@ -68,7 +68,7 @@ class Modal extends React.PureComponent<ModalProps, ModalState> {
 
   private getBodyClassName = () => {
     const { size } = this.props;
-    return classnames({
+    return cn({
       [classes.body]: true,
       [classes[`body__${size}`]]: true,
     });

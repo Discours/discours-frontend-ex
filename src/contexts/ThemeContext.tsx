@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import { defaultThemeName, ThemeName } from "src/config/theme";
 
@@ -25,7 +25,7 @@ export class ThemeContextProvider extends React.PureComponent<{}, WithLocale> {
     const { state, props } = this;
     return (
       <Provider value={state}>
-        <div className={classnames(`discours-theme-${state.activeTheme}`)}>
+        <div className={cn(`discours-theme-${state.activeTheme}`)}>
           {props.children}
         </div>
       </Provider>

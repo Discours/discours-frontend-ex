@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
 import Container from "src/components/discours-ui-kit/Container";
@@ -58,7 +58,7 @@ class FooterBottom extends React.PureComponent {
                 RSS
               </Button>
             </div>
-            <div className={classnames(classes.column, classes.column__right)}>
+            <div className={cn(classes.column, classes.column__right)}>
               <FooterSubscribeFormContainer />
             </div>
           </div>

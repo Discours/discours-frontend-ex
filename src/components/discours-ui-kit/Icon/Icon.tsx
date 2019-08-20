@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import classes from "./Icon.css";
 export * from "./icons";
@@ -50,7 +50,7 @@ class Icon extends React.PureComponent<IconProps> {
   private getClassName = () => {
     const { isInverse, isFixedWidth, isSpinning } = this.props;
 
-    return classnames({
+    return cn({
       [classes.container]: true,
       [classes.container__inverse]: isInverse,
       [classes.container__spinning]: isSpinning,
@@ -63,7 +63,7 @@ class Icon extends React.PureComponent<IconProps> {
     if (!title) {
       return null;
     }
-    return <span className={classnames("sr-only")}>{title}</span>;
+    return <span className={cn("sr-only")}>{title}</span>;
   };
 }
 

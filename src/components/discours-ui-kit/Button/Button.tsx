@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
 import Icon, { sync } from "src/components/discours-ui-kit/Icon";
@@ -139,7 +139,7 @@ class Button extends React.PureComponent<ButtonProps> {
   private getClassName = () => {
     const { variant, isInverse, className, isInline } = this.props;
 
-    return classnames({
+    return cn({
       [classes.common]: true,
       [classes.common__inverse]: isInverse,
       [classes.common__inline]: isInline,
