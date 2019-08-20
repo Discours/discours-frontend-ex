@@ -62,12 +62,17 @@ class Button extends React.PureComponent<ButtonProps> {
   private renderLink = () => {
     const { style } = this.props;
 
-    return (
-      <Link
-        target={this.getLinkTarget()}
+    return this.isExternalLink() ? (
+      <a
+        rel="noreferrer"
+        href={this.getLinkTo()}
+        target="_blank"
         style={style}
-        className={this.getClassName()}
-        to={this.getLinkTo()}>
+        className={this.getClassName()}>
+        {this.renderContent()}
+      </a>
+    ) : (
+      <Link style={style} className={this.getClassName()} to={this.getLinkTo()}>
         {this.renderContent()}
       </Link>
     );
@@ -102,13 +107,12 @@ class Button extends React.PureComponent<ButtonProps> {
     );
   };
 
-  private getLinkTarget = () => {
+  private isExternalLink = () => {
     const { to } = this.props;
     if (!to) {
       return;
     }
-    const isExternalLink = Object.keys(externalRoutes).includes(to);
-    return isExternalLink ? "_blank" : "_self";
+    return Object.keys(externalRoutes).includes(to);
   };
 
   private renderContent = () => {
