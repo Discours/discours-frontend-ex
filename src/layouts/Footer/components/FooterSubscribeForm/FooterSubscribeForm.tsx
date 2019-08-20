@@ -1,8 +1,7 @@
 import { Form, Formik, FormikActions, FormikProps } from "formik";
 import React from "react";
 import Button from "src/components/discours-ui-kit/Button";
-import Icon from "src/components/discours-ui-kit/Icon";
-import { submit } from "src/components/discours-ui-kit/Icon/icons";
+import Icon, { submit } from "src/components/discours-ui-kit/Icon";
 import Input from "src/components/discours-ui-kit/Input";
 import Typography from "src/components/discours-ui-kit/Typography";
 import * as Yup from "yup";
@@ -74,8 +73,12 @@ class FooterSubscribeForm extends React.PureComponent<
         isInverse
         placeholder="Ваш e-mail"
         append={
-          <Button isLoading={isSubmitting} variant="button-regular" isInverse>
-            <Icon isInverse src={submit} />
+          <Button
+            isLoading={isSubmitting}
+            variant="button-regular"
+            isInverse
+            isInline>
+            <Icon isInverse component={submit} />
           </Button>
         }
       />

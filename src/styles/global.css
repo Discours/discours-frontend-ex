@@ -8,7 +8,8 @@
 @import "./vendor.css";
 @import "./themes/default.css";
 @import "./themes/dark.css";
-@import "fonts.css";
+@import "./fonts.css";
+@import "./aria.css";
 
 :global [class^="discours-theme"] {
   overflow: hidden;

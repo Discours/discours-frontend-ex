@@ -4,6 +4,7 @@ import { withInfo } from "@storybook/addon-info";
 import { withA11y } from "@storybook/addon-a11y";
 import { withKnobs } from "@storybook/addon-knobs";
 import "@storybook/addon-console";
+import { MemoryRouter } from "react-router";
 import { addParameters } from "@storybook/react";
 import CommonProvider from "../src/layouts/App/CommonProvider";
 import { withThemes } from "storybook-addon-themes";
@@ -17,6 +18,15 @@ addDecorator(
 addDecorator(withKnobs);
 addDecorator(withA11y);
 addDecorator(withThemes);
+addDecorator((story) =>
+  React.createElement(
+    MemoryRouter,
+    {
+      initialEntries: ["/"],
+    },
+    story(),
+  ),
+);
 
 addParameters({
   themes,

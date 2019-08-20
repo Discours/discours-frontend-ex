@@ -1,4 +1,5 @@
 {
+  "editor.tabSize": 2,
   "css.validate": false, // https://github.com/shinnn/vscode-stylelint#optional-but-recommended-setup
   "files.exclude": {
     "**/*.js": { "when": "$(basename).ts" },

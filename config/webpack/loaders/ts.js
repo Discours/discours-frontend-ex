@@ -1,6 +1,6 @@
 const path = require("path");
 
-const tsLoader = {
+const mainTsLoader = {
   test: /\.tsx?$|.orig.js$/,
   exclude: /node_modules/,
   use: [
@@ -15,15 +15,20 @@ const tsLoader = {
   ],
 };
 
+const storybookMainTsLoader = {
+  ...mainTsLoader,
+  use: [
+    ...mainTsLoader.use,
+    {
+      loader: "react-docgen-typescript-loader",
+    },
+  ],
+};
+
+const tsLoaders = [mainTsLoader];
+const storybookTsLoaders = [storybookMainTsLoader];
+
 module.exports = {
-  tsLoader,
-  tsLoaderStorybook: {
-    ...tsLoader,
-    use: [
-      ...tsLoader.use,
-      {
-        loader: "react-docgen-typescript-loader",
-      },
-    ],
-  },
+  tsLoaders,
+  storybookTsLoaders,
 };

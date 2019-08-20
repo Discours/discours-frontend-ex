@@ -1,8 +1,7 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
-import Icon from "src/components/discours-ui-kit/Icon";
-import { sync } from "src/components/discours-ui-kit/Icon/icons";
+import Icon, { sync } from "src/components/discours-ui-kit/Icon";
 import Typography, {
   TypographyProps,
 } from "src/components/discours-ui-kit/Typography";
@@ -17,6 +16,7 @@ import classes from "./Button.css";
 export const VARIANTS = [
   "link-regular",
   "link-regular-fat",
+  "link-text",
   "link-underline",
   "link-background",
   "button-regular",
@@ -29,7 +29,7 @@ export const VARIANTS = [
 
 export type ButtonVariant = (typeof VARIANTS)[number];
 
-interface ButtonProps {
+export interface ButtonProps {
   variant: ButtonVariant;
   isInverse: boolean;
   isInline: boolean;
@@ -115,7 +115,12 @@ class Button extends React.PureComponent<ButtonProps> {
     const { children, isInverse, typographyProps, isLoading } = this.props;
     if (isLoading) {
       return (
-        <Icon src={sync} isInverse={isInverse} isSpinning title="Загрузка..." />
+        <Icon
+          component={sync}
+          isInverse={isInverse}
+          isSpinning
+          title="Загрузка..."
+        />
       );
     }
     return (
@@ -134,7 +139,7 @@ class Button extends React.PureComponent<ButtonProps> {
   private getClassName = () => {
     const { variant, isInverse, className, isInline } = this.props;
 
-    return classnames({
+    return cn({
       [classes.common]: true,
       [classes.common__inverse]: isInverse,
       [classes.common__inline]: isInline,

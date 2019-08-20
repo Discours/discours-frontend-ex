@@ -1,53 +1,59 @@
-import classnames from "classnames";
+import cn from "classnames";
 import React from "react";
-import ReactSVG from "react-svg";
 import classes from "./Icon.css";
+export * from "./icons";
 
 interface IconProps {
-  src: string;
+  component: React.ComponentType<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string;
+    }
+  >;
   isInverse: boolean;
   isFixedWidth: boolean;
-  isInline: boolean;
   isSpinning: boolean;
   /**
    * Required, if Icon has semantic meaning
    */
   title?: string;
+  fontSize?: string;
 }
 
 class Icon extends React.PureComponent<IconProps> {
   public static defaultProps = {
     isInverse: false,
-    isInline: false,
     isFixedWidth: false,
     isSpinning: false,
   };
 
   public render() {
-    const { src, title } = this.props;
+    const { component: Component, title } = this.props;
     return (
       <>
-        <ReactSVG
-          afterInjection={this.handleAfterInjection}
-          aria-hidden="true"
+        <Component
           className={this.getClassName()}
-          src={src}
-          wrapper="span"
+          aria-hidden="true"
+          style={this.getStyle()}
           title={title}
         />
+
         {this.getSrOnlyTitle()}
       </>
     );
   }
 
-  private getClassName = () => {
-    const { isInverse, isInline, isFixedWidth, isSpinning } = this.props;
+  private getStyle = () => {
+    const { fontSize } = this.props;
+    return { fontSize };
+  };
 
-    return classnames({
+  private getClassName = () => {
+    const { isInverse, isFixedWidth, isSpinning } = this.props;
+
+    return cn({
       [classes.container]: true,
       [classes.container__inverse]: isInverse,
       [classes.container__spinning]: isSpinning,
-      [classes.container__inline]: isInline,
       [classes.container__fixed_width]: isFixedWidth,
     });
   };
@@ -57,14 +63,7 @@ class Icon extends React.PureComponent<IconProps> {
     if (!title) {
       return null;
     }
-    return <span className={classnames(classes["sr-only"])}>{title}</span>;
-  };
-
-  private handleAfterInjection = (error: Error | null, svg?: Element) => {
-    if (!error) {
-      return;
-    }
-    console.error(error);
+    return <span className={cn("sr-only")}>{title}</span>;
   };
 }
 

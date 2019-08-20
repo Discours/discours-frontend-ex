@@ -1,3 +1,4 @@
+import article from "./article.svg";
 import brandFacebook from "./brand-facebook.svg";
 import brandTelegram from "./brand-telegram.svg";
 import brandTwitter from "./brand-twitter.svg";
@@ -28,7 +29,6 @@ import literature from "./literature.svg";
 import music from "./music.svg";
 import paperclip from "./paperclip.svg";
 import photo from "./photo.svg";
-import post from "./post.svg";
 import ratingLight from "./rating-light.svg";
 import rating from "./rating.svg";
 import rss from "./rss.svg";
@@ -70,7 +70,7 @@ export {
   literature,
   music,
   paperclip,
-  post,
+  article,
   photo,
   ratingLight,
   rating,

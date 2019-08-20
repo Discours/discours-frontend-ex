@@ -57,7 +57,7 @@ stories.add("with append", () => (
       name="test"
       placeholder={text("placeholder", "Имя твоё")}
       append={
-        <Button variant="button-regular" type="submit">
+        <Button variant="button-regular" type="submit" isInline>
           Go
         </Button>
       }
@@ -72,7 +72,7 @@ stories.add("with append inverse", () => (
       placeholder={text("placeholder", "Имя твоё")}
       isInverse
       append={
-        <Button isInverse variant="button-regular" type="submit">
+        <Button isInverse variant="button-regular" type="submit" isInline>
           Go
         </Button>
       }
@@ -86,7 +86,12 @@ stories.add("with prepend", () => (
       name="test"
       placeholder={text("placeholder", "Имя твоё")}
       prepend={
-        <Button isInverse isLoading variant="button-regular" type="submit">
+        <Button
+          isInverse
+          isLoading
+          variant="button-regular"
+          type="submit"
+          isInline>
           Go
         </Button>
       }
@@ -100,7 +105,7 @@ stories.add("with prepend inverse", () => (
       name="test"
       placeholder={text("placeholder", "Имя твоё")}
       prepend={
-        <Button isLoading variant="button-regular" type="submit">
+        <Button isLoading variant="button-regular" type="submit" isInline>
           Go
         </Button>
       }
