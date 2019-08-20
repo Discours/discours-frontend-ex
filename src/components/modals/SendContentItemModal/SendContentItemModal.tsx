@@ -25,7 +25,7 @@ class SendContentItemModal extends React.PureComponent {
           </Typography>
           <div className={cn(classes.icons)}>
             <Button
-              to="editArticle"
+              to="postArticle"
               variant="link-background"
               className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={article} isFixedWidth />
@@ -34,7 +34,7 @@ class SendContentItemModal extends React.PureComponent {
               Статья
             </Button>
             <Button
-              to="editExpoItem"
+              to="postLiterature"
               variant="link-background"
               className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={literature} isFixedWidth />
@@ -43,7 +43,7 @@ class SendContentItemModal extends React.PureComponent {
               Литература
             </Button>
             <Button
-              to="editExpoItem"
+              to="postImage"
               variant="link-background"
               className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={photo} isFixedWidth />
@@ -52,7 +52,7 @@ class SendContentItemModal extends React.PureComponent {
               Изображения
             </Button>
             <Button
-              to="editExpoItem"
+              to="postMusic"
               variant="link-background"
               className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={music} isFixedWidth />
@@ -61,7 +61,7 @@ class SendContentItemModal extends React.PureComponent {
               Музыка
             </Button>
             <Button
-              to="editExpoItem"
+              to="postVideo"
               variant="link-background"
               className={cn(classes.icon)}>
               <Icon fontSize="5rem" component={video} isFixedWidth />
