@@ -1,0 +1,91 @@
+html {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  letter-spacing: var(--letter-spacing-base);
+  line-height: var(--line-height-base);
+}
+
+::selection {
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+}
+
+:global(.discours__text__inverse) {
+  background-color: var(--color-background-inverse);
+  color: var(--color-text-inverse);
+}
+
+:global(.discours__text__inverse)::selection {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1,
+global(.discours__text__h1) {
+  font-size: 2.8rem;
+}
+
+h3,
+global(.discours__text__h3) {
+  font-size: 2rem;
+}
+
+@media screen and (--viewport-sm-max) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (--viewport-xs-max) {
+  html {
+    font-size: 14px;
+  }
+}
+
+:global(.discours__text) {
+  font-family: var(--font-family-secondary);
+}
+
+:global(.discours__text) h1,
+:global(.discours__text) h2,
+:global(.discours__text) h3,
+:global(.discours__text) h4,
+:global(.discours__text) h5,
+:global(.discours__text) h6 {
+  font-family: var(--font-family-primary);
+}
+
+@media screen and (--viewport-sm-min) {
+  :global(.discours__text) {
+    width: 60%;
+    margin-left: 20%;
+  }
+  :global(.discours__text) h1,
+  :global(.discours__text) h2,
+  :global(.discours__text) h3,
+  :global(.discours__text) h4,
+  :global(.discours__text) h5,
+  :global(.discours__text) h6 {
+    margin-left: -7.2rem;
+  }
+}
+
+/* TODO link styles */
+
+/* TODO modal links */
