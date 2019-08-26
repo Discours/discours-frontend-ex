@@ -43,8 +43,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 h1,
@@ -76,6 +76,7 @@ global(.discours__text__h3) {
 
 :global(.discours__text) {
   font-family: var(--font-family-secondary);
+  font-size: 20px;
 }
 
 :global(.discours__text) h1,
