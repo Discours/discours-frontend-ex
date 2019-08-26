@@ -9,5 +9,5 @@ module.exports = {
       maxSize: "50kB",
     },
   ],
-  defaultCompression: "none",
+  defaultCompression: "gzip",
 };

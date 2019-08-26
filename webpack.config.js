@@ -24,6 +24,7 @@ const paths = {
   static: "public",
   output: "www",
   template: "src/index.ejs",
+  publicPath: "",
   entry: {
     errorReporting: "./config/errorReporting/frontend.js",
     main: "./src/index.tsx",
@@ -86,6 +87,7 @@ module.exports = {
   mode: IS_DEV ? "development" : "production",
   output: {
     path: path.resolve(__dirname, paths.output),
+    publicPath: paths.publicPath,
     filename: IS_DEV ? "[name].js" : "assets/js/[name].[hash].js",
     chunkFilename: IS_DEV ? "[name].js" : "assets/js/[name].[hash].bundle.js",
   },
