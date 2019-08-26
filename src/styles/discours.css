@@ -10,13 +10,23 @@ html {
   color: var(--color-text-inverse);
 }
 
-:global(.discours__text__inverse) {
+h1 > strong,
+h2 > strong,
+h3 > strong,
+h4 > strong,
+h5 > strong,
+h6 > strong {
   display: inline-block;
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
 }
 
-:global(.discours__text__inverse)::selection {
+h1 > strong::selection,
+h2 > strong::selection,
+h3 > strong::selection,
+h4 > strong::selection,
+h5 > strong::selection,
+h6 > strong::selection {
   background-color: var(--color-background);
   color: var(--color-text);
 }
@@ -82,13 +92,15 @@ global(.discours__text__h3) {
     width: 60%;
     margin-left: 20%;
   }
-  :global(.discours__text) h1,
+  :global(.discours__text) h1 {
+    margin-left: -7.2rem;
+  }
   :global(.discours__text) h2,
   :global(.discours__text) h3,
   :global(.discours__text) h4,
   :global(.discours__text) h5,
   :global(.discours__text) h6 {
-    margin-left: -7.2rem;
+    margin-left: -5rem;
   }
   :global(.discours__text) h1:global(.discours__text__no-left),
   :global(.discours__text) h2:global(.discours__text__no-left),
