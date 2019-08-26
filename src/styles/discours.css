@@ -48,17 +48,17 @@ h6 {
 }
 
 h1,
-global(.discours__text__h1) {
+:global(.discours__text__h1) {
   font-size: 2.8rem;
 }
 
 h2,
-global(.discours__text__h2) {
+:global(.discours__text__h2) {
   font-size: 2.4rem;
 }
 
 h3,
-global(.discours__text__h3) {
+:global(.discours__text__h3) {
   font-size: 2rem;
 }
 
