@@ -3,11 +3,13 @@ import React from "react";
 import Button, { ButtonProps } from "src/components/discours-ui-kit/Button";
 import classes from "./Modal.css";
 
-interface ModalProps {
+export interface ModalProps {
   size: "small" | "medium" | "large";
   className?: string;
+  isOpened?: boolean;
   buttonProps?: Partial<ButtonProps>;
   buttonText: React.ReactNode;
+  onModalClosed?(): void;
 }
 
 interface ModalState {
@@ -17,26 +19,42 @@ interface ModalState {
 class Modal extends React.PureComponent<ModalProps, ModalState> {
   public static defaultProps = {
     size: "medium",
+    isOpened: false,
   };
   public state: ModalState = {
     isOpened: false,
   };
+
+  public componentDidMount() {
+    if (this.props.isOpened) {
+      this.openModal();
+    }
+  }
 
   public componentWillUnmount() {
     document.removeEventListener("keypress", this.handleKeyDown);
   }
 
   public render() {
-    const { buttonProps, buttonText } = this.props;
     return (
       <>
         {this.renderModal()}
-        <Button {...buttonProps} onClick={this.openModal}>
-          {buttonText}
-        </Button>
+        {this.renderButton()}
       </>
     );
   }
+
+  private renderButton = () => {
+    const { buttonProps, buttonText, isOpened } = this.props;
+    if (isOpened) {
+      return null;
+    }
+    return (
+      <Button {...buttonProps} onClick={this.openModal}>
+        {buttonText}
+      </Button>
+    );
+  };
 
   private renderModal = () => {
     const { className, children } = this.props;
@@ -75,11 +93,16 @@ class Modal extends React.PureComponent<ModalProps, ModalState> {
   };
 
   private closeModal = () => {
+    const { onModalClosed } = this.props;
     this.setState({
       isOpened: false,
     });
     document.removeEventListener("keypress", this.handleKeyDown);
     document.body.style.overflow = "auto";
+    if (!onModalClosed) {
+      return;
+    }
+    onModalClosed();
   };
 
   private openModal = () => {

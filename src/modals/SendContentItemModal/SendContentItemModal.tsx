@@ -1,6 +1,6 @@
 import cn from "classnames";
 import React from "react";
-import Button, { ButtonProps } from "src/components/discours-ui-kit/Button";
+import Button from "src/components/discours-ui-kit/Button";
 import Icon, {
   article,
   literature,
@@ -8,21 +8,22 @@ import Icon, {
   photo,
   video,
 } from "src/components/discours-ui-kit/Icon";
-import Modal from "src/components/discours-ui-kit/Modal";
+import Modal, { ModalProps } from "src/components/discours-ui-kit/Modal";
 import Typography from "src/components/discours-ui-kit/Typography";
 import classes from "./SendContentItemModal.css";
 
-interface SendContentItemModalProps {
-  buttonProps?: Partial<ButtonProps>;
-}
+interface SendContentItemModalProps extends Partial<ModalProps> {}
 
 class SendContentItemModal extends React.PureComponent<
   SendContentItemModalProps
 > {
   public render() {
-    const { buttonProps } = this.props;
+    const { buttonText, ...modalProps } = this.props;
     return (
-      <Modal size="large" buttonText="Стать автором" buttonProps={buttonProps}>
+      <Modal
+        size="large"
+        buttonText={buttonText || "Стать автором"}
+        {...modalProps}>
         <div className={cn(classes.container)}>
           <Typography semanticLevel="heading3" size="heading3">
             Опубликовать материал
