@@ -4,6 +4,10 @@ interface TextViewProps {
   html: string;
 }
 
+// TODO modal links
+// TODO external links to open in a new tab
+// TODO images preview
+
 class TextView extends React.PureComponent<TextViewProps> {
   public render() {
     const { html } = this.props;

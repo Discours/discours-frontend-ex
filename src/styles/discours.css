@@ -11,6 +11,7 @@ html {
 }
 
 :global(.discours__text__inverse) {
+  display: inline-block;
   background-color: var(--color-background-inverse);
   color: var(--color-text-inverse);
 }
@@ -39,6 +40,11 @@ h6 {
 h1,
 global(.discours__text__h1) {
   font-size: 2.8rem;
+}
+
+h2,
+global(.discours__text__h2) {
+  font-size: 2.4rem;
 }
 
 h3,
@@ -84,8 +90,34 @@ global(.discours__text__h3) {
   :global(.discours__text) h6 {
     margin-left: -7.2rem;
   }
+  :global(.discours__text) h1:global(.discours__text__no-left),
+  :global(.discours__text) h2:global(.discours__text__no-left),
+  :global(.discours__text) h3:global(.discours__text__no-left),
+  :global(.discours__text) h4:global(.discours__text__no-left),
+  :global(.discours__text) h5:global(.discours__text__no-left),
+  :global(.discours__text) h6:global(.discours__text__no-left) {
+    margin-left: 0;
+  }
 }
 
-/* TODO link styles */
+a:not([class]) {
+  display: inline-block;
+  background-image: linear-gradient(
+    120deg,
+    var(--color-border),
+    var(--color-border)
+  );
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% var(--border-width-regular);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background-size 0.25s ease-in;
+  white-space: nowrap;
+}
 
-/* TODO modal links */
+a:not([class]):hover,
+a:not([class]):focus {
+  background-size: 100% 90%;
+  color: var(--color-text-inverse);
+}

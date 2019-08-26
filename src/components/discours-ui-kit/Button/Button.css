@@ -36,6 +36,7 @@
 .link-regular:hover,
 .link-regular-fat:hover,
 .link-underline {
+  /* Styles are dublicated in src/styles/discours.css */
   background-image: linear-gradient(
     120deg,
     var(--color-border),
@@ -61,10 +62,12 @@
 }
 
 .link-underline {
+  /* Styles are dublicated in src/styles/discours.css */
   transition: background-size 0.25s ease-in;
 }
 
 .link-underline:hover {
+  /* Styles are dublicated in src/styles/discours.css */
   background-size: 100% 90%;
   color: var(--color-text-inverse);
 }
