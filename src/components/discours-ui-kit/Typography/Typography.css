@@ -75,12 +75,6 @@
   font-size: 0.7rem;
 }
 
-@media screen and (--viewport-xs-max) {
-  .size__small {
-    font-size: 0.5rem;
-  }
-}
-
 .size__big {
   font-size: 1.2rem;
 }
