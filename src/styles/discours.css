@@ -101,6 +101,7 @@ global(.discours__text__h3) {
 }
 
 a:not([class]) {
+  /* Styles are dublicated in src/components/discours-ui-kit/Button/Button.css */
   display: inline-block;
   background-image: linear-gradient(
     120deg,
@@ -118,6 +119,7 @@ a:not([class]) {
 
 a:not([class]):hover,
 a:not([class]):focus {
+  /* Styles are dublicated in src/components/discours-ui-kit/Button/Button.css */
   background-size: 100% 90%;
   color: var(--color-text-inverse);
 }
