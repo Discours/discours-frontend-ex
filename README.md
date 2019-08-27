@@ -132,7 +132,7 @@
 
 ### npm run commit
 
-![npm run commit ouput](docs/npm-run-commit/npm-run-commit.svg)
+![npm run commit ouput](docs/npm-run-commit/npm-run-commit.gif)
 
 В проекте есть специальный commit prompt, который помогает отформатировать commit message в соответствии с [Conventional Commits](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/). Для его запуска необходимо выполнить `npm run commit`. Он спросит про тип коммита, scope (не обязательно), описание коммита (мы используем present simple в описании, напр. "Create the Button component"), а в конце попробует достать номер issue на GitHub из имени ветки автоматически и добавить его в commit message в следующем формате: `[#10]`. Таким образом создастся ссылка из коммита на issue.
 

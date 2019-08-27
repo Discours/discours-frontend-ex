@@ -2,5 +2,5 @@
 - `asciinema rec docs/npm-run-commit/npm-run-commit.cast`
 - `npm run commit`
 - `CTRL+d`
-- `npm install -g svg-term-cli`
-- `cat docs/npm-run-commit/npm-run-commit.cast | svg-term --out docs/npm-run-commit/npm-run-commit.svg --window`
+- `npm install -g asciicast2gif`
+- `asciicast2gif -t solarized-dark npm-run-commit.cast npm-run-commit.gif`
