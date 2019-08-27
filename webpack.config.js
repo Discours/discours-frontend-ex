@@ -24,7 +24,7 @@ const paths = {
   static: "public",
   output: "www",
   template: "src/index.ejs",
-  publicPath: "",
+  publicPath: "/",
   entry: {
     errorReporting: "./config/errorReporting/frontend.js",
     main: "./src/index.tsx",
