@@ -1,4 +1,3 @@
-import { action } from "@storybook/addon-actions";
 import { text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import React from "react";
@@ -15,13 +14,13 @@ stories.addParameters({
 
 for (const v of VARIANTS) {
   stories.add(`variant/${v}`, () => (
-    <Button onClick={action("click")} variant={v}>
+    <Button to="index" variant={v}>
       {text("buttonText", "Нажми меня!")}
     </Button>
   ));
 
   stories.add(`variant/${v}/inverse`, () => (
-    <Button onClick={action("click")} variant={v} isInverse>
+    <Button to="index" variant={v} isInverse>
       {text("buttonText", "Нажми меня!")}
     </Button>
   ));

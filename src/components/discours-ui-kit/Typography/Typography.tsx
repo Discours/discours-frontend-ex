@@ -54,15 +54,7 @@ class Typography extends React.PureComponent<TypographyProps> {
   };
 
   private getClassName = () => {
-    const {
-      size,
-      font,
-      semanticLevel,
-      className,
-      isInverse,
-      isInline,
-      color,
-    } = this.props;
+    const { size, font, className, isInverse, isInline, color } = this.props;
 
     return cn({
       [classes.common]: true,
@@ -71,7 +63,8 @@ class Typography extends React.PureComponent<TypographyProps> {
       [classes.color__inverse]: isInverse,
       [classes.common__inline]: isInline,
       [classes[`size__${size}`]]: true,
-      [classes.heading]: semanticLevel.match(/^heading/),
+      discours__text__h1: size === "heading1",
+      discours__text__h3: size === "heading3",
       [className]: true,
     });
   };

@@ -10,6 +10,7 @@
 @import "./themes/dark.css";
 @import "./fonts.css";
 @import "./aria.css";
+@import "./discours.css";
 
 :global [class^="discours-theme"] {
   overflow: hidden;

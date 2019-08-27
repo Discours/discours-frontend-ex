@@ -28,6 +28,5 @@ it("should render h3 for heading3 semanticLevel", async () => {
   const text = getByText("Test");
   expect(text).toBeInstanceOf(HTMLHeadingElement);
   expect(text).toBeInTheDocument();
-  expect(text).toHaveClass("heading");
-  expect(text).toHaveClass("size__heading3");
+  expect(text).toHaveClass("discours__text__h3");
 });
