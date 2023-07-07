@@ -124,7 +124,7 @@
     "rimraf": "^2.6.3",
     "start-server-and-test": "^1.10.0",
     "storybook-addon-themes": "^5.2.0",
-    "stylelint": "^10.1.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-css-modules": "^1.4.0",
     "stylelint-config-idiomatic-order": "^7.0.3",
     "stylelint-config-prettier": "^5.2.0",
